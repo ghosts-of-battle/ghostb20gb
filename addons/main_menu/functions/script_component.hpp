@@ -1,0 +1,1 @@
+#include "\z\ghostb\addons\main_menu\script_component.hpp"
