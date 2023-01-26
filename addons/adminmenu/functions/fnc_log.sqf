@@ -1,6 +1,6 @@
-#include "\z\ghostb\addons\adminmenu\script_component.hpp"
+#include "\z\ghostbrhs\addons\adminmenu\script_component.hpp"
 /* ----------------------------------------------------------------------------
-Function: GHOSTB_adminmenu_fnc_log
+Function: ghostbrhs_adminmenu_fnc_log
 
 Description:
     Logs a message to registered admins, visible in the admin menu.
@@ -8,17 +8,17 @@ Description:
 Parameters:
     _message - Message to be displayed [String]
     _isWarning - Whether to display as warning [Bool]
-    _tag - Tag that message will be prefixed with [String, defaults to "[GHOSTB Log]"]
+    _tag - Tag that message will be prefixed with [String, defaults to "[ghostbrhs Log]"]
 
 Returns:
     Nil
 
 Examples:
     (begin example)
-        ["Everything is on fire!",true,"[GHOSTB Firealarm]"] call GHOSTB_adminmenu_fnc_log;
+        ["Everything is on fire!",true,"[ghostbrhs Firealarm]"] call ghostbrhs_adminmenu_fnc_log;
     (end)
     (begin example)
-        [format ["%1 did something",profileName]] call GHOSTB_adminmenu_fnc_log;
+        [format ["%1 did something",profileName]] call ghostbrhs_adminmenu_fnc_log;
     (end)
 
 Author:

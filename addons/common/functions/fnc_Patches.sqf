@@ -1,5 +1,5 @@
 /*
-Function: GHOSTB_fnc_Patches
+Function: ghostbrhs_fnc_Patches
 
 Description:
  Apply Section Patches to Players/Vehicles
@@ -10,7 +10,7 @@ Arguments:
 
 Examples:
  (begin example)
-  [this, "1Section"] call GHOSTB_fnc_Patches;
+  [this, "1Section"] call ghostbrhs_fnc_Patches;
  (end)
 
 Author:
@@ -30,7 +30,7 @@ call {
     _PatchClass = "HQ";
 };
 
-// ===== Apply the Patch to player. 
+// ===== Apply the Patch to player.
 
 [BIS_fnc_setUnitInsignia, [_unit,_PatchClass], 5] call CBA_fnc_waitAndExecute;
 

@@ -4,7 +4,7 @@ ADDON = false;
 
 #include "initCBASettings.sqf"
 
-if (isNil QEGVAR(common,GHOSTB_enabled) || !(EGVAR(common,GHOSTB_enabled))) exitWith {};
+if (isNil QEGVAR(common,ghostbrhs_enabled) || !(EGVAR(common,ghostbrhs_enabled))) exitWith {};
 
 #include "XEH_PREP.hpp"
 

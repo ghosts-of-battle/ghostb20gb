@@ -1,4 +1,4 @@
-#include "\z\ghostb\addons\adminmenu\script_component.hpp"
+#include "\z\ghostbrhs\addons\adminmenu\script_component.hpp"
 
 disableSerialization;
 
@@ -9,7 +9,7 @@ if (_type == 20) then {
         hint "Nothing selected to Trigger";
 
     } else {
-        if (typeOf GVAR(adminEyeSelectedObj) == "ghostb_ai_wavespawn") then {
+        if (typeOf GVAR(adminEyeSelectedObj) == "ghostbrhs_ai_wavespawn") then {
             // Wave spawner trigger.
             TRACE_1("Admin Eye triggered wave", GVAR(adminEyeSelectedObj));
             [{

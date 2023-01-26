@@ -1,6 +1,6 @@
 // Updates the text on the end mission screen.
 
-#include "\z\ghostb\addons\common\script_component.hpp"
+#include "\z\ghostbrhs\addons\common\script_component.hpp"
 disableSerialization;
 params ["_display"];
 

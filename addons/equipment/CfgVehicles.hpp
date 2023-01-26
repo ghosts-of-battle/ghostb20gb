@@ -20,8 +20,8 @@ class CfgVehicles {
         editorPreview="\A3\EditorPreviews_F\Data\CfgVehicles\Box_NATO_AmmoVeh_F.jpg";
         _generalMacro="Box_NATO_AmmoVeh_F";
         hiddenSelectionsTextures[]= {
-            "z\ghostb\addons\Equipment\data\ammobox_signs_caA.paa",
-            "z\ghostb\addons\Equipment\data\ammo_Ghostb_co.paa"
+            "z\ghostbrhs\addons\equipment\data\ammobox_signs_caA.paa",
+            "z\ghostbrhs\addons\equipment\data\ammo_ghostb_co.paa"
         };
         class TransportMagazines {
         };
@@ -50,8 +50,8 @@ class CfgVehicles {
         editorPreview="\A3\EditorPreviews_F\Data\CfgVehicles\Box_NATO_AmmoVeh_F.jpg";
         _generalMacro="Box_NATO_AmmoVeh_F";
         hiddenSelectionsTextures[]= {
-            "z\ghostb\addons\Equipment\data\ammobox_signs_caA.paa",
-            "z\ghostb\addons\Equipment\data\ammo_Ghostb_W_co.paa"
+            "z\ghostbrhs\addons\Equipment\data\ammobox_signs_caA.paa",
+            "z\ghostbrhs\addons\Equipment\data\ammo_ghostb_W_co.paa"
         };
         class TransportMagazines {
         };
@@ -80,8 +80,8 @@ class CfgVehicles {
         editorPreview="\A3\EditorPreviews_F\Data\CfgVehicles\Box_NATO_AmmoVeh_F.jpg";
         _generalMacro="Box_NATO_AmmoVeh_F";
         hiddenSelectionsTextures[]= {
-            "z\ghostb\addons\Equipment\data\ammobox_signs_caA.paa",
-            "z\ghostb\addons\Equipment\data\ammoGhostb_D_co.paa"
+            "z\ghostbrhs\addons\Equipment\data\ammobox_signs_caA.paa",
+            "z\ghostbrhs\addons\Equipment\data\ammoghostb_D_co.paa"
         };
         class TransportMagazines {
         };
@@ -110,8 +110,8 @@ class CfgVehicles {
         editorPreview="\A3\EditorPreviews_F\Data\CfgVehicles\Box_NATO_AmmoVeh_F.jpg";
         _generalMacro="Box_NATO_AmmoVeh_F";
         hiddenSelectionsTextures[]= {
-            "z\ghostb\addons\Equipment\data\ammobox_signs_caA.paa",
-            "z\ghostb\addons\Equipment\data\ammoGhostb_T_co.paa"
+            "z\ghostbrhs\addons\Equipment\data\ammobox_signs_caA.paa",
+            "z\ghostbrhs\addons\Equipment\data\ammoghostb_T_co.paa"
         };
         class TransportMagazines {
         };
@@ -140,8 +140,8 @@ class CfgVehicles {
         editorPreview="\A3\EditorPreviews_F\Data\CfgVehicles\Box_NATO_AmmoVeh_F.jpg";
         _generalMacro="Box_NATO_AmmoVeh_F";
         hiddenSelectionsTextures[]= {
-            "z\ghostb\addons\Equipment\data\ammobox_signs_caA.paa",
-            "z\ghostb\addons\Equipment\data\ammoGhostb_co_c_.paa"
+            "z\ghostbrhs\addons\Equipment\data\ammobox_signs_caA.paa",
+            "z\ghostbrhs\addons\Equipment\data\ammoghostb_co_c_.paa"
         };
         class TransportMagazines {
         };

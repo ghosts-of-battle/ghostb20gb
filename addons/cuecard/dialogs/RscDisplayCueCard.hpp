@@ -3,9 +3,9 @@ class RscDisplayCueCard {
     enableSimulation = 1;
     closeOnMissionEnd = 0;
     scriptName = "RscDisplayCueCard";
-    scriptPath = "GHOSTBisplays";
-    onLoad = "[""onLoad"",_this,""RscDisplayCueCard"",'GHOSTBisplays'] call  (uinamespace getvariable 'BIS_fnc_initDisplay')";
-    onUnload = "[""onUnload"",_this,""RscDisplayCueCard"",'GHOSTBisplays'] call  (uinamespace getvariable 'BIS_fnc_initDisplay')";
+    scriptPath = "ghostbrhsisplays";
+    onLoad = "[""onLoad"",_this,""RscDisplayCueCard"",'ghostbrhsisplays'] call  (uinamespace getvariable 'BIS_fnc_initDisplay')";
+    onUnload = "[""onUnload"",_this,""RscDisplayCueCard"",'ghostbrhsisplays'] call  (uinamespace getvariable 'BIS_fnc_initDisplay')";
     movingEnable = true;
 
     class Controls {
@@ -86,7 +86,7 @@ class RscDisplayCueCard {
     class controlsBackground {
         class NotePadBackground: RscPicture {
             idc = 1200;
-            text = "z\ghostb\addons\common\images\cuecards\notepad_CA.paa";
+            text = "z\ghostbrhs\addons\common\images\cuecards\notepad_CA.paa";
             x = 0.288594 * safezoneW + safezoneX;
             y = 0.093 * safezoneH + safezoneY;
             w = 0.31 * safezoneW;

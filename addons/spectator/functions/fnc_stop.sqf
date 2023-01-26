@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [player] call ghostb_spectator_fnc_stop
+ * [player] call ghostbrhs_spectator_fnc_stop
  *
  * Public: No
  */

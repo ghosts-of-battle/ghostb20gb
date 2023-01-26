@@ -12,7 +12,7 @@
  *  existed before 'getUnitLoadout' was a thing and backwards compatibility and shit)
  *
  * Example:
- * [player] call GHOSTB_boc_fnc_chestpackMagazines;
+ * [player] call ghostbrhs_boc_fnc_chestpackMagazines;
  *
  * Public: No
  */

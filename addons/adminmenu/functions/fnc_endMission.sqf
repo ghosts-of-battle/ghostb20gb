@@ -1,4 +1,4 @@
-#include "\z\ghostb\addons\adminmenu\script_component.hpp"
+#include "\z\ghostbrhs\addons\adminmenu\script_component.hpp"
 
 disableSerialization;
 params ["_display"];
@@ -6,7 +6,7 @@ params ["_display"];
 [_display] call FUNC(endMission_occluder);
 
 // Populate mission ending list
-private _endingList = (_display displayCtrl IDC_GHOSTB_ADMINMENU_ENDM_LIST);
+private _endingList = (_display displayCtrl IDC_ghostbrhs_ADMINMENU_ENDM_LIST);
 if ((lbSize _endingList) == 0) then {
     {
         private _title = getText (_x >> "title");

@@ -7,8 +7,8 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "ghostb_common",
-            // "ALiVE_splashscreen"
+            "ghostbrhs_common",
+            "ALiVE_splashscreen"
         };
         author = QAUTHOR;
         authors[] = {"veteran29"};

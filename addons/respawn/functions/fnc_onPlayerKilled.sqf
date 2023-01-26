@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [bob, ted] call ghostbaaespawn_fnc_onPlayerKilled
+ * [bob, ted] call ghostbrhsaaespawn_fnc_onPlayerKilled
  *
  * Public: No
  */

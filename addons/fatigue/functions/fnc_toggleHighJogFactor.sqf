@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [true] call ghostb_fatigue_fnc_toggleHighJogFactor
+ * [true] call ghostbrhs_fatigue_fnc_toggleHighJogFactor
  *
  * Public: No
  */

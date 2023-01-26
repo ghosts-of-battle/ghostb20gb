@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
 
- * \ghostb_medical\supplies\functions\fn_canUnpackMedicKit.sqf
+ * \ghostbrhs_medical\supplies\functions\fn_canUnpackMedicKit.sqf
  * by Ojemineh
  *
  * check if medical supplies can be unpacked
@@ -13,7 +13,7 @@
  * <BOOLEAN>
  *
  * Example:
- * [player] call GHOSTB_medical_supplies_fnc_canUnpackMedicKit;
+ * [player] call ghostbrhs_medical_supplies_fnc_canUnpackMedicKit;
  *
  */
 
@@ -32,7 +32,7 @@ if (isNull _unit) exitWith {false};
 private _return = false;
 
 _return = (
-    ("ghostb_medbags_DrugKit" in items _unit) &&
+    ("ghostbrhs_medbags_DrugKit" in items _unit) &&
     (alive _unit) &&
     !(_unit getVariable ["ace_captives_isSurrendering", false]) &&
     !(_unit getVariable ["ace_captives_isHandcuffed", false]) &&

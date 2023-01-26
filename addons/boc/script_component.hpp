@@ -1,6 +1,6 @@
 #define COMPONENT boc
 #define COMPONENT_BEAUTIFIED Backpack on Chest
-#include "\z\ghostb\addons\main\script_mod.hpp"
+#include "\z\ghostbrhs\addons\main\script_mod.hpp"
 
 #ifdef DEBUG_ENABLED_BOC
     #define DEBUG_MODE_FULL
@@ -12,4 +12,4 @@
 
 #define DEBUG_MODE_NORMAL
 #define DEBUG_SYNCHRONOUS
-#include "\z\ghostb\addons\main\script_macros.hpp"
+#include "\z\ghostbrhs\addons\main\script_macros.hpp"

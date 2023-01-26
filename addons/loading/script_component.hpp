@@ -1,6 +1,6 @@
 #define COMPONENT loading
 #define COMPONENT_BEAUTIFIED Loading
-#include "\z\ghostb\addons\main\script_mod.hpp"
+#include "\z\ghostbrhs\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL
 // #define DISABLE_COMPILE_CACHE
@@ -12,7 +12,7 @@
     #define DEBUG_SETTINGS DEBUG_SETTINGS_LOADING
 #endif
 
-#include "\z\ghostb\addons\main\script_macros.hpp"
+#include "\z\ghostbrhs\addons\main\script_macros.hpp"
 
 #define IDC_LOADINGSTART_CUSTOM_BG 657001
 #define CFG_LOADING_SCREEN (configFile >> QGVAR(CfgLoadingScreen))

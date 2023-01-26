@@ -1,1 +1,1 @@
-#include "\z\ghostb\addons\safestart\script_component.hpp"
+#include "\z\ghostbrhs\addons\safestart\script_component.hpp"

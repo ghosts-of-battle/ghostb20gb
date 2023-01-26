@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * ["STR_USRACT_THROW"] call ghostb_safestart_fnc_openKeybinding
+ * ["STR_USRACT_THROW"] call ghostbrhs_safestart_fnc_openKeybinding
  *
  * Public: No
  */

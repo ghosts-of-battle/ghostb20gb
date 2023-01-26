@@ -1,6 +1,6 @@
 #define COMPONENT usp_fix
 #define COMPONENT_BEAUTIFIED USP_Fix
-#include "\z\ghostb\addons\main\script_mod.hpp"
+#include "\z\ghostbrhs\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL
 // #define DISABLE_COMPILE_CACHE
@@ -15,4 +15,4 @@
     #define DEBUG_SETTINGS DEBUG_SETTINGS_USP_FIX
 #endif
 
-#include "\z\ghostb\addons\main\script_macros.hpp"
+#include "\z\ghostbrhs\addons\main\script_macros.hpp"

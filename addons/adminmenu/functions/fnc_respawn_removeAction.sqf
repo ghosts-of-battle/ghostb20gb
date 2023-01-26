@@ -1,11 +1,11 @@
-#include "\z\ghostb\addons\adminmenu\script_component.hpp"
+#include "\z\ghostbrhs\addons\adminmenu\script_component.hpp"
 
 disableSerialization;
 params ["_display"];
 
 
-private _ctrlGroupListBox = (_display displayCtrl IDC_GHOSTB_ADMINMENU_RESP_GROUPLIST);
-        
+private _ctrlGroupListBox = (_display displayCtrl IDC_ghostbrhs_ADMINMENU_RESP_GROUPLIST);
+
 GVAR(selectedRespawnGroup) deleteAt (lbCurSel _ctrlGroupListBox);
 
 [_display] call FUNC(respawn_refreshSpectatorList);

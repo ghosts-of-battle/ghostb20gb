@@ -1,6 +1,6 @@
 /*
  * ARMA EXTENDED ENVIRONMENT
- * \z\ghostb\addons\hints\functions\fn_hintGlobal.sqf
+ * \z\ghostbrhs\addons\hints\functions\fn_hintGlobal.sqf
  * by Ojemineh
  *
  * extended hint system
@@ -16,7 +16,7 @@
  * nothing
  *
  * Example:
- * [ format [hint_ghostb_default, "Hello World"] ] call ghostb_fnc_hintGlobal;
+ * [ format [hint_ghostbrhs_default, "Hello World"] ] call ghostbrhs_fnc_hintGlobal;
  *
  */
 
@@ -32,6 +32,6 @@ _position = [_this, 4, -1, [0]] call BIS_fnc_param;
 
 // -------------------------------------------------------------------------------------------------
 
-[_text, _color, _sound, _delay, _position] remoteExecCall ["ghostb_fnc_hint", 0];
+[_text, _color, _sound, _delay, _position] remoteExecCall ["ghostbrhs_fnc_hint", 0];
 
 // -------------------------------------------------------------------------------------------------

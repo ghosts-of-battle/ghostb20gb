@@ -15,18 +15,18 @@ class RscPicture;
 
 /*
 class cfgScriptPaths {
-    GHOSTB_briefing = "z\ghostb\addons\briefing\ui_scripts\";
+    ghostbrhs_briefing = "z\ghostbrhs\addons\briefing\ui_scripts\";
 };
 */
 
 class Cfg3DEN {
     class Mission {
         class GVAR(Attributes) {
-            displayName = "GHOSTB Autotest"; // Text visible in the window title as "Edit <displayName>"
+            displayName = "ghostbrhs Autotest"; // Text visible in the window title as "Edit <displayName>"
             //display = "Display3DENEditAttributesPreview"; // Optional - display for attributes window. Must have the same structure and IDCs as the default Display3DENEditAttributes
             class AttributeCategories {
                 class GVAR(FakeSettings) {
-                    displayName = "GHOSTB: Autotest settings"; // Category name visible in Edit Attributes window
+                    displayName = "ghostbrhs: Autotest settings"; // Category name visible in Edit Attributes window
                     collapsed = 0; // When 1, the category is collapsed by default
                     class Attributes {
                         class GVAR(MissionName) {

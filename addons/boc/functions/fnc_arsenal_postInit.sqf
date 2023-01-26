@@ -10,7 +10,7 @@
  * Nothing
  *
  * Example:
- * [] call GHOSTB_boc_fnc_arsenal_postInit;
+ * [] call ghostbrhs_boc_fnc_arsenal_postInit;
  *
  * Public: No
  */

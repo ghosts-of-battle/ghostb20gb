@@ -1,8 +1,8 @@
 #include "script_component.hpp"
 ADDON = false;
 
-ghostb_unit = objNull;
-uiNamespace setVariable ["ghostb_unit", objNull];
+ghostbrhs_unit = objNull;
+uiNamespace setVariable ["ghostbrhs_unit", objNull];
 
 PREP_RECOMPILE_START;
 #include "XEH_PREP.hpp"
@@ -41,3 +41,5 @@ GVAR(runAfterSettingsInit) = [];
 }] call CBA_fnc_addEventHandler;
 
 ADDON = true;
+
+#include "initSettings.sqf"

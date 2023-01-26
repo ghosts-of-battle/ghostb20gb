@@ -1,10 +1,10 @@
-#include "\z\ghostb\addons\adminmenu\script_component.hpp"
+#include "\z\ghostbrhs\addons\adminmenu\script_component.hpp"
 
 // Thanks to Snippers
 
 params [["_radios", []], ["_network", -1]];
 
-private _presetName = format ["ghostb_preset%1", _network];
+private _presetName = format ["ghostbrhs_preset%1", _network];
 private _oldPresetName = ["ACRE_PRC343"] call acre_api_fnc_getPreset;
 
 if (_network > -1 && !(_presetName isEqualTo _oldPresetName)) then {
@@ -19,13 +19,13 @@ if (_network > -1 && !(_presetName isEqualTo _oldPresetName)) then {
 {
     if (player canAdd _radio) then {
         player addItem _radio;
-        systemChat format ["[GHOSTB] Added radio: %1", _radio];
+        systemChat format ["[ghostbrhs] Added radio: %1", _radio];
     } else {
         if (getContainerMaxLoad uniform player > 0) then {
             (uniformContainer player) addItemCargoGlobal [_radio, 1];
-            systemChat format ["[GHOSTB] Added radio (exceeds inventory capacity): %1", _radio];
+            systemChat format ["[ghostbrhs] Added radio (exceeds inventory capacity): %1", _radio];
         } else {
-            systemChat format ["[GHOSTB] Couldn't add radio: %1", _radio];
+            systemChat format ["[ghostbrhs] Couldn't add radio: %1", _radio];
         };
 
         // TODO: give addaction?

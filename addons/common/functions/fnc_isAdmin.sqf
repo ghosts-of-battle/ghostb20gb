@@ -1,5 +1,5 @@
 /*
- * Name: ghostb_common_fnc_isAdmin
+ * Name: ghostbrhs_common_fnc_isAdmin
  * Author: Snippers
  *
  * Arguments:
@@ -11,7 +11,7 @@
  * Description:
  * Use this function to determine if the local client is admin
  */
- 
+
 private _return = false;
 
 if (isServer or serverCommandAvailable "#kick") then {
@@ -24,6 +24,6 @@ if (!isNil "tac1_adminIDs") then {
     if (_localID in ([] call tac1_adminIDs)) then {
         _return = true;
     };
-}; 
+};
 
 _return

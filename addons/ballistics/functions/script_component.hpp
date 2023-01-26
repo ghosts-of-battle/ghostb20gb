@@ -1,1 +1,1 @@
-#include "\z\ghostb\addons\ballistics\script_component.hpp"
+#include "\z\ghostbrhs\addons\ballistics\script_component.hpp"

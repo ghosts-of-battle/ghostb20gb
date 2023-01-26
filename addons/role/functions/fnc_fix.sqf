@@ -28,8 +28,8 @@
 if (isDedicated) exitWith {};
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
-private _ghostbFIX = [
-    "ghostbfix",
+private _ghostbrhsFIX = [
+    "ghostbrhsfix",
     "FIX Perms",
     "", {
         player call FUNC(role);
@@ -38,6 +38,6 @@ private _ghostbFIX = [
     [_area]
 ] call ACE_interact_menu_fnc_createAction;
 
-[this, 0, ["ACE_MainActions"], _ghostbFIX] call ACE_interact_menu_fnc_addActionToObject;
+[this, 0, ["ACE_MainActions"], _ghostbrhsFIX] call ACE_interact_menu_fnc_addActionToObject;
 
 //////

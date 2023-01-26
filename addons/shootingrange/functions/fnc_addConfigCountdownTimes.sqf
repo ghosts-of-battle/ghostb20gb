@@ -14,7 +14,7 @@
  * None
  *
  * Example:
- * ["range", controller, [controller1, controller2], [6, 9], [target1, target2]] call ghostb_shootingrange_fnc_addConfigCountdownTimes;
+ * ["range", controller, [controller1, controller2], [6, 9], [target1, target2]] call ghostbrhs_shootingrange_fnc_addConfigCountdownTimes;
  *
  * Public: No
  */

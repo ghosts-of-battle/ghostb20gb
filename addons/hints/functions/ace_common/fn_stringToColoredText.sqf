@@ -1,6 +1,6 @@
 /*
  * ARMA EXTENDED ENVIRONMENT
- * \z\ghostb\addons\hints\functions\ace_common\fn_stringToColoredText.sqf
+ * \z\ghostbrhs\addons\hints\functions\ace_common\fn_stringToColoredText.sqf
  * by Ojemineh
  *
  * replace ace core displayIcon
@@ -34,8 +34,8 @@ if (_color isEqualType []) then {
     );
 };
 
-private _hint_enabled = (missionNamespace getVariable ["ghostb_hint_enabled", true]);
-private _hint_option_ace = (missionNamespace getVariable ["ghostb_hint_option_ace", true]);
+private _hint_enabled = (missionNamespace getVariable ["ghostbrhs_hint_enabled", true]);
+private _hint_option_ace = (missionNamespace getVariable ["ghostbrhs_hint_option_ace", true]);
 
 if (_hint_enabled && _hint_option_ace) then {
     _return = format ["<t align='center' color='%1' >%2</t>", _color, _string];

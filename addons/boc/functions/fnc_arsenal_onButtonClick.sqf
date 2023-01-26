@@ -10,7 +10,7 @@
  * Nothing
  *
  * Example:
- * [] call GHOSTB_boc_fnc_arsenal_onButtonClick;
+ * [] call ghostbrhs_boc_fnc_arsenal_onButtonClick;
  *
  * Public: No
  */
@@ -24,7 +24,7 @@ _action = ["onback", "onchest"] select (_chestpack isEqualTo "");
 if (!(_backpack isEqualTo "") and !(_chestpack isEqualTo "")) then {_action = "swap";};
 
 //execute action
-[_center] call (missionNamespace getVariable (format ["GHOSTB_boc_fnc_action%1",_action]));
+[_center] call (missionNamespace getVariable (format ["ghostbrhs_boc_fnc_action%1",_action]));
 
 //update arsenal
 ["ListSelectCurrent"] call BIS_fnc_arsenal;

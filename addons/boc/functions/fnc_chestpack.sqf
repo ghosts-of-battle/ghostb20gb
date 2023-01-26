@@ -10,7 +10,7 @@
  * Classname <STRING>
  *
  * Example:
- * [player] call GHOSTB_boc_fnc_chestpack;
+ * [player] call ghostbrhs_boc_fnc_chestpack;
  *
  * Public: No
  */

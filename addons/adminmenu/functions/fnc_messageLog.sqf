@@ -1,4 +1,4 @@
-#include "\z\ghostb\addons\adminmenu\script_component.hpp"
+#include "\z\ghostbrhs\addons\adminmenu\script_component.hpp"
 
 disableSerialization;
 params ["_display"];
@@ -11,7 +11,7 @@ private _pfhRefresh = [{
     disableSerialization;
     params ["_display","_handle"];
 
-    private _listCtrl = _display displayCtrl IDC_GHOSTB_ADMINMENU_MSGS_LIST;
+    private _listCtrl = _display displayCtrl IDC_ghostbrhs_ADMINMENU_MSGS_LIST;
 
     private _entriesNum = lbSize _listCtrl;
     private _newEntriesNum = count GVAR(logEntries);

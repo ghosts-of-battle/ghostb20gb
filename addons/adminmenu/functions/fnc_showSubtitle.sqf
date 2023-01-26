@@ -1,7 +1,7 @@
-#include "\z\ghostb\addons\adminmenu\script_component.hpp"
+#include "\z\ghostbrhs\addons\adminmenu\script_component.hpp"
 
 /*
-    Modified by Bear for GHOSTB Admin Menu
+    Modified by Bear for ghostbrhs Admin Menu
 
     Author: Thomas Ryan
 

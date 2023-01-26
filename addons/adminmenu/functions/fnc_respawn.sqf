@@ -1,4 +1,4 @@
-#include "\z\ghostb\addons\adminmenu\script_component.hpp"
+#include "\z\ghostbrhs\addons\adminmenu\script_component.hpp"
 
 disableSerialization;
 params ["_display"];
@@ -9,27 +9,27 @@ GVAR(selectedRespawnGroup) = [];
 GVAR(respawn_rank) = 0; // initialize
 
 if (isNil QGVAR(lastFactionSelection)) then {GVAR(lastFactionSelection) = [0,0];};
-// GVAR(selectedRespawnGroup) format 
+// GVAR(selectedRespawnGroup) format
 // Rank: Int (0-6), Object: Player, Role: Int (0 -> count respawnMenuRoles)
 
 // Propogate the list of dead players.
 if (!isMultiplayer) then {
-    GVAR(spectatorList) append allUnits;  
+    GVAR(spectatorList) append allUnits;
 } else {
     {
         if (isPlayer _x) then { //not all of them will be players.
             GVAR(spectatorList) pushBack _x;
         };
-    } forEach ([0,0,0] nearEntities ["ghostb_spectator_unit",500]);
+    } forEach ([0,0,0] nearEntities ["ghostbrhs_spectator_unit",500]);
     {
         if (!alive _x) then { //not all of them will be players.
-            GVAR(spectatorList) pushBackUnique _x;  
+            GVAR(spectatorList) pushBackUnique _x;
         };
     } forEach allPlayers;
 };
 
 
-private _control = (_display displayCtrl IDC_GHOSTB_ADMINMENU_RESP_FACTIONCATEGORY); /* respawnMenuFactionCategoryCombo */
+private _control = (_display displayCtrl IDC_ghostbrhs_ADMINMENU_RESP_FACTIONCATEGORY); /* respawnMenuFactionCategoryCombo */
 lbClear _control;
 private _missionConfig = (configProperties [missionConfigFile >> "CfgLoadouts","isClass _x"]);
 private _index = -1;
@@ -39,7 +39,7 @@ private _index = -1;
 // Build up a pool of who is using what faction from assign gear.
 private _playerFactions = [] call CBA_fnc_hashCreate;
 {
-    private _faction = _x getVariable ["ghostb_assignGear_faction",""];
+    private _faction = _x getVariable ["ghostbrhs_assignGear_faction",""];
     if (_faction != "") then {
         if ([_playerFactions,_faction] call CBA_fnc_hashHasKey) then {
             private _value = [_playerFactions,_faction] call CBA_fnc_hashGet;
@@ -121,7 +121,7 @@ _control ctrlAddEventHandler ["LBSelChanged",{[ctrlParent (param [0])] call FUNC
 // Faction selector Control
 private _lastIndex = GVAR(lastFactionSelection) select 1; // Store this before executing below code, otherwise it will override.
 
-_control = (_display displayCtrl IDC_GHOSTB_ADMINMENU_RESP_FACTION); /* respawnMenuFactionCombo */
+_control = (_display displayCtrl IDC_ghostbrhs_ADMINMENU_RESP_FACTION); /* respawnMenuFactionCombo */
 lbClear _control;
 _control ctrlAddEventHandler ["LBSelChanged",{[ctrlParent (param [0])] call FUNC(respawn_factionChanged);}];
 
@@ -154,7 +154,7 @@ private _west = 0; private _east = 0; private _resistance = 0; private _civilian
 } forEach (allPlayers select {alive _x});
 
 
-_control = (_display displayCtrl IDC_GHOSTB_ADMINMENU_RESP_SIDE); /* Side control */
+_control = (_display displayCtrl IDC_ghostbrhs_ADMINMENU_RESP_SIDE); /* Side control */
 lbClear _control;
 
 private _idx = _control lbAdd format["BLUFOR (%1p)",_west];
@@ -189,16 +189,16 @@ _control ctrlAddEventHandler ["LBSelChanged",{GVAR(selectedSide) = (_this select
 
 // _control lbSetCurSel 0;
 
-(_display displayCtrl IDC_GHOSTB_ADMINMENU_RESP_SPECTATORTEXT) ctrlSetText format["Players in Spectator: %1",count GVAR(spectatorList) ];
+(_display displayCtrl IDC_ghostbrhs_ADMINMENU_RESP_SPECTATORTEXT) ctrlSetText format["Players in Spectator: %1",count GVAR(spectatorList) ];
 
 // Marker Type
-_control = (_display displayCtrl IDC_GHOSTB_ADMINMENU_RESP_MARKERTYPE);
+_control = (_display displayCtrl IDC_ghostbrhs_ADMINMENU_RESP_MARKERTYPE);
 lbClear _control;
 {
     private _idx = _control lbAdd (_x select 1);
     _markerImg = (_x select 0);
     if (_markerImg != "") then {
-        _control lbSetPicture[_idx,_markerImg]; 
+        _control lbSetPicture[_idx,_markerImg];
         _control lbSetColor[_idx,[1,1,1,1]];
     };
 } forEach [
@@ -211,7 +211,7 @@ lbClear _control;
     ["\A3\ui_f\data\map\markers\nato\b_motor_inf.paa","APC/IFV","inf_mech"],
     ["\A3\ui_f\data\map\markers\nato\b_armor.paa","Armour","armor"],
     ["\A3\ui_f\data\map\markers\nato\b_air.paa","Heli","helo_cargo"],
-    ["\A3\ui_f\data\map\markers\nato\b_plane.paa","Airplane/Jet","fixedwing"]   
+    ["\A3\ui_f\data\map\markers\nato\b_plane.paa","Airplane/Jet","fixedwing"]
 ];
 
 
@@ -223,7 +223,7 @@ if (!isNil QGVAR(MarkerIdx)) then {
 };
 
 // Marker Colours
-_control = (_display displayCtrl IDC_GHOSTB_ADMINMENU_RESP_MARKERCOLOUR);
+_control = (_display displayCtrl IDC_ghostbrhs_ADMINMENU_RESP_MARKERCOLOUR);
 lbClear _control;
 {
     private _idx = _control lbAdd (_x select 1);
@@ -243,7 +243,7 @@ if (!isNil QGVAR(MarkerColour)) then {
 };
 
 // Group ID
-_control = (_display displayCtrl IDC_GHOSTB_ADMINMENU_RESP_GROUPNAME);
+_control = (_display displayCtrl IDC_ghostbrhs_ADMINMENU_RESP_GROUPNAME);
 if (isNil QGVAR(groupName)) then {
     GVAR(groupName) = "INSERT_GROUP_NAME";
 } else {
@@ -252,7 +252,7 @@ if (isNil QGVAR(groupName)) then {
 _control ctrlAddEventHandler ["KeyUp",{GVAR(groupName) = ctrlText (_this select 0);}];
 
 // Marker Name
-_control = (_display displayCtrl IDC_GHOSTB_ADMINMENU_RESP_GROUPMARKERNAME);
+_control = (_display displayCtrl IDC_ghostbrhs_ADMINMENU_RESP_GROUPMARKERNAME);
 if (isNil QGVAR(markerName)) then {
     GVAR(markerName) = "INSERT_MARKER_NAME";
 } else {
@@ -261,7 +261,7 @@ if (isNil QGVAR(markerName)) then {
 _control ctrlAddEventHandler ["KeyUp",{GVAR(markerName) = ctrlText (_this select 0);}];
 
 if (!isNil QGVAR(respawnGroupMarkerCheckBoxVal)) then {
-    (_display displayCtrl IDC_GHOSTB_ADMINMENU_RESP_GROUPMARKERCHECKBOX) cbSetChecked GVAR(respawnGroupMarkerCheckBoxVal);
+    (_display displayCtrl IDC_ghostbrhs_ADMINMENU_RESP_GROUPMARKERCHECKBOX) cbSetChecked GVAR(respawnGroupMarkerCheckBoxVal);
 } else {
     GVAR(respawnGroupMarkerCheckBoxVal) = false;
 };
@@ -272,20 +272,20 @@ if (!isNil QGVAR(respawnGroupMarkerCheckBoxVal)) then {
 [{
     params["_input", "_pfhID"];
     _input params ["_oldSpectList"];
-    _display = findDisplay IDD_GHOSTB_ADMINMENU;
-    if (isNull (findDisplay IDD_GHOSTB_ADMINMENU)) exitWith { [_pfhID] call CBA_fnc_removePerFrameHandler;} ;
+    _display = findDisplay IDD_ghostbrhs_ADMINMENU;
+    if (isNull (findDisplay IDD_ghostbrhs_ADMINMENU)) exitWith { [_pfhID] call CBA_fnc_removePerFrameHandler;} ;
 
     //Recompute who is alive and Dead.
-    
+
     private _deadList = [];
     if (!isMultiplayer) then {
         _deadList append allUnits;
     } else {
         {
             if (isPlayer _x) then { //not all of them will be players.
-                _deadList pushBack _x;  
+                _deadList pushBack _x;
             };
-        } forEach ([0,0,0] nearEntities ["ghostb_spectator_unit",500]);
+        } forEach ([0,0,0] nearEntities ["ghostbrhs_spectator_unit",500]);
         {
             if (!alive _x) then { //not all of them will be players.
                 _deadList pushBackUnique _x;
@@ -294,14 +294,14 @@ if (!isNil QGVAR(respawnGroupMarkerCheckBoxVal)) then {
     };
 
     if (({_x in GVAR(spectatorList) } count _deadList) == count _deadList) exitWith {};
-    
+
     GVAR(spectatorList) = _deadList;
     _input set [0,_deadList];
-                
-    (_display displayCtrl IDC_GHOSTB_ADMINMENU_RESP_SPECTATORTEXT) ctrlSetText format["Players in Spectator: %1",count GVAR(spectatorList) ];
-    
+
+    (_display displayCtrl IDC_ghostbrhs_ADMINMENU_RESP_SPECTATORTEXT) ctrlSetText format["Players in Spectator: %1",count GVAR(spectatorList) ];
+
     //CHeck specatator List
     [_display] call FUNC(respawn_refreshSpectatorList);
     [_display] call FUNC(respawn_refreshGroupBox);
-    
+
 },  0.4,[]] call CBA_fnc_addPerFrameHandler;

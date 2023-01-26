@@ -50,3 +50,12 @@ PREP(sideToString);
 PREP(sideToTexture);
 PREP(sideType);
 PREP(testGroupsSlottingScreen);
+////////////////
+
+PREP(DynamicGroups);
+PREP(DynamicSim);
+PREP(FlipVehicle);
+PREP(advancedSlingLoadingInit);
+PREP(TFARSettings);
+PREP(log);
+PREP(SafePos);

@@ -1,4 +1,4 @@
-#include "\z\ghostb\addons\adminmenu\script_component.hpp"
+#include "\z\ghostbrhs\addons\adminmenu\script_component.hpp"
 
 #include "initKeybinds.sqf"
 
@@ -7,7 +7,7 @@ GVAR(playerManagement_listControls) = [];
 GVAR(playerManagement_players) = [];
 GVAR(playerManagement_selected) = [];
 
-if (isGHOSTB) then {
+if (isghostbrhs) then {
     [
         {time > 5 && [] call FUNC(isAuthorized)},
         {
@@ -50,7 +50,7 @@ if (isMultiplayer && hasInterface) then {
     QGVAR(fps) addPublicVariableEventHandler {
         disableSerialization;
 
-        private _ctrl = (uiNamespace getVariable [QGVAR(display), displayNull]) displayCtrl IDC_GHOSTB_ADMINMENU_FPS;
+        private _ctrl = (uiNamespace getVariable [QGVAR(display), displayNull]) displayCtrl IDC_ghostbrhs_ADMINMENU_FPS;
         if (isNull _ctrl) exitWith {};
 
         _ctrl ctrlSetText format ["%1 SFPS", _this select 1];
@@ -58,7 +58,7 @@ if (isMultiplayer && hasInterface) then {
     QGVAR(headlessInfo) addPublicVariableEventHandler {
         disableSerialization;
 
-        private _ctrl = ((uiNamespace getVariable [QGVAR(display), displayNull]) displayCtrl IDC_GHOSTB_ADMINMENU_G_DASH) controlsGroupCtrl IDC_GHOSTB_ADMINMENU_DASH_HEADLESS;
+        private _ctrl = ((uiNamespace getVariable [QGVAR(display), displayNull]) displayCtrl IDC_ghostbrhs_ADMINMENU_G_DASH) controlsGroupCtrl IDC_ghostbrhs_ADMINMENU_DASH_HEADLESS;
         if (isNull _ctrl) exitWith {};
 
         _ctrl ctrlSetText (_this select 1);
@@ -68,7 +68,7 @@ if (isMultiplayer && hasInterface) then {
     QGVAR(currentAdmin) addPublicVariableEventHandler {
         disableSerialization;
 
-        private _ctrl = ((uiNamespace getVariable [QGVAR(display), displayNull]) displayCtrl IDC_GHOSTB_ADMINMENU_G_DASH) controlsGroupCtrl IDC_GHOSTB_ADMINMENU_DASH_CURRADMIN;
+        private _ctrl = ((uiNamespace getVariable [QGVAR(display), displayNull]) displayCtrl IDC_ghostbrhs_ADMINMENU_G_DASH) controlsGroupCtrl IDC_ghostbrhs_ADMINMENU_DASH_CURRADMIN;
         if (isNull _ctrl) exitWith {};
 
         _ctrl ctrlSetText (_this select 1);

@@ -14,7 +14,7 @@
  * None
  *
  * Example:
- * ["range", controller, [controller1, controller2], 1, [target1, target2]] call ghostb_shootingrange_fnc_setConfigMode;
+ * ["range", controller, [controller1, controller2], 1, [target1, target2]] call ghostbrhs_shootingrange_fnc_setConfigMode;
  *
  * Public: No
  */

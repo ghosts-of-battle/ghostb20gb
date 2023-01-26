@@ -1,6 +1,6 @@
 /*
 
- * \ghostb_common\functions\common\fn_addItem.sqf
+ * \ghostbrhs_common\functions\common\fn_addItem.sqf
  * by Ojemineh
  *
  * add item to unit/vehicle

@@ -21,7 +21,7 @@ class Cfg3den {
                     h = "5 * (pixelH * pixelGrid * 0.50)";
                     rows = 1;
                     columns = 5;
-                    strings[] = {"None", "MC", "Tropical", "Desert", "Snow", "Wood"};
+                    strings[] = {"None", "Base"};
                 };
             };
         };
@@ -66,27 +66,27 @@ class Cfg3den {
                 collapsed = 1;
                 class Attributes {
                     class GVAR(Arsenal_Select) {
-                        property = QUOTE(GHOSTB_Arsenal_Select);
+                        property = QUOTE(ghostbrhs_Arsenal_Select);
                         control = "ArsenalSelect";
                         displayName = "Full Arsenal Selection:";
                         tooltip = "Removes all items from this container and replaces them with a Full Arsenal of the selected gear.";
-                        expression = "if (_value > -1) then {[_this, _value] call GHOSTB_fnc_FullArsenal;}";
+                        expression = "if (_value > -1) then {[_this, _value] call ghostbrhs_fnc_FullArsenal;}";
                         typeName = "STRING";
                         condition = "objectHasInventoryCargo - objectVehicle";
                         defaultValue = "-1";
                     };
                         class GVAR(Ammo_Select) {
-                        property = QUOTE(GHOSTB_Ammo_Select);
+                        property = QUOTE(ghostbrhs_Ammo_Select);
                         control = "ArsenalSelect";
                         displayName = "Limited Arsenal Selection:";
                         tooltip = "Removes all items from this container and replaces them with a Limited Arsenal of the selected gear, such as Weapons and Ammo.";
-                        expression = "if (_value > -1) then {[_this, _value] call GHOSTB_fnc_LimitedArsenal;}";
+                        expression = "if (_value > -1) then {[_this, _value] call ghostbrhs_fnc_LimitedArsenal;}";
                         typeName = "STRING";
                         condition = "objectHasInventoryCargo - objectVehicle";
                         defaultValue = "-1";
                     };
                         class GVAR(LimitedAmmoSelect) {
-                        property = QUOTE(GHOSTB_LimitedAmmoSelect);
+                        property = QUOTE(ghostbrhs_LimitedAmmoSelect);
                         control = LimitedAmmoSelect;
                         displayName = "Ammobox Selection:";
                         tooltip = "Suppliments the equipment is this object with preset ammunition. This doesn't remove currently selected equipment.";
@@ -96,7 +96,7 @@ class Cfg3den {
                         defaultValue = "-1";
                     };
                         class GVAR(Equipment_Select) {
-                        property = QUOTE(GHOSTB_Equipment_Select);
+                        property = QUOTE(ghostbrhs_Equipment_Select);
                         control = "EquipmentSelect";
                         displayName = "Medical Supplies Selection:";
                         tooltip = "Suppliments the equipment is this object with a preset equipment loadout. This doesn't remove currently selected equipment.";

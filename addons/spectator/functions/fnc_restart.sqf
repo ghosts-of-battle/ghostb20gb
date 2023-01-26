@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * call ghostb_spectator_fnc_restart
+ * call ghostbrhs_spectator_fnc_restart
  *
  * Public: No
  */

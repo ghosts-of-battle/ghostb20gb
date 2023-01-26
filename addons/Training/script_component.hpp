@@ -1,7 +1,7 @@
 #define COMPONENT TRAINING
 #define COMPONENT_BEAUTIFIED Training
 
-#include "\z\ghostb\addons\main\script_mod.hpp"
+#include "\z\ghostbrhs\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL
 // #define DISABLE_COMPILE_CACHE
@@ -13,4 +13,4 @@
     #define DEBUG_SETTINGS DEBUG_SETTINGS_TRAINING
 #endif
 
-#include "\z\ghostb\addons\main\script_macros.hpp"
+#include "\z\ghostbrhs\addons\main\script_macros.hpp"

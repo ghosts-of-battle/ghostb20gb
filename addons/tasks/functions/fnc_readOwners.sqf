@@ -10,7 +10,7 @@
  * 0: Processed task owners <ARRAY>
  *
  * Example:
- * [["true", "west", "bob", "rob_group"]] call ghostb_main_fnc_example
+ * [["true", "west", "bob", "rob_group"]] call ghostbrhs_main_fnc_example
  *
  * Public: No
  */

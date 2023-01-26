@@ -10,7 +10,7 @@
  * Nothing
  *
  * Example:
- * [_disp] call GHOSTB_boc_fnc_arsenal_updateUI);
+ * [_disp] call ghostbrhs_boc_fnc_arsenal_updateUI);
  *
  * Public: No
  */
@@ -32,7 +32,7 @@ _action = ["onBack", "onChest"] select (_chestpack isEqualTo "");
 if (!(_backpack isEqualTo "") and !(_chestpack isEqualTo "")) then {_action = "swap";};
 
 (_display displayCtrl 9233) ctrlSetText format [QPATHTOF(data\actions\%1_ca.paa),_action];
-(_display displayCtrl 9233) ctrlSetTooltip localize format ["STR_GHOSTB_boc_%1",_action];
+(_display displayCtrl 9233) ctrlSetTooltip localize format ["STR_ghostbrhs_boc_%1",_action];
 
 if ((_backpack isEqualTo "") and (_chestpack isEqualTo "")) then {
     (_display displayCtrl 9233) ctrlEnable false;

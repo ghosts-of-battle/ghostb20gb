@@ -1,4 +1,4 @@
-#include "\z\ghostb\addons\autotest\script_component.hpp"
+#include "\z\ghostbrhs\addons\autotest\script_component.hpp"
 
 private _ctrlListbox = (_this controlsGroupCtrl 101);
 _ctrlListbox lnbSetColumnsPos [0,0.05];

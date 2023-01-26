@@ -12,7 +12,7 @@
  * None
  *
  * Example:
- * [player, getPlayerUID player] call ghostb_back_to_game_fnc_handleDisconnected
+ * [player, getPlayerUID player] call ghostbrhs_back_to_game_fnc_handleDisconnected
  *
  * Public: No
  */

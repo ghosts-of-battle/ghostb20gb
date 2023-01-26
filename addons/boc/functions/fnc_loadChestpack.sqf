@@ -10,7 +10,7 @@
  * Mass <NUMBER>
  *
  * Example:
- * [player] call GHOSTB_boc_fnc_loadChestpack;
+ * [player] call ghostbrhs_boc_fnc_loadChestpack;
  *
  * Public: No
  */

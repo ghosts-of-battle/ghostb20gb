@@ -13,7 +13,7 @@
  * None
  *
  * Example:
- * [["text", "STR_text"], 2.5] call ghostb_shootingrange_fnc_notifyVicinity;
+ * [["text", "STR_text"], 2.5] call ghostbrhs_shootingrange_fnc_notifyVicinity;
  *
  * Public: No
  */

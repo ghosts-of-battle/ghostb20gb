@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 #######################
-#  ghostb Setup Script  #
+#  ghostbrhs Setup Script  #
 #######################
 
 import os
@@ -13,26 +13,26 @@ import winreg
 
 ######## GLOBALS #########
 MAINDIR = "z"
-PROJECTDIR = "ghostb"
+PROJECTDIR = "ghostbrhs"
 ##########################
 
 def main():
     FULLDIR = "{}\\{}".format(MAINDIR,PROJECTDIR)
     print("""
   ######################################
-  # ghostb Development Environment Setup #
+  # ghostbrhs Development Environment Setup #
   ######################################
 
-  This script will create your ghostb dev environment for you.
+  This script will create your ghostbrhs dev environment for you.
 
   Before you run this, you should already have:
     - A properly setup ACE3 Development Environment
 
   If you have not done those things yet, please abort this script in the next step and do so first.
 
-  This script will create two hard links on your system, both pointing to your ghostb project folder:
-    [Arma 3 installation directory]\\{} => ghostb project folder
-    P:\\{}                              => ghostb project folder
+  This script will create two hard links on your system, both pointing to your ghostbrhs project folder:
+    [Arma 3 installation directory]\\{} => ghostbrhs project folder
+    P:\\{}                              => ghostbrhs project folder
     """.format(FULLDIR,FULLDIR))
     print("\n")
 

@@ -1,6 +1,6 @@
 /*
  * ARMA EXTENDED ENVIRONMENT
- * \z\ghostb\addons\hints\functions\fn_cleanup.sqf
+ * \z\ghostbrhs\addons\hints\functions\fn_cleanup.sqf
  * by Ojemineh
  *
  * cleanup extended hint system
@@ -12,7 +12,7 @@
  * nothing
  *
  * Example:
- * [] call GHOSTB_hints_fnc_cleanup;
+ * [] call ghostbrhs_hints_fnc_cleanup;
  *
  */
 
@@ -36,13 +36,13 @@ private ["_queue", "_Content", "_ColorBar"];
     };
 
 } forEach [
-    uiNamespace getVariable ["ghostb_hint_queue_0", []],
-    uiNamespace getVariable ["ghostb_hint_queue_1", []],
-    uiNamespace getVariable ["ghostb_hint_queue_2", []],
-    uiNamespace getVariable ["ghostb_hint_queue_3", []]
+    uiNamespace getVariable ["ghostbrhs_hint_queue_0", []],
+    uiNamespace getVariable ["ghostbrhs_hint_queue_1", []],
+    uiNamespace getVariable ["ghostbrhs_hint_queue_2", []],
+    uiNamespace getVariable ["ghostbrhs_hint_queue_3", []]
 ];
 
-uiNamespace setVariable ["ghostb_hint_queue_0", []];
-uiNamespace setVariable ["ghostb_hint_queue_1", []];
-uiNamespace setVariable ["ghostb_hint_queue_2", []];
-uiNamespace setVariable ["ghostb_hint_queue_3", []];
+uiNamespace setVariable ["ghostbrhs_hint_queue_0", []];
+uiNamespace setVariable ["ghostbrhs_hint_queue_1", []];
+uiNamespace setVariable ["ghostbrhs_hint_queue_2", []];
+uiNamespace setVariable ["ghostbrhs_hint_queue_3", []];

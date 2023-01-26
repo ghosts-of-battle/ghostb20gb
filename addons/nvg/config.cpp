@@ -7,7 +7,7 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "ghostb_common",
+            "ghostbrhs_common",
             "cba_main",
             "ace_nightvision",
             "BettIR_Core"
@@ -22,3 +22,4 @@ class CfgPatches {
 #include "CfgEventHandlers.hpp"
 #include "CfgEffects.hpp"
 #include "CfgWeapons.hpp"
+#include "XtdGear.hpp"

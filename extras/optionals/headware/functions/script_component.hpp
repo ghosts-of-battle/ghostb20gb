@@ -1,1 +1,1 @@
-#include "\z\ghostb\addons\headware\script_component.hpp"
+#include "\z\ghostbrhs\addons\headware\script_component.hpp"

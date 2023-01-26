@@ -1,11 +1,11 @@
 class CfgFunctions {
 
-    class GHOSTB_Hints {
+    class ghostbrhs_Hints {
 
-        tag = "ghostb_hints";
+        tag = "ghostbrhs_hints";
 
         class Hints {
-            file = "z\ghostb\addons\hints\functions";
+            file = "z\ghostbrhs\addons\hints\functions";
             class cleanup {};
             class initialize {};
             class initSettings {};
@@ -13,24 +13,24 @@ class CfgFunctions {
 
     };
 
-    class GHOSTB_Hints_Functions {
+    class ghostbrhs_Hints_Functions {
 
-        tag = "ghostb";
+        tag = "ghostbrhs";
 
         class Hints {
-            file = "z\ghostb\addons\hints\functions";
+            file = "z\ghostbrhs\addons\hints\functions";
             class hint {};
             class hintGlobal {};
         };
 
     };
 
-    class GHOSTB_Hints_ACE {
+    class ghostbrhs_Hints_ACE {
 
         tag = "ace_common";
 
         class ace_common {
-            file = "z\ghostb\addons\hints\functions\ace_common";
+            file = "z\ghostbrhs\addons\hints\functions\ace_common";
             class displayIcon {};
             class displayIconEx { file = "\z\ace\addons\common\functions\fnc_displayIcon.sqf"; };
             class displayText {};
@@ -44,12 +44,12 @@ class CfgFunctions {
 
     };
 
-    class GHOSTB_Hints_CBA {
+    class ghostbrhs_Hints_CBA {
 
         tag = "cba";
 
         class cba_ui {
-            file = "z\ghostb\addons\hints\functions\cba_ui";
+            file = "z\ghostbrhs\addons\hints\functions\cba_ui";
             class notify {};
             class notifyEx { recompile = 1; file = "\x\cba\addons\ui\fnc_notify.sqf"; };
         };

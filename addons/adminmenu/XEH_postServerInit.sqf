@@ -1,8 +1,8 @@
-#include "\z\ghostb\addons\adminmenu\script_component.hpp"
+#include "\z\ghostbrhs\addons\adminmenu\script_component.hpp"
 
 #include "initKeybinds.sqf"
 
-if (isGHOSTB) then {
+if (isghostbrhs) then {
     GVAR(disconnectEH) = addMissionEventHandler ["HandleDisconnect",{
         params ["_unit", "_id", "_uid", "_name"];
         if !(typeOf _unit isEqualTo QEGVAR(spectator,unit)) then {

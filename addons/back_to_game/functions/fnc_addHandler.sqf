@@ -14,7 +14,7 @@
  * [
  *     {_this getVariable ["ACE_hasEarPlugsIn", false]},
  *     {(_this select 0) setVariable ["ACE_hasEarPlugsIn", (_this select 1), true]}
- * ] call ghostb_back_to_game_fnc_addHandler
+ * ] call ghostbrhs_back_to_game_fnc_addHandler
  *
  * Public: No
  */

@@ -1,6 +1,6 @@
-#include "\z\ghostb\addons\common\script_component.hpp"
+#include "\z\ghostbrhs\addons\common\script_component.hpp"
 /*
- * Name: ghostb_common_fnc_mouseOver
+ * Name: ghostbrhs_common_fnc_mouseOver
  * Author: Nick
  *
  * Arguments:
@@ -10,7 +10,7 @@
  * nil
  *
  * Description:
- * Set ghostb_common_edenMouseObjects and fires mouseOver events?
+ * Set ghostbrhs_common_edenMouseObjects and fires mouseOver events?
  *
  */
 

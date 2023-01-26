@@ -1,11 +1,11 @@
-#include "\z\ghostb\addons\adminmenu\script_component.hpp"
+#include "\z\ghostbrhs\addons\adminmenu\script_component.hpp"
 
 disableSerialization;
 params ["_display"];
 
-private _list = _display displayCtrl IDC_GHOSTB_ADMINMENU_PMAN_LIST;
-private _filterSide = [sideUnknown, blufor, opfor, resistance, civilian] param [(lbCurSel (_display displayCtrl IDC_GHOSTB_ADMINMENU_PMAN_FILTER_SIDE)) max 0];
-private _filterState = (lbCurSel (_display displayCtrl IDC_GHOSTB_ADMINMENU_PMAN_FILTER_STATE)) max 0;
+private _list = _display displayCtrl IDC_ghostbrhs_ADMINMENU_PMAN_LIST;
+private _filterSide = [sideUnknown, blufor, opfor, resistance, civilian] param [(lbCurSel (_display displayCtrl IDC_ghostbrhs_ADMINMENU_PMAN_FILTER_SIDE)) max 0];
+private _filterState = (lbCurSel (_display displayCtrl IDC_ghostbrhs_ADMINMENU_PMAN_FILTER_STATE)) max 0;
 
 private _allPlayers = allPlayers - entities "HeadlessClient_F";
 if (!isMultiplayer) then {

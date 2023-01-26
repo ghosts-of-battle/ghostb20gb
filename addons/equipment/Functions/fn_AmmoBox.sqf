@@ -1,5 +1,5 @@
 /*
-Function: GHOSTB_fnc_Ammobox
+Function: ghostbrhs_fnc_Ammobox
 
 Description:
  Used to configure basic container Ammo state.
@@ -10,8 +10,8 @@ Arguments:
 
 Examples:
  (begin example)
-  [this] call GHOSTB_fnc_Ammobox;
-  [this, "Aegis"] call GHOSTB_fnc_Ammobox;
+  [this] call ghostbrhs_fnc_Ammobox;
+  [this, "Aegis"] call ghostbrhs_fnc_Ammobox;
  (end)
 
 Author:
@@ -26,7 +26,7 @@ params [
  ["_Type", "None"]
 ];
 
-private _Type = _container getVariable ["GHOSTB_LimitedAmmoSelect", -1];
+private _Type = _container getVariable ["ghostbrhs_LimitedAmmoSelect", -1];
 
 if ((_Type isEqualto -1) || (_Type isEqualTo "None")) exitwith {};
 
@@ -311,10 +311,10 @@ if (_Type isEqualTo "Ghost") exitwith {
             "ACE_Sandbag_empty",
             "ACE_SpareBarrel_Item",
             "ACE_SpareBarrel",
-            "ghostb_medbags_DrugKit",
+            "ghostbrhs_medbags_DrugKit",
             "KNB_PanelGreen",
-            "ghostb_medbags_FirstAid",
-            "ghostb_medbags_MedicKit",
+            "ghostbrhs_medbags_FirstAid",
+            "ghostbrhs_medbags_MedicKit",
             "KNB_PanelRed",
             "KNB_PanelYellow",
             "tsp_frameCharge_mag",

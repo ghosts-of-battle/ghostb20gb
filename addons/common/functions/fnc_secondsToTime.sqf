@@ -1,5 +1,5 @@
 /*
- * Name: ghostb_common_fnc_secondsToTime
+ * Name: ghostbrhs_common_fnc_secondsToTime
  * Author: Head
  *
  * Arguments:

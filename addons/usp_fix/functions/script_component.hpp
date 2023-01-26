@@ -1,1 +1,1 @@
-#include "\z\ghostb\addons\usp_fix\script_component.hpp"
+#include "\z\ghostbrhs\addons\usp_fix\script_component.hpp"

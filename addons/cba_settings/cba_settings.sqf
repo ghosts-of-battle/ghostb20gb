@@ -142,10 +142,10 @@ force ace_goggles_showInThirdPerson = false;
 force ace_grenades_convertExplosives = true;
 
 // ACE Headless
-force acex_headless_delay = 15;
-force acex_headless_enabled = false;
-force acex_headless_endMission = 0;
-force acex_headless_log = false;
+acex_headless_delay = 15;
+force acex_headless_enabled = true;
+acex_headless_endMission = 0;
+acex_headless_log = false;
 force acex_headless_transferLoadout = 1;
 
 // ACE Hearing
@@ -238,7 +238,7 @@ force ace_medical_ivFlowRate = 1.25;
 force ace_medical_limping = 1;
 force ace_medical_painCoefficient = 1;
 force ace_medical_painUnconsciousChance = 0.1;
-force ace_medical_playerDamageThreshold = 1.25;
+force ace_medical_playerDamageThreshold = 2;
 force ace_medical_spontaneousWakeUpChance = 0.2;
 force ace_medical_spontaneousWakeUpEpinephrineBoost = 20;
 force ace_medical_statemachine_AIUnconsciousness = true;
@@ -727,136 +727,136 @@ force lambs_main_radioWest = 500;
 force KNB_book_aceAction = true;
 force KNB_panel_aceAction = true;
 
-// GHOSTB
-ghostb_autotest_outputToRPT = false;
+// ghostbrhs
+ghostbrhs_autotest_outputToRPT = false;
 
 // Ghost - AdminMenu
-ghostb_adminMenu_endLogToRPT = false;
-ghostb_adminMenu_printToChat = 1;
+ghostbrhs_adminMenu_endLogToRPT = false;
+ghostbrhs_adminMenu_printToChat = 1;
 
 // Ghost - ai_disembark
-force ghostb_ai_disembark_enabled = true;
-force ghostb_ai_disembark_stayInImmobileChance = 0.2927;
+force ghostbrhs_ai_disembark_enabled = true;
+force ghostbrhs_ai_disembark_stayInImmobileChance = 0.2927;
 
 // Ghost - back_to_game
-force ghostb_back_to_game_enableAddon = false;
-force ghostb_back_to_game_removeBody = true;
-force ghostb_back_to_game_teleportToLeader = false;
-force ghostb_back_to_game_teleportToVehicle = false;
+force ghostbrhs_back_to_game_enableAddon = false;
+force ghostbrhs_back_to_game_removeBody = true;
+force ghostbrhs_back_to_game_teleportToLeader = false;
+force ghostbrhs_back_to_game_teleportToVehicle = false;
 
 // Ghost - Backpack on Chest
-force ghostb_boc_disabled = false;
-force ghostb_boc_forceWalk = false;
-force ghostb_boc_removeKilledPlayerChestpack = true;
+force ghostbrhs_boc_disabled = false;
+force ghostbrhs_boc_forceWalk = false;
+force ghostbrhs_boc_removeKilledPlayerChestpack = true;
 
 // Ghost - BluForce Tracker
-FORCE FORCE ghostb_bft_bftEnabled = true;
-FORCE FORCE ghostb_bft_friendlySides_CIVILIAN = [0,2];
-FORCE FORCE ghostb_bft_friendlySides_EAST = [3];
-FORCE FORCE ghostb_bft_friendlySides_RESISTANCE = [1,3];
-FORCE FORCE ghostb_bft_friendlySides_WEST = [2];
-FORCE FORCE ghostb_bft_friendlySidesDynamic = true;
-FORCE FORCE ghostb_bft_groupIconsInteraction = "hover";
-FORCE FORCE ghostb_bft_medicalSystem = "ACE";
-FORCE FORCE ghostb_bft_requireItemGPS = true;
-FORCE FORCE ghostb_bft_showAIGroups = true;
-FORCE FORCE ghostb_bft_showAINames = true;
-FORCE FORCE ghostb_bft_showCivilians = false;
-FORCE FORCE ghostb_bft_showGroupIcons = true;
-FORCE FORCE ghostb_bft_showGroupText = true;
-FORCE FORCE ghostb_bft_showLifeState = true;
-FORCE FORCE ghostb_bft_showOwnFactionOnly = false;
-FORCE FORCE ghostb_bft_showOwnGroup = true;
-FORCE FORCE ghostb_bft_showOwnGroupUnits = true;
-FORCE FORCE ghostb_bft_showPlayerNames = true;
-FORCE FORCE ghostb_bft_showUnitNames = true;
-FORCE FORCE ghostb_bft_teamColors = "ACE";
-FORCE FORCE ghostb_bft_updateInterval = 0
+FORCE FORCE ghostbrhs_bft_bftEnabled = true;
+FORCE FORCE ghostbrhs_bft_friendlySides_CIVILIAN = [0,2];
+FORCE FORCE ghostbrhs_bft_friendlySides_EAST = [3];
+FORCE FORCE ghostbrhs_bft_friendlySides_RESISTANCE = [1,3];
+FORCE FORCE ghostbrhs_bft_friendlySides_WEST = [2];
+FORCE FORCE ghostbrhs_bft_friendlySidesDynamic = true;
+FORCE FORCE ghostbrhs_bft_groupIconsInteraction = "hover";
+FORCE FORCE ghostbrhs_bft_medicalSystem = "ACE";
+FORCE FORCE ghostbrhs_bft_requireItemGPS = true;
+FORCE FORCE ghostbrhs_bft_showAIGroups = true;
+FORCE FORCE ghostbrhs_bft_showAINames = true;
+FORCE FORCE ghostbrhs_bft_showCivilians = false;
+FORCE FORCE ghostbrhs_bft_showGroupIcons = true;
+FORCE FORCE ghostbrhs_bft_showGroupText = true;
+FORCE FORCE ghostbrhs_bft_showLifeState = true;
+FORCE FORCE ghostbrhs_bft_showOwnFactionOnly = false;
+FORCE FORCE ghostbrhs_bft_showOwnGroup = true;
+FORCE FORCE ghostbrhs_bft_showOwnGroupUnits = true;
+FORCE FORCE ghostbrhs_bft_showPlayerNames = true;
+FORCE FORCE ghostbrhs_bft_showUnitNames = true;
+FORCE FORCE ghostbrhs_bft_teamColors = "ACE";
+FORCE FORCE ghostbrhs_bft_updateInterval = 0
 
 // Ghost - Bodybag
-force ghostb_bodybag_destroyChance = 20;
+force ghostbrhs_bodybag_destroyChance = 20;
 
 // Ghost - Channels
-force ghostb_Channels_CommandDuration = 0;
-force ghostb_Channels_CommandText = true;
-force ghostb_Channels_CommandVoice = false;
-force ghostb_Channels_DirectDuration = 0;
-force ghostb_Channels_DirectText = true;
-force ghostb_Channels_DirectVoice = false;
-force ghostb_Channels_GlobalDuration = 0;
-force ghostb_Channels_GlobalText = true;
-force ghostb_Channels_GlobalVoice = false;
-force ghostb_Channels_GroupDuration = 0;
-force ghostb_Channels_GroupText = true;
-force ghostb_Channels_GroupVoice = false;
-force ghostb_Channels_SideDuration = 0;
-force ghostb_Channels_SideText = true;
-force ghostb_Channels_SideVoice = false;
-force ghostb_Channels_VehicleDuration = 0;
-force ghostb_Channels_VehicleText = true;
-force ghostb_Channels_VehicleVoice = false;
+force ghostbrhs_Channels_CommandDuration = 0;
+force ghostbrhs_Channels_CommandText = false;
+force ghostbrhs_Channels_CommandVoice = false;
+force ghostbrhs_Channels_DirectDuration = 0;
+force ghostbrhs_Channels_DirectText = true;
+force ghostbrhs_Channels_DirectVoice = false;
+force ghostbrhs_Channels_GlobalDuration = 0;
+force ghostbrhs_Channels_GlobalText = false;
+force ghostbrhs_Channels_GlobalVoice = false;
+force ghostbrhs_Channels_GroupDuration = 0;
+force ghostbrhs_Channels_GroupText = false;
+force ghostbrhs_Channels_GroupVoice = false;
+force ghostbrhs_Channels_SideDuration = 0;
+force ghostbrhs_Channels_SideText = false;
+force ghostbrhs_Channels_SideVoice = false;
+force ghostbrhs_Channels_VehicleDuration = 0;
+force ghostbrhs_Channels_VehicleText = false;
+force ghostbrhs_Channels_VehicleVoice = false;
 
 // Ghost - Cuecard
 force QGVAR(CueCards) = true;
 
 // Ghost - fatigue
-force ghostb_fatigue_highJogCoef = 0.9;
-force ghostb_fatigue_highJogCoefEnabled = false;
+force ghostbrhs_fatigue_highJogCoef = 0.9;
+force ghostbrhs_fatigue_highJogCoefEnabled = false;
 
 // Ghost - friendly_fire
-force ghostb_friendly_fire_loggingEnabled = true;
+force ghostbrhs_friendly_fire_loggingEnabled = true;
 
 // Ghost - fries
-force ghostb_fries_autoAdd = true;
+force ghostbrhs_fries_autoAdd = true;
 
 // Ghost - grass
-force ghostb_grass_enabled = false;
+force ghostbrhs_grass_enabled = false;
 
 // Ghost - insurgents
-force ghostb_insurgents_enabled_CUP = true;
-force ghostb_insurgents_enabled_Vanilla = true;
+force ghostbrhs_insurgents_enabled_CUP = true;
+force ghostbrhs_insurgents_enabled_Vanilla = true;
 
 // Ghost - respawn
-force ghostb_respawn_enabled = true;
-force ghostb_respawn_time = 6;
+force ghostbrhs_respawn_enabled = true;
+force ghostbrhs_respawn_time = 6;
 
 // Ghost - spectator
-force ghostb_spectator_allowAI = false;
-force ghostb_spectator_allowAIUnconscious = false;
-force ghostb_spectator_allowUnconscious = false;
-force ghostb_spectator_civilianSide = false;
-force ghostb_spectator_civilianSideUnconscious = false;
-force ghostb_spectator_enabled = false;
-force ghostb_spectator_freeCamera = false;
-force ghostb_spectator_freeCameraUnconscious = false;
-force ghostb_spectator_sides = 1;
-force ghostb_spectator_sidesUnconscious = 1;
-force ghostb_spectator_TPPCamera = false;
-force ghostb_spectator_TPPCameraUnconscious = false;
-force ghostb_spectator_unconsciousDelay = 30;
+force ghostbrhs_spectator_allowAI = false;
+force ghostbrhs_spectator_allowAIUnconscious = false;
+force ghostbrhs_spectator_allowUnconscious = false;
+force ghostbrhs_spectator_civilianSide = false;
+force ghostbrhs_spectator_civilianSideUnconscious = false;
+force ghostbrhs_spectator_enabled = false;
+force ghostbrhs_spectator_freeCamera = false;
+force ghostbrhs_spectator_freeCameraUnconscious = false;
+force ghostbrhs_spectator_sides = 1;
+force ghostbrhs_spectator_sidesUnconscious = 1;
+force ghostbrhs_spectator_TPPCamera = false;
+force ghostbrhs_spectator_TPPCameraUnconscious = false;
+force ghostbrhs_spectator_unconsciousDelay = 30;
 
 // Ghost - Suppress
-force ghostb_suppress_checkLOS = true;
-force ghostb_suppress_overlayFadeoutTime = 10;
-force ghostb_suppress_overlayOpacity = 0.96;
-force ghostb_suppress_overlayTexture = 0;
-force ghostb_suppress_projectileMaxDistance = 9;
-force ghostb_suppress_shooterMinDistance = 0;
+force ghostbrhs_suppress_checkLOS = true;
+force ghostbrhs_suppress_overlayFadeoutTime = 10;
+force ghostbrhs_suppress_overlayOpacity = 0.96;
+force ghostbrhs_suppress_overlayTexture = 0;
+force ghostbrhs_suppress_projectileMaxDistance = 9;
+force ghostbrhs_suppress_shooterMinDistance = 0;
 
 // Ghost - tagging
-force ghostb_tagging_enabled = true;
+force ghostbrhs_tagging_enabled = true;
 
 
 // Ghost - TFAR Setter
-ghostb_tfar_setter_Layout = false;
-ghostb_tfar_setter_Shortcut = false;
-ghostb_tfar_setter_ShowLR = true;
-ghostb_tfar_setter_ShowSR = true;
-ghostb_tfar_setter_ShowVLR = true;
+ghostbrhs_tfar_setter_Layout = false;
+ghostbrhs_tfar_setter_Shortcut = false;
+ghostbrhs_tfar_setter_ShowLR = true;
+ghostbrhs_tfar_setter_ShowSR = true;
+ghostbrhs_tfar_setter_ShowVLR = true;
 
 // Ghost - towing
-force ghostb_towing_addToCars = true;
-force ghostb_towing_addToHeavyDutyVehicles = true;
+force ghostbrhs_towing_addToCars = true;
+force ghostbrhs_towing_addToHeavyDutyVehicles = true;
 
 // TFAR - Global settings
 force TFAR_AICanHearPlayer = true;
@@ -1025,3 +1025,120 @@ VCM_TURRETUNLOAD = true;
 VCM_USECBASETTINGS = true;
 VCM_WARNDELAY = 30;
 VCM_WARNDIST = 1000;
+
+
+// MRH_MilsimTools - Core settings
+force MRH_MilsimTools_AdminCasualtiesCap = 60;
+force MRH_MilsimTools_AllowAdminForZeus = true;
+force MRH_MilsimTools_AllowDeadReco = false;
+force MRH_MilsimTools_Core_ApplyMedicPatch = false;
+force MRH_MilsimTools_Delete_disconnected_body = false;
+force MRH_MilsimTools_hideAceMyLoadOuts = false;
+force MRH_MilsimTools_LD_loadoutDisplaySize = 100;
+force MRH_MilsimTools_LD_ShowLoadOutInBrief = false;
+MRH_MilsimTools_PlayIntro_ToPlayer = false;
+force MRH_MilsimTools_ResetHasDiedOnRespawn = false;
+force MRH_MilsimTools_Rmv_map_nolead = false;
+MRH_MilsimTools_ShowAdminDeadHint = false;
+
+// MRH_MilsimTools - Debug Mode
+force MRH_MilsimTools_DebugTools_DoLogDebugMode = false;
+force MRH_MilsimTools_DebugTools_isDebugMode = false;
+
+// MRH_MilsimTools - Deployable Fobs
+force MRH_MilsimTools_CAMP_composition = "MRH_SmallCamp_default";
+force MRH_MilsimTools_FOB_BIG_composition = "MRH_FieldHQSmall_default";
+force MRH_MilsimTools_MiscItems_CAMP_DeployTime = 10;
+force MRH_MilsimTools_MiscItems_CAMP_GRepackRadius = 10;
+force MRH_MilsimTools_MiscItems_CAMP_GRepackTime = 10;
+force MRH_MilsimTools_MiscItems_FOB_BIGDeployTime = 20;
+force MRH_MilsimTools_MiscItems_FOB_BIGRepackRadius = 50;
+force MRH_MilsimTools_MiscItems_FOB_BIGRepackTime = 20;
+
+// MRH_MilsimTools - Hacking settings
+force MRH_MilsimTools_RequireHackingTool = true;
+
+// MRH_MilsimTools - Halo Jumps
+force MRH_MilsimTools_HaloGear_AADDefaultOpeningAltitude = "400";
+force MRH_MilsimTools_HaloGear_allowManualAADSetting = true;
+force MRH_MilsimTools_HaloGear_disableMaskHud = false;
+force MRH_MilsimTools_HaloGear_disableMaskHudAltimeter = false;
+force MRH_MilsimTools_HaloGear_disableMaskHudCompass = false;
+force MRH_MilsimTools_HaloGear_disableMaskHudVelocity = false;
+force MRH_MilsimTools_HaloGear_haloMaskBreakingChancePerc = 7;
+force MRH_MilsimTools_HaloGear_hypoxiaAltitude = 4600;
+force MRH_MilsimTools_HaloGear_hypoxiaUse = true;
+force MRH_MilsimTools_HaloGear_missionConfiguredProtectiveGear = "RHS_jetpilot_usaf,rhs_zsh7a,rhs_zsh7a_alt,RHS_TU95MS_vvs_old";
+force MRH_MilsimTools_HaloGear_playRebreatherSounds = true;
+
+// MRH_MilsimTools - Heli Taxi
+force MRH_MilsimTools_BluForCivs = "C_Heli_Light_01_civil_F";
+force MRH_MilsimTools_BluForHelis = "B_Heli_Transport_01_F,B_Heli_Light_01_F,B_Heli_Transport_03_unarmed_F,B_T_VTOL_01_infantry_F";
+force MRH_MilsimTools_BluForInde = "I_Heli_Transport_02_F,I_Heli_light_03_unarmed_F";
+force MRH_MilsimTools_BluForOpFor = "O_Heli_Transport_04_bench_F,O_Heli_Light_02_unarmed_F,O_Heli_Transport_04_covered_F";
+force MRH_MilsimTools_Heli_ConditionIsFormLeader = true;
+force MRH_MilsimTools_Heli_CustomCondition = "(isFormationLeader MRH_player) && ([MRH_player, 'ACRE_PRC117F'] call acre_api_fnc_hasKindOfRadio)";
+force MRH_MilsimTools_Heli_isCustomConditionSet = false;
+force MRH_MilsimTools_Heli_NumberSimulTPerSide = "3";
+force MRH_MilsimTools_Heli_UseHeliTaxiInMission = false;
+
+// MRH_MilsimTools - Insertion Handler
+force MRH_MilsimTools_InsertionHandler_allowHALO = true;
+force MRH_MilsimTools_InsertionHandler_allowStatic = true;
+force MRH_MilsimTools_InsertionHandler_allowSub = true;
+force MRH_MilsimTools_InsertionHandler_SupplyPlanesBluFor = "B_T_VTOL_01_infantry_F,B_Heli_Transport_03_unarmed_F,B_Heli_Transport_01_F";
+force MRH_MilsimTools_InsertionHandler_SupplyPlanesInde = "I_Heli_Transport_02_F,I_Heli_light_03_unarmed_F,I_C_Plane_Civil_01_F";
+force MRH_MilsimTools_InsertionHandler_SupplyPlanesOpFor = "O_T_VTOL_02_infantry_dynamicLoadout_F,O_Heli_Light_02_unarmed_F,O_Heli_Transport_04_box_F";
+
+// MRH_MilsimTools - JIP settings
+force MRH_MilsimTools_Jip_Menu_sideOnly = false;
+force MRH_MilsimTools_Jip_MenuAllow = false;
+force MRH_MilsimTools_Jip_MenuIncludeAI = false;
+
+// MRH_MilsimTools - MEDEVAC
+force MRH_MilsimTools_MEDEVAC_BluFor = "B_Heli_Light_01_F,B_Heli_Transport_01_F,B_Heli_Transport_03_unarmed_F";
+force MRH_MilsimTools_MEDEVAC_Civs = "C_IDAP_Heli_Transport_02_F,C_Heli_Light_01_civil_F";
+force MRH_MilsimTools_MEDEVAC_ConditionIsFormLeader = false;
+force MRH_MilsimTools_MEDEVAC_CustomCondition = "player getVariable [""canUseSSStrans"",false]";
+force MRH_MilsimTools_MEDEVAC_DelayBetween = 120;
+force MRH_MilsimTools_MEDEVAC_ESCORT_BluFor = "B_Heli_Attack_01_dynamicLoadout_F";
+force MRH_MilsimTools_MEDEVAC_ESCORT_BluForCivs = "C_Heli_Light_01_civil_F";
+force MRH_MilsimTools_MEDEVAC_ESCORT_Inde = "I_Heli_light_03_dynamicLoadout_F";
+force MRH_MilsimTools_MEDEVAC_ESCORT_OpFor = "O_Heli_Attack_02_dynamicLoadout_F";
+force MRH_MilsimTools_MEDEVAC_Inde = "I_Heli_light_03_unarmed_F,I_Heli_Transport_02_F";
+force MRH_MilsimTools_MEDEVAC_isCustomConditionSet = true;
+force MRH_MilsimTools_MEDEVAC_MEDICCLASS_BluFor = "B_medic_F";
+force MRH_MilsimTools_MEDEVAC_MEDICCLASS_Civs = "C_Man_Paramedic_01_F";
+force MRH_MilsimTools_MEDEVAC_MEDICCLASS_Inde = "I_medic_F";
+force MRH_MilsimTools_MEDEVAC_MEDICCLASS_ItemsCall = "ACE_HandFlare_Red,SmokeShellOrange";
+force MRH_MilsimTools_MEDEVAC_MEDICCLASS_OpFor = "O_medic_F";
+force MRH_MilsimTools_MEDEVAC_OpFor = "O_Heli_Light_02_dynamicLoadout_F,O_Heli_Transport_04_medevac_F";
+force MRH_MilsimTools_MEDEVAC_timeToReachLZ = 600;
+force MRH_MilsimTools_MEDEVAC_UseMedEVACInMission = true;
+
+// MRH_MilsimTools - Medical Tent
+force MRH_MilsimTools_MiscItems_FieldMedicalTentDeployTime = 20;
+force MRH_MilsimTools_MiscItems_FieldMedicalTentRepackTime = 10;
+
+// MRH_MilsimTools - Roster settings
+force MRH_MilsimTools_Roster_AllowAllSides = false;
+force MRH_MilsimTools_Roster_ColorBF = [0.259,0.525,0.957,1];
+force MRH_MilsimTools_Roster_ColorCiv = [0.686,0.141,0.588,1];
+force MRH_MilsimTools_Roster_ColorInd = [0.212,0.847,0.286,1];
+force MRH_MilsimTools_Roster_ColorOp = [0.929,0.063,0.063,1];
+force MRH_MilsimTools_Roster_ColorUnknown = [0.929,0.82,0.118,1];
+force MRH_MilsimTools_Roster_ShowAIgroups = false;
+force MRH_MilsimTools_Roster_ShowAiWithinGrps = false;
+
+// MRH_MilsimTools - Supply drops
+force MRH_MilsimTools_SupplyDrop_DelayBetween = 600;
+
+// MRH_MilsimTools - Tablet settings
+force MRH_MilsimTools_AllowMapTablet = false;
+force MRH_MilsimTools_ST_BriefingRemote_overlay = "\MRHMilsimTools\Paa\cnn_news_ca.paa";
+force MRH_MilsimTools_ST_BriefingRemote_videosToPlay = "\a3\missions_f_bootcamp\video\vr_generictransition_1.ogv,\a3\missions_f_epa\video\a_in_intro.ogv";
+
+// MRH_MilsimTools - Zeus
+MRH_MilsimTools_Zeus_hideWaterMark = false;
+MRH_MilsimTools_Zeus_waterMark = "UseVanilla";
+MRH_MilsimTools_Zeus_waterMarkCustomImg = "\MRHMilsimTools\Paa\zeusicon.paa";

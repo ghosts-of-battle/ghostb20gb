@@ -6,7 +6,7 @@ import subprocess
 
 ######## GLOBALS #########
 MAINPREFIX = "z"
-PREFIX = "ghostb_"
+PREFIX = "ghostbrhs_"
 ##########################
 
 def mod_time(path):
@@ -32,7 +32,7 @@ def check_for_obsolete_pbos(addonspath, file):
 def main():
     print("""
   ####################
-  # ghostb3 Debug Build #
+  # ghostbrhs3 Debug Build #
   ####################
 """)
 

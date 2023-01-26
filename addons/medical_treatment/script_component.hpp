@@ -1,6 +1,6 @@
 #define COMPONENT medical_treatment
 #define COMPONENT_BEAUTIFIED Medical_Treatment
-#include "\z\ghostb\addons\main\script_mod.hpp"
+#include "\z\ghostbrhs\addons\main\script_mod.hpp"
 
 // #define DEBUG_MODE_FULL
 // #define DISABLE_COMPILE_CACHE
@@ -12,7 +12,7 @@
     #define DEBUG_SETTINGS DEBUG_SETTINGS_MEDICAL_TREATMENT
 #endif
 
-#include "\z\ghostb\addons\main\script_macros.hpp"
+#include "\z\ghostbrhs\addons\main\script_macros.hpp"
 
 // The best choice for given wound
 #define SUPER_EFF_BASE \

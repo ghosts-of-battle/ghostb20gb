@@ -12,7 +12,7 @@
  * 0: Is task successfully finished? <BOOL>
  *
  * Example:
- * ["KnockHorse", "Canceled"] call ghostb_tasks_fnc_finishTask
+ * ["KnockHorse", "Canceled"] call ghostbrhs_tasks_fnc_finishTask
  *
  * Public: Yes
  */

@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 
 class CfgPatches {
-    class GHOSTBFundamentals_Channels {
+    class ghostbrhsFundamentals_Channels {
 
         author = QAUTHOR;
         name = QUOTE(COMPONENT_NAME);
@@ -15,13 +15,13 @@ class CfgPatches {
 };
 
 class Extended_PreInit_EventHandlers {
-    class GHOSTBFundamentals_Channels_Event {
-        init = "call compile preprocessFileLineNumbers 'z\ghostb\addons\channels\XEH_preInit.sqf'";
+    class ghostbrhsFundamentals_Channels_Event {
+        init = "call compile preprocessFileLineNumbers 'z\ghostbrhs\addons\channels\XEH_preInit.sqf'";
     };
 };
 
 class Extended_PostInit_EventHandlers {
-    class GHOSTB_AI_Event {
-        init = "call compile preprocessFileLineNumbers 'z\ghostb\addons\channels\XEH_postInit.sqf'";
+    class ghostbrhs_AI_Event {
+        init = "call compile preprocessFileLineNumbers 'z\ghostbrhs\addons\channels\XEH_postInit.sqf'";
     };
 };

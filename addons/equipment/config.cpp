@@ -43,7 +43,11 @@ class CfgPatches {
             "ace_vector",
             "A3_Weapons_F",
             "cba_jr",
-            "ace_xm157"
+            "ace_xm157",
+            // "aceax_compat_mcx",
+            // "aceax_compat_milgp_headgear",
+            // "aceax_compat_milgp_uniform",
+            // "aceax_compat_milgp_uniform"
         };
         VERSION_CONFIG;
         authors[] = {"MitchJC"};
@@ -60,4 +64,4 @@ class CfgFunctions {
 #include "CfgWeapons.hpp"
 #include "jr_classes.hpp"
 #include "RscInGameUI.hpp"
-
+#include "XtdGearModels.hpp"

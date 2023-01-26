@@ -1,5 +1,5 @@
-name = "ghostb"
-prefix = "ghostb"
+name = "ghostbrhs"
+prefix = "ghostbrhs"
 author = "YonV"
 template = "cba"
 mainprefix = "z"
@@ -13,8 +13,8 @@ files = [
     "3rdparty/addons",
     "3rdparty/keys",
     "AUTHORS.txt",
-    "gobp2_256_g.paa",
-    "gobp2_256.paa",
+    "newlogo_3_256_g.paa",
+    "newlogo_3_256.paa",
     ]
 
 exclude = ["*.psd", "*.png", "*.tga"]
@@ -34,7 +34,7 @@ postbuild = [
 ]
 
 releasebuild = [
-    "@zip @ghostb_{{version}}"
+    "@zip @ghostbrhs_{{version}}"
 ]
 
 [header_exts]

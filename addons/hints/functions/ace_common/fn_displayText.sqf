@@ -1,6 +1,6 @@
 /*
  * ARMA EXTENDED ENVIRONMENT
- * \z\ghostb\addons\hints\functions\ace_common\fn_displayText.sqf
+ * \z\ghostbrhs\addons\hints\functions\ace_common\fn_displayText.sqf
  * by Ojemineh
  *
  * replace ace core displayText
@@ -23,18 +23,18 @@
 
 params ["_text", ["_sound", false], ["_delay", 2], ["_priority", 0]];
 
-private _hint_enabled = (missionNamespace getVariable ["ghostb_hint_enabled", true]);
-private _hint_option_ace = (missionNamespace getVariable ["ghostb_hint_option_ace", true]);
+private _hint_enabled = (missionNamespace getVariable ["ghostbrhs_hint_enabled", true]);
+private _hint_option_ace = (missionNamespace getVariable ["ghostbrhs_hint_option_ace", true]);
 
 if (_hint_enabled && _hint_option_ace) then {
 
- _text = format [hint_ghostb_liner_1, _text];
+ _text = format [hint_ghostbrhs_liner_1, _text];
 
  private _snd = 0;
 
  if (_sound) then { _snd = -1; };
 
- [_text, -1, _snd] call ghostb_fnc_hint;
+ [_text, -1, _snd] call ghostbrhs_fnc_hint;
 
 } else {
 

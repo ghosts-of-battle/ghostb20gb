@@ -1,1 +1,1 @@
-#include "\z\ghostb\addons\insurgents\script_component.hpp"
+#include "\z\ghostbrhs\addons\insurgents\script_component.hpp"

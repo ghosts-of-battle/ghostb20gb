@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [true] call ghostb_respawn_fnc_toggle
+ * [true] call ghostbrhs_respawn_fnc_toggle
  *
  * Public: No
  */

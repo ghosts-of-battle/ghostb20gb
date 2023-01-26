@@ -6,7 +6,7 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"GHOSTB_main","ghostb_common"};
+        requiredAddons[] = {"ghostbrhs_main","ghostbrhs_common"};
         author = "";
         authors[] = {""};
         VERSION_CONFIG;
@@ -19,6 +19,6 @@ class CfgPatches {
 #include "dialogs\CfgDisplays.hpp"
 
 class CfgScriptPaths {
-    GHOSTBisplays = "z\ghostb\addons\cuecard\Scripts\UI\Displays\";
+    ghostbrhsisplays = "z\ghostbrhs\addons\cuecard\Scripts\UI\Displays\";
 };
 

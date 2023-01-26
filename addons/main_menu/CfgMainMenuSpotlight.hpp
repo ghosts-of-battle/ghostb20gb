@@ -4,7 +4,7 @@ class CfgMainMenuSpotlight {
     class GVAR(server1) {
         text = "Ghost of Battle [GHOST] Operations";
         textIsQuote = 0;
-        picture = QUOTE(\z\ghostb\addons\common\images\gobp2_512.paa);
+        picture = QUOTE(\z\ghostbrhs\addons\common\images\newlogo_3_512.paa);
         action = QUOTE(_this call (uiNamespace getVariable QQFUNC(join)));
         actionText = CSTRING(SpotlightHeader);
         condition = QUOTE(true);

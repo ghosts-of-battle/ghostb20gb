@@ -7,9 +7,9 @@ class display3DEN {
                     items[] += {ADDON};
                 };
                 class ADDON {
-                    text = "GHOSTB Autotest";
+                    text = "ghostbrhs Autotest";
                     action = QUOTE(edit3DENMissionAttributes QQGVAR(Attributes););
-                    //picture = "\z\ghostb\addons\common\UI\icon_gear_ca";
+                    //picture = "\z\ghostbrhs\addons\common\UI\icon_gear_ca";
                 };
             };
         };

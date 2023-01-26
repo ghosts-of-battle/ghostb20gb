@@ -12,5 +12,5 @@
 #define DEBUG_MODE_NORMAL
 #define DEBUG_SYNCHRONOUS
 
-#include "\z\ghostb\addons\main\script_mod.hpp"
-#include "\z\ghostb\addons\main\script_macros.hpp"
+#include "\z\ghostbrhs\addons\main\script_mod.hpp"
+#include "\z\ghostbrhs\addons\main\script_macros.hpp"

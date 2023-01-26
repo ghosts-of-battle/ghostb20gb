@@ -6,7 +6,7 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"ghostb_main"};
+        requiredAddons[] = {"ghostbrhs_main"};
         author = "";
         authors[] = {""};
         VERSION_CONFIG;
@@ -16,3 +16,4 @@ class CfgPatches {
 #include "CfgEventHandlers.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgWeapons.hpp"
+#include "XtdGear.hpp"

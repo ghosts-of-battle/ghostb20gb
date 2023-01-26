@@ -1,6 +1,6 @@
-#include "\z\ghostb\addons\autotest\script_component.hpp"
+#include "\z\ghostbrhs\addons\autotest\script_component.hpp"
 /*
- * Name: ghostb_common_fnc_testGroupsSlottingScreen
+ * Name: ghostbrhs_common_fnc_testGroupsSlottingScreen
  * Author: Snippers
  *
  * Arguments:Index of side

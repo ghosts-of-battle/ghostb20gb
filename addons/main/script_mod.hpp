@@ -1,6 +1,6 @@
 #define MAINPREFIX z
-#define PREFIX ghostb
-#define QPREFIX "ghostb"
+#define PREFIX ghostbrhs
+#define QPREFIX "ghostbrhs"
 #include "script_version.hpp"
 
 #define VERSION     MAJOR.MINOR
@@ -11,14 +11,14 @@
 
 #define AUTHOR Ghost
 #define QAUTHOR QUOTE(AUTHOR)
-#define LOGO_PATH "\z\ghostb\addons\common\images\Ghost.paa"
+#define LOGO_PATH "\z\ghostbrhs\addons\common\images\Ghost.paa"
 #define URL "https://arma.wiki"
 #define NAME Ghost
 
 #define REQUIRED_VERSION 2.00
 
 #ifdef COMPONENT_BEAUTIFIED
-    #define COMPONENT_NAME QUOTE(Ghost - COMPONENT_BEAUTIFIED)
+    #define COMPONENT_NAME QUOTE(Ghost of Battle - COMPONENT_BEAUTIFIED)
 #else
-    #define COMPONENT_NAME QUOTE(Ghost - COMPONENT)
+    #define COMPONENT_NAME QUOTE(Ghost of Battle - COMPONENT)
 #endif

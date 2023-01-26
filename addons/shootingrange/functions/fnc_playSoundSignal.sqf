@@ -12,7 +12,7 @@
  * None
  *
  * Example:
- * [controller, "FD_Timer_F", 25] call ghostb_shootingrange_fnc_playSoundSignal;
+ * [controller, "FD_Timer_F", 25] call ghostbrhs_shootingrange_fnc_playSoundSignal;
  *
  * Public: No
  */

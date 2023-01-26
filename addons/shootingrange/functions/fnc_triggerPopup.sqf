@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [target, 0] call ghostb_shootingrange_fnc_triggerPopup;
+ * [target, 0] call ghostbrhs_shootingrange_fnc_triggerPopup;
  *
  * Public: No
  */

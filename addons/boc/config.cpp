@@ -4,14 +4,14 @@ class CfgPatches {
     class ADDON {
         name = QUOTE(COMPONENT_NAME);
         units[] = {
-            "GHOSTB_boc_moduleAdd",
-            "GHOSTB_boc_moduleOnChest",
-            "GHOSTB_boc_weaponHolder"
+            "ghostbrhs_boc_moduleAdd",
+            "ghostbrhs_boc_moduleOnChest",
+            "ghostbrhs_boc_weaponHolder"
         };
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "GHOSTB_main",
+            "ghostbrhs_main",
             "a3_ui_f",
             "A3_Modules_F",
             "ace_main",

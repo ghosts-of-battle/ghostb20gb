@@ -7,48 +7,48 @@ if !(isClass (configFile >> "CfgPatches" >> "ace_main")) exitwith {};
 _cueCardsData = [
     // 1 - ace Report Card
     [
-        "z\ghostb\addons\common\images\cuecards\contact.paa",
+        "z\ghostbrhs\addons\common\images\cuecards\contact.paa",
         "Contact Report Card"
     ],
     // 2 - Contact Report Card
     [
-        "z\ghostb\addons\common\images\cuecards\veh_ace.paa",
+        "z\ghostbrhs\addons\common\images\cuecards\veh_ace.paa",
         "ACE \ Vehicle Report Card"
     ],
     // 3 - Contact Report Card
     [
-        "z\ghostb\addons\common\images\cuecards\salute_react.paa",
+        "z\ghostbrhs\addons\common\images\cuecards\salute_react.paa",
         "Salute Report Card"
     ],
     //  0 - mist
     [
-        "z\ghostb\addons\common\images\cuecards\mist.paa",
+        "z\ghostbrhs\addons\common\images\cuecards\mist.paa",
         "MIST Report Card"
     ],
     //  1 - medical
     [
-        "z\ghostb\addons\common\images\cuecards\med_band.paa",
+        "z\ghostbrhs\addons\common\images\cuecards\med_band.paa",
         "Medical SmartCard Bandages"
     ],
 
     //  2 -
     [
-        "z\ghostb\addons\common\images\cuecards\med_blood.paa",
+        "z\ghostbrhs\addons\common\images\cuecards\med_blood.paa",
         "Medical SmartCard Blood Loss"
     ],
     //  3 -
     [
-        "z\ghostb\addons\common\images\cuecards\med_wounds.paa",
+        "z\ghostbrhs\addons\common\images\cuecards\med_wounds.paa",
         "Medical SmartCard Wounds"
     ],
     //  4 -
     [
-        "z\ghostb\addons\common\images\cuecards\med_card.paa",
+        "z\ghostbrhs\addons\common\images\cuecards\med_card.paa",
         "Medical SmartCard Cardiac Arrest"
     ],
     //  5 -
     [
-        "z\ghostb\addons\common\images\cuecards\med_drugs.paa",
+        "z\ghostbrhs\addons\common\images\cuecards\med_drugs.paa",
         "Medical SmartCard Drugs"
     ]
 ];

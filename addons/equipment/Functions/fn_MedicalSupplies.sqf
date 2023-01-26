@@ -1,5 +1,5 @@
 /*
-Function: GHOSTB_fnc_MedicalSupplies
+Function: ghostbrhs_fnc_MedicalSupplies
 
 Description:
  Used to configure basic container medical state.
@@ -11,8 +11,8 @@ Arguments:
 
 Examples:
  (begin example)
-  [this] call GHOSTB_fnc_MedicalSupplies;
-  [this, "MERT", true] call GHOSTB_fnc_MedicalSupplies;
+  [this] call ghostbrhs_fnc_MedicalSupplies;
+  [this, "MERT", true] call ghostbrhs_fnc_MedicalSupplies;
  (end)
 
 Author:
@@ -26,7 +26,7 @@ params [
  ["_purge", false]
 ];
 
-private _VarType = _container getVariable ["GHOSTB_Equipment_Select", -1];
+private _VarType = _container getVariable ["ghostbrhs_Equipment_Select", -1];
 
 call {
  if (_VarType isEqualto 0) exitwith {_Type = "Limited"};
@@ -49,7 +49,7 @@ call {
     ["1Rnd_SmokePurple_Grenade_shell",2],
     ["1Rnd_SmokeBlue_Grenade_shell",2],
     ["1Rnd_SmokeOrange_Grenade_shell",2],
-    ["GHOSTB_medbags_FirstAid", 4],
+    ["ghostbrhs_medbags_FirstAid", 4],
     ["ACE_EarPlugs", 4],
     ["ACE_Flashlight_MX991", 1],
     ["ToolKit", 1],
@@ -73,7 +73,7 @@ call {
     ["1Rnd_SmokePurple_Grenade_shell",2],
     ["1Rnd_SmokeBlue_Grenade_shell",2],
     ["1Rnd_SmokeOrange_Grenade_shell",2],
-    ["GHOSTB_medbags_FirstAid", 4],
+    ["ghostbrhs_medbags_FirstAid", 4],
     ["ACE_EarPlugs", 4],
     ["ACE_Flashlight_MX991", 1],
     ["ToolKit", 1],
@@ -104,15 +104,15 @@ call {
     ["Chemlight_blue", 10],
     ["Chemlight_green", 10],
     ["Chemlight_red", 10],
-    ["ghostb_medbags_DrugKit", 10],
-    ["ghostb_medbags_FirstAid", 20],
+    ["ghostbrhs_medbags_DrugKit", 10],
+    ["ghostbrhs_medbags_FirstAid", 20],
     ["ACE_bodyBag", 8],
-    ["GHOSTB_medbags_MedicKit", 8],
+    ["ghostbrhs_medbags_MedicKit", 8],
     ["Attachable_Helistretcher", 2],
     ["ACE_surgicalKit", 2],
-    ["GHOSTB_Stethoscope", 2],
+    ["ghostbrhs_Stethoscope", 2],
     ["ACE_personalAidKit",8],
-    ["ghostb_medbags_Trauma",1]
+    ["ghostbrhs_medbags_Trauma",1]
    ];
   } else {
    _ContainerItems = [

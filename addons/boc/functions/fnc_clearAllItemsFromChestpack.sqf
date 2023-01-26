@@ -10,7 +10,7 @@
  * Nothing
  *
  * Example:
- * [player] call GHOSTB_boc_fnc_clearAllItemsFromChestpack;
+ * [player] call ghostbrhs_boc_fnc_clearAllItemsFromChestpack;
  *
  * Public: No
  */

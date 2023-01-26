@@ -1,6 +1,6 @@
-#include "\z\ghostb\addons\common\script_component.hpp"
+#include "\z\ghostbrhs\addons\common\script_component.hpp"
 /*
- * Name: ghostb_common_fnc_sideType
+ * Name: ghostbrhs_common_fnc_sideType
  * Author: Nick
  *
  * Arguments:Index of side

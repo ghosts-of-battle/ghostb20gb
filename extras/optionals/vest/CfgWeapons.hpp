@@ -1,147 +1,119 @@
 #include "script_component.hpp"
 class CfgWeapons {
-
     class Vest_Camo_Base;
-    class Vest_NoCamo_Base;
-    class V_PlateCarrier_Kerry: V_PlateCarrier1_rgr {
-		class ItemInfo;
-		};
+    class Vest_NoCamo_Base: Vest_Camo_Base  {
+        class ItemInfo;
+    };
     class V_CarrierRigKBT_01_heavy_Olive_F {
-		class ItemInfo;
-	};
+        class ItemInfo;
+    };
     class V_CarrierRigKBT_01_light_Olive_F {
-		class ItemInfo;
-	};
+        class ItemInfo;
+    };
     class V_CarrierRigKBT_01_Olive_F {
-		class ItemInfo;
-	};
-	class V_PlateCarrier1_rgr: Vest_NoCamo_Base {
-		class ItemInfo;
-	};
-	class V_PlateCarrier2_rgr: Vest_NoCamo_Base {
-		class ItemInfo;
-	};
-	class V_PlateCarrierSpec_rgr: Vest_NoCamo_Base {
-		class ItemInfo;
-	};
-	class V_PlateCarrierGL_rgr: Vest_NoCamo_Base {
-		class ItemInfo;
-	};
-	class V_Chestrig_khk: Vest_Camo_Base {
-		class ItemInfo;
-	};
-	class V_PlateCarrierSpec_blk:  V_PlateCarrierSpec_rgr {
-		class ItemInfo;
-	};
-	class V_PlateCarrierGL_blk: V_PlateCarrierGL_rgr {
-		class ItemInfo;
-	};
-	class V_PlateCarrier1_blk: Vest_Camo_Base {
-		class ItemInfo;
-	};
-	class V_PlateCarrier2_blk: Vest_Camo_Base {
-		class ItemInfo;
-	};
-	class V_BandollierB_blk: Vest_Camo_Base {
-		class ItemInfo;
-	};
-	class Vest_NoCamo_Base: Vest_Camo_Base {
-		class ItemInfo;
-	};
-	class V_Rangemaster_belt: Vest_NoCamo_Base {
-		class ItemInfo;
-	};
-	class V_PlateCarrier1_rgr: Vest_Camo_Base {
-		class ItemInfo;
-	};
-	class V_TacVestIR_blk: Vest_NoCamo_Base {
-		class ItemInfo;
-	};
-	class Crye_AVS_1: Vest_NoCamo_Base {
-		class ItemInfo;
-	};
+        class ItemInfo;
+    };
+    class V_PlateCarrier1_rgr: Vest_NoCamo_Base {
+        class ItemInfo;
+    };
+    class V_PlateCarrier_Kerry: V_PlateCarrier1_rgr {
+        class ItemInfo;
+        };
+    class V_PlateCarrier2_rgr: Vest_NoCamo_Base  {
+        class ItemInfo;
+    };
+    class V_PlateCarrierSpec_rgr: Vest_NoCamo_Base  {
+        class ItemInfo;
+    };
+    class V_PlateCarrierGL_rgr: Vest_NoCamo_Base {
+        class ItemInfo;
+    };
+    class V_Chestrig_khk: Vest_NoCamo_Base {
+        class ItemInfo;
+    };
+    class V_PlateCarrierSpec_blk:  V_PlateCarrierSpec_rgr {
+        class ItemInfo;
+    };
+    class V_PlateCarrierGL_blk: V_PlateCarrierGL_rgr {
+        class ItemInfo;
+    };
+    class V_PlateCarrier1_blk: Vest_Camo_Base  {
+        class ItemInfo;
+    };
+    class V_PlateCarrier2_blk: Vest_Camo_Base  {
+        class ItemInfo;
+    };
+    class V_BandollierB_blk: Vest_Camo_Base  {
+        class ItemInfo;
+    };
+    class V_Rangemaster_belt: Vest_NoCamo_Base {
+        class ItemInfo;
+    };
+    class V_TacVestIR_blk: Vest_NoCamo_Base {
+        class ItemInfo;
+    };
+    class Crye_AVS_1: Vest_NoCamo_Base {
+        class ItemInfo;
+    };
     class Crye_AVS_1_1: Crye_AVS_1 {
-		class ItemInfo;
-	};
+        class ItemInfo;
+    };
     class Crye_AVS_1_2: Crye_AVS_1 {
-		class ItemInfo;
-	};
+        class ItemInfo;
+    };
     class Crye_AVS_1_3: Crye_AVS_1 {
-		class ItemInfo;
-	};
+        class ItemInfo;
+    };
     class Crye_AVS_2: Crye_AVS_1 {
-		class ItemInfo;
-	};
-	class Crye_AVS_3: Crye_AVS_1 {
-		class ItemInfo;
-	};
-
-    class GVAR(Multicam_lite_V_PlateCarrierSpec_Multicam): V_PlateCarrierSpec_blk {
+        class ItemInfo;
+    };
+    ////////////////////////////////////////
+    class GVAR(PlateCarrierSpec_Multicam): V_PlateCarrierSpec_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
         };
-        displayName="[GHOST] (Multicam) Carrier Special Rig";
+        displayName="[GHOST] Carrier Special Rig";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\carrier_gl_rig_Multicam.paa)
         };
         picture=QPATHTOF(data\ui\icon_carrier_spec_rig_Multicam.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Multicam_lite_V_PlateCarrierGL_Multicam): V_PlateCarrierGL_blk {
+    class GVAR(PlateCarrierGL_Multicam): V_PlateCarrierGL_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
         };
-        displayName="[GHOST] (Multicam) Carrier GL Rig";
+        displayName="[GHOST] Carrier GL Rig";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\carrier_gl_rig_Multicam.paa)
         };
         picture=QPATHTOF(data\ui\icon_carrier_gl_rig_Multicam.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Multicam_lite_V_PlateCarrier1_Multicam): V_PlateCarrier1_blk {
+    class GVAR(PlateCarrier1_Multicam): V_PlateCarrier1_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
         };
-        displayName="[GHOST] (Multicam) Carrier Lite";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\vests_Multicam_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_V_plate_carrier_1_Multicam_CA.paa);
-        MACRO_ITEM_COMMON
-    };
-    class GVAR(Multicam_lite_V_PlateCarrier2_Multicam): V_PlateCarrier2_blk {
-        author = QAUTHOR;
-        class ItemInfo: ItemInfo {
-            containerClass = "Supply300";
-        };
-        displayName="[GHOST] (Multicam) Carrier Rig";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\vests_Multicam_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_V_plate_carrier_2_Multicam_CA.paa);
-        MACRO_ITEM_COMMON
-    };
-    class GVAR(Multicam_lite_V_BandollierB_Multicam): V_BandollierB_blk {
-        author = QAUTHOR;
-        class ItemInfo: ItemInfo {
-            containerClass = "Supply300";
-        };
-        displayName="[GHOST] (Multicam) Slash Bandolier";
-        hiddenSelectionsTextures[]= {
-            QPATHTOF(data\vests_Multicam_co.paa)
-        };
-        picture=QPATHTOF(data\ui\icon_V_bandollierB_Multicam_CA.paa);
-        MACRO_ITEM_COMMON
-    };
-    class GVAR(Multicam_lite_V_PlateCarrier_Kerry_Multicam): V_PlateCarrier_Kerry {
-        author = QAUTHOR;
-        class ItemInfo: ItemInfo {
-            containerClass = "Supply300";
-        };
-        displayName="[GHOST] (Multicam) Carrier Lite (No belt)";
+        displayName="[GHOST] Carrier Lite";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\vests_Multicam_co.paa)
         };
@@ -156,7 +128,67 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(Multicam_Snow_lite_V_PlateCarrierSpec_Multicam_Snow): V_PlateCarrierSpec_blk {
+    class GVAR(PlateCarrier2_Multicam): V_PlateCarrier2_blk {
+        author = QAUTHOR;
+        class ItemInfo: ItemInfo {
+            containerClass = "Supply300";
+        };
+        displayName="[GHOST] Carrier Rig";
+        hiddenSelectionsTextures[]= {
+            QPATHTOF(data\vests_Multicam_co.paa)
+        };
+        picture=QPATHTOF(data\ui\icon_V_plate_carrier_2_Multicam_CA.paa);
+        MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
+    };
+    class GVAR(BandollierB_Multicam): V_BandollierB_blk {
+        author = QAUTHOR;
+        class ItemInfo: ItemInfo {
+            containerClass = "Supply300";
+        };
+        displayName="[GHOST] Slash Bandolier";
+        hiddenSelectionsTextures[]= {
+            QPATHTOF(data\vests_Multicam_co.paa)
+        };
+        picture=QPATHTOF(data\ui\icon_V_bandollierB_Multicam_CA.paa);
+        MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
+    };
+    class GVAR(PlateCarrier_Kerry_Multicam): V_PlateCarrier_Kerry {
+        author = QAUTHOR;
+        class ItemInfo: ItemInfo {
+            containerClass = "Supply300";
+        };
+        displayName="[GHOST] Carrier Lite (No belt)";
+        hiddenSelectionsTextures[]= {
+            QPATHTOF(data\vests_Multicam_co.paa)
+        };
+        picture=QPATHTOF(data\ui\icon_V_plate_carrier_1_Multicam_CA.paa);
+        MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
+    };
+    class GVAR(PlateCarrierSpec_Multicam_Snow): V_PlateCarrierSpec_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -167,8 +199,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_carrier_spec_rig_Multicam_Snow.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Multicam_Snow_lite_V_PlateCarrierGL_Multicam_Snow): V_PlateCarrierGL_blk {
+    class GVAR(PlateCarrierGL_Multicam_Snow): V_PlateCarrierGL_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -179,8 +219,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_carrier_gl_rig_Multicam_Snow.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Multicam_Snow_lite_V_PlateCarrier1_Multicam_Snow): V_PlateCarrier1_blk {
+    class GVAR(PlateCarrier1_Multicam_Snow): V_PlateCarrier1_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -191,8 +239,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_plate_carrier_1_Multicam_Snow_CA.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Multicam_Snow_lite_V_PlateCarrier2_Multicam_Snow): V_PlateCarrier2_blk {
+    class GVAR(PlateCarrier2_Multicam_Snow): V_PlateCarrier2_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -203,8 +259,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_plate_carrier_2_Multicam_Snow_CA.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Multicam_Snow_lite_V_BandollierB_Multicam_Snow): V_BandollierB_blk {
+    class GVAR(BandollierB_Multicam_Snow): V_BandollierB_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -215,8 +279,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_bandollierB_Multicam_Snow_CA.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Multicam_Snow_lite_V_PlateCarrier_Kerry_Multicam_Snow): V_PlateCarrier_Kerry {
+    class GVAR(PlateCarrier_Kerry_Multicam_Snow): V_PlateCarrier_Kerry {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -236,7 +308,7 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(Multicam_Woodland_lite_V_PlateCarrierSpec_Multicam_Woodland): V_PlateCarrierSpec_blk {
+    class GVAR(PlateCarrierSpec_Multicam_Woodland): V_PlateCarrierSpec_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -247,8 +319,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_carrier_spec_rig_Multicam_Woodland.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Multicam_Woodland_lite_V_PlateCarrierGL_Multicam_Woodland): V_PlateCarrierGL_blk {
+    class GVAR(PlateCarrierGL_Multicam_Woodland): V_PlateCarrierGL_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -259,8 +339,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_carrier_gl_rig_Multicam_Woodland.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Multicam_Woodland_lite_V_PlateCarrier1_Multicam_Woodland): V_PlateCarrier1_blk {
+    class GVAR(PlateCarrier1_Multicam_Woodland): V_PlateCarrier1_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -271,8 +359,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_plate_carrier_1_Multicam_Woodland_CA.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Multicam_Woodland_lite_V_PlateCarrier2_Multicam_Woodland): V_PlateCarrier2_blk {
+    class GVAR(PlateCarrier2_Multicam_Woodland): V_PlateCarrier2_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -283,8 +379,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_plate_carrier_2_Multicam_Woodland_CA.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Multicam_Woodland_lite_V_BandollierB_Multicam_Woodland): V_BandollierB_blk {
+    class GVAR(BandollierB_Multicam_Woodland): V_BandollierB_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -295,8 +399,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_bandollierB_Multicam_Woodland_CA.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Multicam_Woodland_lite_V_PlateCarrier_Kerry_Multicam_Woodland): V_PlateCarrier_Kerry {
+    class GVAR(PlateCarrier_Kerry_Multicam_Woodland): V_PlateCarrier_Kerry {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -316,7 +428,7 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(Solid_Black_lite_V_PlateCarrierSpec_Solid_Black): V_PlateCarrierSpec_blk {
+    class GVAR(PlateCarrierSpec_Solid_Black): V_PlateCarrierSpec_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -327,8 +439,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_carrier_spec_rig_Solid_Black.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Solid_Black_lite_V_PlateCarrierGL_Solid_Black): V_PlateCarrierGL_blk {
+    class GVAR(PlateCarrierGL_Solid_Black): V_PlateCarrierGL_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -339,8 +459,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_carrier_gl_rig_Solid_Black.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Solid_Black_lite_V_PlateCarrier1_Solid_Black): V_PlateCarrier1_blk {
+    class GVAR(PlateCarrier1_Solid_Black): V_PlateCarrier1_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -351,8 +479,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_plate_carrier_1_Solid_Black_CA.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Solid_Black_lite_V_PlateCarrier2_Solid_Black): V_PlateCarrier2_blk {
+    class GVAR(PlateCarrier2_Solid_Black): V_PlateCarrier2_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -363,8 +499,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_plate_carrier_2_Solid_Black_CA.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Solid_Black_lite_V_BandollierB_Solid_Black): V_BandollierB_blk {
+    class GVAR(BandollierB_Solid_Black): V_BandollierB_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -375,8 +519,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_bandollierB_Solid_Black_CA.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Solid_Black_lite_V_PlateCarrier_Kerry_Solid_Black): V_PlateCarrier_Kerry {
+    class GVAR(PlateCarrier_Kerry_Solid_Black): V_PlateCarrier_Kerry {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -396,7 +548,7 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(Solid_CoyoteBrown_lite_V_PlateCarrierSpec_Solid_CoyoteBrown): V_PlateCarrierSpec_blk {
+    class GVAR(PlateCarrierSpec_Solid_CoyoteBrown): V_PlateCarrierSpec_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -407,8 +559,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_carrier_spec_rig_Solid_CoyoteBrown.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Solid_CoyoteBrown_lite_V_PlateCarrierGL_Solid_CoyoteBrown): V_PlateCarrierGL_blk {
+    class GVAR(PlateCarrierGL_Solid_CoyoteBrown): V_PlateCarrierGL_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -419,8 +579,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_carrier_gl_rig_Solid_CoyoteBrown.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Solid_CoyoteBrown_lite_V_PlateCarrier1_Solid_CoyoteBrown): V_PlateCarrier1_blk {
+    class GVAR(PlateCarrier1_Solid_CoyoteBrown): V_PlateCarrier1_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -431,8 +599,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_plate_carrier_1_Solid_CoyoteBrown_CA.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Solid_CoyoteBrown_lite_V_PlateCarrier2_Solid_CoyoteBrown): V_PlateCarrier2_blk {
+    class GVAR(PlateCarrier2_Solid_CoyoteBrown): V_PlateCarrier2_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -443,8 +619,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_plate_carrier_2_Solid_CoyoteBrown_CA.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Solid_CoyoteBrown_lite_V_BandollierB_Solid_CoyoteBrown): V_BandollierB_blk {
+    class GVAR(BandollierB_Solid_CoyoteBrown): V_BandollierB_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -455,8 +639,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_bandollierB_Solid_CoyoteBrown_CA.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Solid_CoyoteBrown_lite_V_PlateCarrier_Kerry_Solid_CoyoteBrown): V_PlateCarrier_Kerry {
+    class GVAR(PlateCarrier_Kerry_Solid_CoyoteBrown): V_PlateCarrier_Kerry {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -476,7 +668,7 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(Solid_Ranger_Green_lite_V_PlateCarrierSpec_Solid_Ranger_Green): V_PlateCarrierSpec_blk {
+    class GVAR(PlateCarrierSpec_Solid_Ranger_Green): V_PlateCarrierSpec_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -487,8 +679,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_carrier_spec_rig_Solid_Ranger_Green.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Solid_Ranger_Green_lite_V_PlateCarrierGL_Solid_Ranger_Green): V_PlateCarrierGL_blk {
+    class GVAR(PlateCarrierGL_Solid_Ranger_Green): V_PlateCarrierGL_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -499,8 +699,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_carrier_gl_rig_Solid_Ranger_Green.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Solid_Ranger_Green_lite_V_PlateCarrier1_Solid_Ranger_Green): V_PlateCarrier1_blk {
+    class GVAR(PlateCarrier1_Solid_Ranger_Green): V_PlateCarrier1_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -511,8 +719,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_plate_carrier_1_Solid_Ranger_Green_CA.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Solid_Ranger_Green_lite_V_PlateCarrier2_Solid_Ranger_Green): V_PlateCarrier2_blk {
+    class GVAR(PlateCarrier2_Solid_Ranger_Green): V_PlateCarrier2_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -523,8 +739,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_plate_carrier_2_Solid_Ranger_Green_CA.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Solid_Ranger_Green_lite_V_BandollierB_Solid_Ranger_Green): V_BandollierB_blk {
+    class GVAR(BandollierB_Solid_Ranger_Green): V_BandollierB_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -535,8 +759,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_bandollierB_Solid_Ranger_Green_CA.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Solid_Ranger_Green_lite_V_PlateCarrier_Kerry_Solid_Ranger_Green): V_PlateCarrier_Kerry {
+    class GVAR(PlateCarrier_Kerry_Solid_Ranger_Green): V_PlateCarrier_Kerry {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -556,7 +788,7 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(US_Tigerstripe_lite_V_PlateCarrierSpec_US_Tigerstripe): V_PlateCarrierSpec_blk {
+    class GVAR(PlateCarrierSpec_US_Tigerstripe): V_PlateCarrierSpec_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -567,8 +799,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_carrier_spec_rig_US_Tigerstripe.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(US_Tigerstripe_lite_V_PlateCarrierGL_US_Tigerstripe): V_PlateCarrierGL_blk {
+    class GVAR(PlateCarrierGL_US_Tigerstripe): V_PlateCarrierGL_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -579,8 +819,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_carrier_gl_rig_US_Tigerstripe.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(US_Tigerstripe_lite_V_PlateCarrier1_US_Tigerstripe): V_PlateCarrier1_blk {
+    class GVAR(PlateCarrier1_US_Tigerstripe): V_PlateCarrier1_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -591,8 +839,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_plate_carrier_1_US_Tigerstripe_CA.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(US_Tigerstripe_lite_V_PlateCarrier2_US_Tigerstripe): V_PlateCarrier2_blk {
+    class GVAR(PlateCarrier2_US_Tigerstripe): V_PlateCarrier2_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -603,8 +859,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_plate_carrier_2_US_Tigerstripe_CA.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(US_Tigerstripe_lite_V_BandollierB_US_Tigerstripe): V_BandollierB_blk {
+    class GVAR(BandollierB_US_Tigerstripe): V_BandollierB_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -615,8 +879,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_bandollierB_US_Tigerstripe_CA.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(US_Tigerstripe_lite_V_PlateCarrier_Kerry_US_Tigerstripe): V_PlateCarrier_Kerry {
+    class GVAR(PlateCarrier_Kerry_US_Tigerstripe): V_PlateCarrier_Kerry {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -636,7 +908,7 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(Solid_Olive_lite_V_PlateCarrierSpec_Solid_Olive): V_PlateCarrierSpec_blk {
+    class GVAR(PlateCarrierSpec_Solid_Olive): V_PlateCarrierSpec_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -647,8 +919,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_carrier_spec_rig_Solid_Olive.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Solid_Olive_lite_V_PlateCarrierGL_Solid_Olive): V_PlateCarrierGL_blk {
+    class GVAR(PlateCarrierGL_Solid_Olive): V_PlateCarrierGL_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -659,8 +939,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_carrier_gl_rig_Solid_Olive.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Solid_Olive_lite_V_PlateCarrier1_Solid_Olive): V_PlateCarrier1_blk {
+    class GVAR(PlateCarrier1_Solid_Olive): V_PlateCarrier1_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -671,8 +959,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_plate_carrier_1_Solid_Olive_CA.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Solid_Olive_lite_V_PlateCarrier2_Solid_Olive): V_PlateCarrier2_blk {
+    class GVAR(PlateCarrier2_Solid_Olive): V_PlateCarrier2_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -683,8 +979,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_plate_carrier_2_Solid_Olive_CA.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Solid_Olive_lite_V_BandollierB_Solid_Olive): V_BandollierB_blk {
+    class GVAR(BandollierB_Solid_Olive): V_BandollierB_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -695,8 +999,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_bandollierB_Solid_Olive_CA.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Solid_Olive_lite_V_PlateCarrier_Kerry_Solid_Olive): V_PlateCarrier_Kerry {
+    class GVAR(PlateCarrier_Kerry_Solid_Olive): V_PlateCarrier_Kerry {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -716,7 +1028,7 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(Solid_Tan_lite_V_PlateCarrierSpec_Solid_Tan): V_PlateCarrierSpec_blk {
+    class GVAR(PlateCarrierSpec_Solid_Tan): V_PlateCarrierSpec_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -727,8 +1039,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_carrier_spec_rig_Solid_Tan.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Solid_Tan_lite_V_PlateCarrierGL_Solid_Tan): V_PlateCarrierGL_blk {
+    class GVAR(PlateCarrierGL_Solid_Tan): V_PlateCarrierGL_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -739,8 +1059,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_carrier_gl_rig_Solid_Tan.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Solid_Tan_lite_V_PlateCarrier1_Solid_Tan): V_PlateCarrier1_blk {
+    class GVAR(PlateCarrier1_Solid_Tan): V_PlateCarrier1_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -751,8 +1079,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_plate_carrier_1_Solid_Tan_CA.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Solid_Tan_lite_V_PlateCarrier2_Solid_Tan): V_PlateCarrier2_blk {
+    class GVAR(PlateCarrier2_Solid_Tan): V_PlateCarrier2_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -763,8 +1099,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_plate_carrier_2_Solid_Tan_CA.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Solid_Tan_lite_V_BandollierB_Solid_Tan): V_BandollierB_blk {
+    class GVAR(BandollierB_Solid_Tan): V_BandollierB_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -775,8 +1119,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_bandollierB_Solid_Tan_CA.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Solid_Tan_lite_V_PlateCarrier_Kerry_Solid_Tan): V_PlateCarrier_Kerry {
+    class GVAR(PlateCarrier_Kerry_Solid_Tan): V_PlateCarrier_Kerry {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -796,7 +1148,7 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(Solid_White_lite_V_PlateCarrierSpec_Solid_White): V_PlateCarrierSpec_blk {
+    class GVAR(PlateCarrierSpec_Solid_White): V_PlateCarrierSpec_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -807,8 +1159,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_carrier_spec_rig_Solid_White.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Solid_White_lite_V_PlateCarrierGL_Solid_White): V_PlateCarrierGL_blk {
+    class GVAR(PlateCarrierGL_Solid_White): V_PlateCarrierGL_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -819,8 +1179,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_carrier_gl_rig_Solid_White.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Solid_White_lite_V_PlateCarrier1_Solid_White): V_PlateCarrier1_blk {
+    class GVAR(PlateCarrier1_Solid_White): V_PlateCarrier1_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -831,8 +1199,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_plate_carrier_1_Solid_White_CA.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Solid_White_lite_V_PlateCarrier2_Solid_White): V_PlateCarrier2_blk {
+    class GVAR(PlateCarrier2_Solid_White): V_PlateCarrier2_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -843,8 +1219,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_plate_carrier_2_Solid_White_CA.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Solid_White_lite_V_BandollierB_Solid_White): V_BandollierB_blk {
+    class GVAR(BandollierB_Solid_White): V_BandollierB_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -855,8 +1239,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_bandollierB_Solid_White_CA.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Solid_White_lite_V_PlateCarrier_Kerry_Solid_White): V_PlateCarrier_Kerry {
+    class GVAR(PlateCarrier_Kerry_Solid_White): V_PlateCarrier_Kerry {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -876,7 +1268,7 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(US_DCU_lite_V_PlateCarrierSpec_US_DCU): V_PlateCarrierSpec_blk {
+    class GVAR(PlateCarrierSpec_US_DCU): V_PlateCarrierSpec_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -887,8 +1279,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_carrier_spec_rig_US_DCU.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(US_DCU_lite_V_PlateCarrierGL_US_DCU): V_PlateCarrierGL_blk {
+    class GVAR(PlateCarrierGL_US_DCU): V_PlateCarrierGL_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -899,8 +1299,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_carrier_gl_rig_US_DCU.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(US_DCU_lite_V_PlateCarrier1_US_DCU): V_PlateCarrier1_blk {
+    class GVAR(PlateCarrier1_US_DCU): V_PlateCarrier1_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -911,8 +1319,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_plate_carrier_1_US_DCU_CA.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(US_DCU_lite_V_PlateCarrier2_US_DCU): V_PlateCarrier2_blk {
+    class GVAR(PlateCarrier2_US_DCU): V_PlateCarrier2_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -923,8 +1339,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_plate_carrier_2_US_DCU_CA.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(US_DCU_lite_V_BandollierB_US_DCU): V_BandollierB_blk {
+    class GVAR(BandollierB_US_DCU): V_BandollierB_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -935,8 +1359,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_bandollierB_US_DCU_CA.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(US_DCU_lite_V_PlateCarrier_Kerry_US_DCU): V_PlateCarrier_Kerry {
+    class GVAR(PlateCarrier_Kerry_US_DCU): V_PlateCarrier_Kerry {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -956,7 +1388,7 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(US_M81_lite_V_PlateCarrierSpec_US_M81): V_PlateCarrierSpec_blk {
+    class GVAR(PlateCarrierSpec_US_M81): V_PlateCarrierSpec_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -967,8 +1399,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_carrier_spec_rig_US_M81.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(US_M81_lite_V_PlateCarrierGL_US_M81): V_PlateCarrierGL_blk {
+    class GVAR(PlateCarrierGL_US_M81): V_PlateCarrierGL_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -979,8 +1419,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_carrier_gl_rig_US_M81.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(US_M81_lite_V_PlateCarrier1_US_M81): V_PlateCarrier1_blk {
+    class GVAR(PlateCarrier1_US_M81): V_PlateCarrier1_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -991,8 +1439,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_plate_carrier_1_US_M81_CA.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(US_M81_lite_V_PlateCarrier2_US_M81): V_PlateCarrier2_blk {
+    class GVAR(PlateCarrier2_US_M81): V_PlateCarrier2_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1003,8 +1459,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_plate_carrier_2_US_M81_CA.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(US_M81_lite_V_BandollierB_US_M81): V_BandollierB_blk {
+    class GVAR(BandollierB_US_M81): V_BandollierB_blk {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1015,8 +1479,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_bandollierB_US_M81_CA.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(US_M81_lite_V_PlateCarrier_Kerry_US_M81): V_PlateCarrier_Kerry {
+    class GVAR(PlateCarrier_Kerry_US_M81): V_PlateCarrier_Kerry {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1036,43 +1508,67 @@ class CfgWeapons {
             };
         };
     };
-    class GVAR(Multicam_lite_V_CarrierRigKBT_01_heavy_Multicam_F): V_CarrierRigKBT_01_heavy_Olive_F {
+    class GVAR(CarrierRigKBT_01_heavy_Multicam_F): V_CarrierRigKBT_01_heavy_Olive_F {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
         };
-        displayName="[GHOST] (Multicam) Modular Carrier GL Rig";
+        displayName="[GHOST] Modular Carrier GL Rig";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\carrierrigkbt_01_multicam_co.paa)
         };
         picture=QPATHTOF(data\ui\icon_V_CarrierRigKBT_01_heavy_Multicam_F_ca.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Multicam_lite_V_CarrierRigKBT_01_light_Multicam_F): V_CarrierRigKBT_01_light_Olive_F {
+    class GVAR(CarrierRigKBT_01_light_Multicam_F): V_CarrierRigKBT_01_light_Olive_F {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
         };
-        displayName="[GHOST] (Multicam) Modular Carrier Lite";
+        displayName="[GHOST] Modular Carrier Lite";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\carrierrigkbt_01_multicam_co.paa)
         };
         picture=QPATHTOF(data\ui\icon_V_CarrierRigKBT_01_light_Multicam_F_ca.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Multicam_lite_V_CarrierRigKBT_01_Multicam_F): V_CarrierRigKBT_01_Olive_F {
+    class GVAR(CarrierRigKBT_01_Multicam_F): V_CarrierRigKBT_01_Olive_F {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
         };
-        displayName="[GHOST] (Multicam) Modular Carrier Vest";
+        displayName="[GHOST] Modular Carrier Vest";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\carrierrigkbt_01_multicam_co.paa)
         };
         picture=QPATHTOF(data\ui\icon_V_CarrierRigKBT_01_Multicam_F_ca.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Multicam_Snow_lite_V_CarrierRigKBT_01_heavy_Multicam_Snow_F): V_CarrierRigKBT_01_heavy_Olive_F {
+    class GVAR(CarrierRigKBT_01_heavy_Multicam_Snow_F): V_CarrierRigKBT_01_heavy_Olive_F {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1083,8 +1579,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_CarrierRigKBT_01_heavy_Multicam_Snow_F_ca.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Multicam_Snow_lite_V_CarrierRigKBT_01_light_Multicam_Snow_F): V_CarrierRigKBT_01_light_Olive_F {
+    class GVAR(CarrierRigKBT_01_light_Multicam_Snow_F): V_CarrierRigKBT_01_light_Olive_F {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1095,8 +1599,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_CarrierRigKBT_01_light_Multicam_Snow_F_ca.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Multicam_Snow_lite_V_CarrierRigKBT_01_Multicam_Snow_F): V_CarrierRigKBT_01_Olive_F {
+    class GVAR(CarrierRigKBT_01_Multicam_Snow_F): V_CarrierRigKBT_01_Olive_F {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1107,8 +1619,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_CarrierRigKBT_01_Multicam_Snow_F_ca.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Multicam_Woodland_lite_V_CarrierRigKBT_01_heavy_Multicam_Woodland_F): V_CarrierRigKBT_01_heavy_Olive_F {
+    class GVAR(CarrierRigKBT_01_heavy_Multicam_Woodland_F): V_CarrierRigKBT_01_heavy_Olive_F {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1119,8 +1639,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_CarrierRigKBT_01_heavy_Multicam_Woodland_F_ca.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Multicam_Woodland_lite_V_CarrierRigKBT_01_light_Multicam_Woodland_F): V_CarrierRigKBT_01_light_Olive_F {
+    class GVAR(CarrierRigKBT_01_light_Multicam_Woodland_F): V_CarrierRigKBT_01_light_Olive_F {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1131,8 +1659,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_CarrierRigKBT_01_light_Multicam_Woodland_F_ca.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Multicam_Woodland_lite_V_CarrierRigKBT_01_Multicam_Woodland_F): V_CarrierRigKBT_01_Olive_F {
+    class GVAR(CarrierRigKBT_01_Multicam_Woodland_F): V_CarrierRigKBT_01_Olive_F {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1143,8 +1679,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_CarrierRigKBT_01_Multicam_Woodland_F_ca.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Solid_Black_lite_V_CarrierRigKBT_01_heavy_Solid_Black_F): V_CarrierRigKBT_01_heavy_Olive_F {
+    class GVAR(CarrierRigKBT_01_heavy_Solid_Black_F): V_CarrierRigKBT_01_heavy_Olive_F {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1155,8 +1699,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_CarrierRigKBT_01_heavy_Solid_Black_F_ca.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Solid_Black_lite_V_CarrierRigKBT_01_light_Solid_Black_F): V_CarrierRigKBT_01_light_Olive_F {
+    class GVAR(CarrierRigKBT_01_light_Solid_Black_F): V_CarrierRigKBT_01_light_Olive_F {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1167,8 +1719,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_CarrierRigKBT_01_light_Solid_Black_F_ca.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Solid_Black_lite_V_CarrierRigKBT_01_Solid_Black_F): V_CarrierRigKBT_01_Olive_F {
+    class GVAR(CarrierRigKBT_01_Solid_Black_F): V_CarrierRigKBT_01_Olive_F {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1179,8 +1739,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_CarrierRigKBT_01_Solid_Black_F_ca.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Solid_CoyoteBrown_lite_V_CarrierRigKBT_01_heavy_Solid_CoyoteBrown_F): V_CarrierRigKBT_01_heavy_Olive_F {
+    class GVAR(CarrierRigKBT_01_heavy_Solid_CoyoteBrown_F): V_CarrierRigKBT_01_heavy_Olive_F {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1191,8 +1759,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_CarrierRigKBT_01_heavy_Solid_CoyoteBrown_F_ca.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Solid_CoyoteBrown_lite_V_CarrierRigKBT_01_light_Solid_CoyoteBrown_F): V_CarrierRigKBT_01_light_Olive_F {
+    class GVAR(CarrierRigKBT_01_light_Solid_CoyoteBrown_F): V_CarrierRigKBT_01_light_Olive_F {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1203,8 +1779,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_CarrierRigKBT_01_light_Solid_CoyoteBrown_F_ca.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Solid_CoyoteBrown_lite_V_CarrierRigKBT_01_Solid_CoyoteBrown_F): V_CarrierRigKBT_01_Olive_F {
+    class GVAR(CarrierRigKBT_01_Solid_CoyoteBrown_F): V_CarrierRigKBT_01_Olive_F {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1215,8 +1799,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_CarrierRigKBT_01_Solid_CoyoteBrown_F_ca.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Solid_Ranger_Green_lite_V_CarrierRigKBT_01_heavy_Solid_Ranger_Green_F): V_CarrierRigKBT_01_heavy_Olive_F {
+    class GVAR(CarrierRigKBT_01_heavy_Solid_Ranger_Green_F): V_CarrierRigKBT_01_heavy_Olive_F {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1227,8 +1819,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_CarrierRigKBT_01_heavy_Solid_Ranger_Green_F_ca.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Solid_Ranger_Green_lite_V_CarrierRigKBT_01_light_Solid_Ranger_Green_F): V_CarrierRigKBT_01_light_Olive_F {
+    class GVAR(CarrierRigKBT_01_light_Solid_Ranger_Green_F): V_CarrierRigKBT_01_light_Olive_F {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1239,8 +1839,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_CarrierRigKBT_01_light_Solid_Ranger_Green_F_ca.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Solid_Ranger_Green_lite_V_CarrierRigKBT_01_Solid_Ranger_Green_F): V_CarrierRigKBT_01_Olive_F {
+    class GVAR(CarrierRigKBT_01_Solid_Ranger_Green_F): V_CarrierRigKBT_01_Olive_F {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1251,8 +1859,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_CarrierRigKBT_01_Solid_Ranger_Green_F_ca.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(US_Tigerstripe_lite_V_CarrierRigKBT_01_heavy_US_Tigerstripe_F): V_CarrierRigKBT_01_heavy_Olive_F {
+    class GVAR(CarrierRigKBT_01_heavy_US_Tigerstripe_F): V_CarrierRigKBT_01_heavy_Olive_F {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1263,8 +1879,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_CarrierRigKBT_01_heavy_US_Tigerstripe_F_ca.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(US_Tigerstripe_lite_V_CarrierRigKBT_01_light_US_Tigerstripe_F): V_CarrierRigKBT_01_light_Olive_F {
+    class GVAR(CarrierRigKBT_01_light_US_Tigerstripe_F): V_CarrierRigKBT_01_light_Olive_F {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1275,8 +1899,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_CarrierRigKBT_01_light_US_Tigerstripe_F_ca.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(US_Tigerstripe_lite_V_CarrierRigKBT_01_US_Tigerstripe_F): V_CarrierRigKBT_01_Olive_F {
+    class GVAR(CarrierRigKBT_01_US_Tigerstripe_F): V_CarrierRigKBT_01_Olive_F {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1287,8 +1919,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_CarrierRigKBT_01_US_Tigerstripe_F_ca.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Solid_Olive_lite_V_CarrierRigKBT_01_heavy_Solid_Olive_F): V_CarrierRigKBT_01_heavy_Olive_F {
+    class GVAR(CarrierRigKBT_01_heavy_Solid_Olive_F): V_CarrierRigKBT_01_heavy_Olive_F {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1299,8 +1939,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_CarrierRigKBT_01_heavy_Solid_Olive_F_ca.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Solid_Olive_lite_V_CarrierRigKBT_01_light_Solid_Olive_F): V_CarrierRigKBT_01_light_Olive_F {
+    class GVAR(CarrierRigKBT_01_light_Solid_Olive_F): V_CarrierRigKBT_01_light_Olive_F {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1311,8 +1959,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_CarrierRigKBT_01_light_Solid_Olive_F_ca.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Solid_Olive_lite_V_CarrierRigKBT_01_Solid_Olive_F): V_CarrierRigKBT_01_Olive_F {
+    class GVAR(CarrierRigKBT_01_Solid_Olive_F): V_CarrierRigKBT_01_Olive_F {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1323,8 +1979,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_CarrierRigKBT_01_Solid_Olive_F_ca.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Solid_Tan_lite_V_CarrierRigKBT_01_heavy_Solid_Tan_F): V_CarrierRigKBT_01_heavy_Olive_F {
+    class GVAR(CarrierRigKBT_01_heavy_Solid_Tan_F): V_CarrierRigKBT_01_heavy_Olive_F {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1335,8 +1999,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_CarrierRigKBT_01_heavy_Solid_Tan_F_ca.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Solid_Tan_lite_V_CarrierRigKBT_01_light_Solid_Tan_F): V_CarrierRigKBT_01_light_Olive_F {
+    class GVAR(CarrierRigKBT_01_light_Solid_Tan_F): V_CarrierRigKBT_01_light_Olive_F {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1347,8 +2019,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_CarrierRigKBT_01_light_Solid_Tan_F_ca.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Solid_Tan_lite_V_CarrierRigKBT_01_Solid_Tan_F): V_CarrierRigKBT_01_Olive_F {
+    class GVAR(CarrierRigKBT_01_Solid_Tan_F): V_CarrierRigKBT_01_Olive_F {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1359,8 +2039,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_CarrierRigKBT_01_Solid_Tan_F_ca.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Solid_White_lite_V_CarrierRigKBT_01_heavy_Solid_White_F): V_CarrierRigKBT_01_heavy_Olive_F {
+    class GVAR(CarrierRigKBT_01_heavy_Solid_White_F): V_CarrierRigKBT_01_heavy_Olive_F {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1371,8 +2059,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_CarrierRigKBT_01_heavy_Solid_White_F_ca.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Solid_White_lite_V_CarrierRigKBT_01_light_Solid_White_F): V_CarrierRigKBT_01_light_Olive_F {
+    class GVAR(CarrierRigKBT_01_light_Solid_White_F): V_CarrierRigKBT_01_light_Olive_F {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1383,8 +2079,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_CarrierRigKBT_01_light_Solid_White_F_ca.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Solid_White_lite_V_CarrierRigKBT_01_Solid_White_F): V_CarrierRigKBT_01_Olive_F {
+    class GVAR(CarrierRigKBT_01_Solid_White_F): V_CarrierRigKBT_01_Olive_F {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1395,8 +2099,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_CarrierRigKBT_01_Solid_White_F_ca.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(US_DCU_lite_V_CarrierRigKBT_01_heavy_US_DCU_F): V_CarrierRigKBT_01_heavy_Olive_F {
+    class GVAR(CarrierRigKBT_01_heavy_US_DCU_F): V_CarrierRigKBT_01_heavy_Olive_F {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1407,8 +2119,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_CarrierRigKBT_01_heavy_US_DCU_F_ca.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(US_DCU_lite_V_CarrierRigKBT_01_light_US_DCU_F): V_CarrierRigKBT_01_light_Olive_F {
+    class GVAR(CarrierRigKBT_01_light_US_DCU_F): V_CarrierRigKBT_01_light_Olive_F {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1419,8 +2139,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_CarrierRigKBT_01_light_US_DCU_F_ca.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(US_DCU_lite_V_CarrierRigKBT_01_US_DCU_F): V_CarrierRigKBT_01_Olive_F {
+    class GVAR(CarrierRigKBT_01_US_DCU_F): V_CarrierRigKBT_01_Olive_F {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1431,8 +2159,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_CarrierRigKBT_01_US_DCU_F_ca.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(US_M81_lite_V_CarrierRigKBT_01_heavy_US_M81_F): V_CarrierRigKBT_01_heavy_Olive_F {
+    class GVAR(CarrierRigKBT_01_heavy_US_M81_F): V_CarrierRigKBT_01_heavy_Olive_F {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1443,8 +2179,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_CarrierRigKBT_01_heavy_US_M81_F_ca.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(US_M81_lite_V_CarrierRigKBT_01_light_US_M81_F): V_CarrierRigKBT_01_light_Olive_F {
+    class GVAR(CarrierRigKBT_01_light_US_M81_F): V_CarrierRigKBT_01_light_Olive_F {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1455,8 +2199,16 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_CarrierRigKBT_01_light_US_M81_F_ca.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(US_M81_lite_V_CarrierRigKBT_01_US_M81_F): V_CarrierRigKBT_01_Olive_F {
+    class GVAR(CarrierRigKBT_01_US_M81_F): V_CarrierRigKBT_01_Olive_F {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1467,13 +2219,23 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_CarrierRigKBT_01_US_M81_F_ca.paa);
         MACRO_ITEM_COMMON
+        hiddenSelections[]= {
+            "camo"
+        };
+        class ItemInfo: ItemInfo {
+            hiddenSelections[]= {
+                "camo"
+            };
+        };
     };
-    class GVAR(Multicam_lite_V_Crye_AVS_1_Multicam): Crye_AVS_1 {
+    ////////////////////////
+
+    class GVAR(Crye_AVS_1_Multicam): Crye_AVS_1 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
         };
-        displayName="[GHOST] (Multicam) Crye AVS Assaulter 1";
+        displayName="[GHOST] Crye AVS Assaulter 1";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\AVS_Vest_Multicam.paa),
             QPATHTOF(data\AVS_AVSPouch_Multicam.paa),
@@ -1491,13 +2253,14 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_Multicam.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(Multicam_lite_V_Crye_AVS_1_1_Multicam): Crye_AVS_1_1 {
+    class GVAR(Crye_AVS_1_1_Multicam): Crye_AVS_1_1 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
         };
-        displayName="[GHOST] (Multicam) Crye AVS Assaulter 2";
+        displayName="[GHOST] Crye AVS Assaulter 2";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\AVS_Vest_Multicam.paa),
             QPATHTOF(data\AVS_Belt556_Multicam.paa),
@@ -1515,13 +2278,14 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_Multicam.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(Multicam_lite_V_Crye_AVS_1_2_Multicam): Crye_AVS_1_2 {
+    class GVAR(Crye_AVS_1_2_Multicam): Crye_AVS_1_2 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
         };
-        displayName="[GHOST] (Multicam) Crye AVS Assaulter 3";
+        displayName="[GHOST] Crye AVS Assaulter 3";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\AVS_Vest_Multicam.paa),
             QPATHTOF(data\AVS_Mk4_Multicam.paa),
@@ -1539,13 +2303,14 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_Multicam.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(Multicam_lite_V_Crye_AVS_1_3_Multicam): Crye_AVS_1_3 {
+    class GVAR(Crye_AVS_1_3_Multicam): Crye_AVS_1_3 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
         };
-        displayName="[GHOST] (Multicam) Crye AVS Assaulter 4";
+        displayName="[GHOST] Crye AVS Assaulter 4";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\AVS_Vest_Multicam.paa),
             QPATHTOF(data\AVS_AVSPouchT_Multicam.paa),
@@ -1563,13 +2328,14 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_Multicam.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(Multicam_lite_V_Crye_AVS_2_Multicam): Crye_AVS_2 {
+    class GVAR(Crye_AVS_2_Multicam): Crye_AVS_2 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
         };
-        displayName="[GHOST] (Multicam) Crye AVS Gunner";
+        displayName="[GHOST] Crye AVS Gunner";
         hiddenSelectionsTextures[]= {
             QPATHTOF(data\AVS_Vest_Multicam.paa),
             QPATHTOF(data\AVS_AVSPouch_Multicam.paa),
@@ -1585,8 +2351,9 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_Multicam.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(Multicam_Snow_lite_V_Crye_AVS_1_Multicam_Snow): Crye_AVS_1 {
+    class GVAR(Crye_AVS_1_Multicam_Snow): Crye_AVS_1 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1609,8 +2376,9 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_Multicam_Snow.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(Multicam_Snow_lite_V_Crye_AVS_1_1_Multicam_Snow): Crye_AVS_1_1 {
+    class GVAR(Crye_AVS_1_1_Multicam_Snow): Crye_AVS_1_1 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1633,8 +2401,9 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_Multicam_Snow.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(Multicam_Snow_lite_V_Crye_AVS_1_2_Multicam_Snow): Crye_AVS_1_2 {
+    class GVAR(Crye_AVS_1_2_Multicam_Snow): Crye_AVS_1_2 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1657,8 +2426,9 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_Multicam_Snow.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(Multicam_Snow_lite_V_Crye_AVS_1_3_Multicam_Snow): Crye_AVS_1_3 {
+    class GVAR(Crye_AVS_1_3_Multicam_Snow): Crye_AVS_1_3 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1681,8 +2451,9 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_Multicam_Snow.paa);
         MACRO_ITEM_COMMON
-    };
-    class GVAR(Multicam_Snow_lite_V_Crye_AVS_2_Multicam_Snow): Crye_AVS_2 {
+
+};
+    class GVAR(Crye_AVS_2_Multicam_Snow): Crye_AVS_2 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1703,8 +2474,9 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_Multicam_Snow.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(Multicam_Woodland_lite_V_Crye_AVS_1_Multicam_Woodland): Crye_AVS_1 {
+    class GVAR(Crye_AVS_1_Multicam_Woodland): Crye_AVS_1 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1727,8 +2499,9 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_Multicam_Woodland.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(Multicam_Woodland_lite_V_Crye_AVS_1_1_Multicam_Woodland): Crye_AVS_1_1 {
+    class GVAR(Crye_AVS_1_1_Multicam_Woodland): Crye_AVS_1_1 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1751,8 +2524,9 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_Multicam_Woodland.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(Multicam_Woodland_lite_V_Crye_AVS_1_2_Multicam_Woodland): Crye_AVS_1_2 {
+    class GVAR(Crye_AVS_1_2_Multicam_Woodland): Crye_AVS_1_2 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1775,8 +2549,9 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_Multicam_Woodland.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(Multicam_Woodland_lite_V_Crye_AVS_1_3_Multicam_Woodland): Crye_AVS_1_3 {
+    class GVAR(Crye_AVS_1_3_Multicam_Woodland): Crye_AVS_1_3 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1799,8 +2574,9 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_Multicam_Woodland.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(Multicam_Woodland_lite_V_Crye_AVS_2_Multicam_Woodland): Crye_AVS_2 {
+    class GVAR(Crye_AVS_2_Multicam_Woodland): Crye_AVS_2 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1821,8 +2597,9 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_Multicam_Woodland.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(Solid_CoyoteBrown_lite_V_Crye_AVS_1_Solid_CoyoteBrown): Crye_AVS_1 {
+    class GVAR(Crye_AVS_1_Solid_CoyoteBrown): Crye_AVS_1 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1845,8 +2622,9 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_Solid_CoyoteBrown.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(Solid_CoyoteBrown_lite_V_Crye_AVS_1_1_Solid_CoyoteBrown): Crye_AVS_1_1 {
+    class GVAR(Crye_AVS_1_1_Solid_CoyoteBrown): Crye_AVS_1_1 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1869,8 +2647,9 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_Solid_CoyoteBrown.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(Solid_CoyoteBrown_lite_V_Crye_AVS_1_2_Solid_CoyoteBrown): Crye_AVS_1_2 {
+    class GVAR(Crye_AVS_1_2_Solid_CoyoteBrown): Crye_AVS_1_2 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1893,8 +2672,9 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_Solid_CoyoteBrown.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(Solid_CoyoteBrown_lite_V_Crye_AVS_1_3_Solid_CoyoteBrown): Crye_AVS_1_3 {
+    class GVAR(Crye_AVS_1_3_Solid_CoyoteBrown): Crye_AVS_1_3 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1917,8 +2697,9 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_Solid_CoyoteBrown.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(Solid_CoyoteBrown_lite_V_Crye_AVS_2_Solid_CoyoteBrown): Crye_AVS_2 {
+    class GVAR(Crye_AVS_2_Solid_CoyoteBrown): Crye_AVS_2 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1939,8 +2720,9 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_Solid_CoyoteBrown.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(Solid_Ranger_Green_lite_V_Crye_AVS_1_Solid_Ranger_Green): Crye_AVS_1 {
+    class GVAR(Crye_AVS_1_Solid_Ranger_Green): Crye_AVS_1 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1963,8 +2745,9 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_Solid_Ranger_Green.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(Solid_Ranger_Green_lite_V_Crye_AVS_1_1_Solid_Ranger_Green): Crye_AVS_1_1 {
+    class GVAR(Crye_AVS_1_1_Solid_Ranger_Green): Crye_AVS_1_1 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -1987,8 +2770,9 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_Solid_Ranger_Green.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(Solid_Ranger_Green_lite_V_Crye_AVS_1_2_Solid_Ranger_Green): Crye_AVS_1_2 {
+    class GVAR(Crye_AVS_1_2_Solid_Ranger_Green): Crye_AVS_1_2 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -2011,8 +2795,9 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_Solid_Ranger_Green.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(Solid_Ranger_Green_lite_V_Crye_AVS_1_3_Solid_Ranger_Green): Crye_AVS_1_3 {
+    class GVAR(Crye_AVS_1_3_Solid_Ranger_Green): Crye_AVS_1_3 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -2035,8 +2820,9 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_Solid_Ranger_Green.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(Solid_Ranger_Green_lite_V_Crye_AVS_2_Solid_Ranger_Green): Crye_AVS_2 {
+    class GVAR(Crye_AVS_2_Solid_Ranger_Green): Crye_AVS_2 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -2057,8 +2843,9 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_Solid_Ranger_Green.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(US_Tigerstripe_lite_V_Crye_AVS_1_US_Tigerstripe): Crye_AVS_1 {
+    class GVAR(Crye_AVS_1_US_Tigerstripe): Crye_AVS_1 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -2081,8 +2868,9 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_US_Tigerstripe.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(US_Tigerstripe_lite_V_Crye_AVS_1_1_US_Tigerstripe): Crye_AVS_1_1 {
+    class GVAR(Crye_AVS_1_1_US_Tigerstripe): Crye_AVS_1_1 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -2105,8 +2893,9 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_US_Tigerstripe.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(US_Tigerstripe_lite_V_Crye_AVS_1_2_US_Tigerstripe): Crye_AVS_1_2 {
+    class GVAR(Crye_AVS_1_2_US_Tigerstripe): Crye_AVS_1_2 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -2129,8 +2918,9 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_US_Tigerstripe.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(US_Tigerstripe_lite_V_Crye_AVS_1_3_US_Tigerstripe): Crye_AVS_1_3 {
+    class GVAR(Crye_AVS_1_3_US_Tigerstripe): Crye_AVS_1_3 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -2153,8 +2943,9 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_US_Tigerstripe.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(US_Tigerstripe_lite_V_Crye_AVS_2_US_Tigerstripe): Crye_AVS_2 {
+    class GVAR(Crye_AVS_2_US_Tigerstripe): Crye_AVS_2 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -2175,8 +2966,9 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_US_Tigerstripe.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(Solid_Olive_lite_V_Crye_AVS_1_Solid_Olive): Crye_AVS_1 {
+    class GVAR(Crye_AVS_1_Solid_Olive): Crye_AVS_1 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -2199,8 +2991,9 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_Solid_Olive.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(Solid_Olive_lite_V_Crye_AVS_1_1_Solid_Olive): Crye_AVS_1_1 {
+    class GVAR(Crye_AVS_1_1_Solid_Olive): Crye_AVS_1_1 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -2223,8 +3016,9 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_Solid_Olive.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(Solid_Olive_lite_V_Crye_AVS_1_2_Solid_Olive): Crye_AVS_1_2 {
+    class GVAR(Crye_AVS_1_2_Solid_Olive): Crye_AVS_1_2 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -2247,8 +3041,9 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_Solid_Olive.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(Solid_Olive_lite_V_Crye_AVS_1_3_Solid_Olive): Crye_AVS_1_3 {
+    class GVAR(Crye_AVS_1_3_Solid_Olive): Crye_AVS_1_3 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -2271,8 +3066,9 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_Solid_Olive.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(Solid_Olive_lite_V_Crye_AVS_2_Solid_Olive): Crye_AVS_2 {
+    class GVAR(Crye_AVS_2_Solid_Olive): Crye_AVS_2 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -2293,8 +3089,9 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_Solid_Olive.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(Solid_Tan_lite_V_Crye_AVS_1_Solid_Tan): Crye_AVS_1 {
+    class GVAR(Crye_AVS_1_Solid_Tan): Crye_AVS_1 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -2317,8 +3114,9 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_Solid_Tan.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(Solid_Tan_lite_V_Crye_AVS_1_1_Solid_Tan): Crye_AVS_1_1 {
+    class GVAR(Crye_AVS_1_1_Solid_Tan): Crye_AVS_1_1 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -2341,8 +3139,9 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_Solid_Tan.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(Solid_Tan_lite_V_Crye_AVS_1_2_Solid_Tan): Crye_AVS_1_2 {
+    class GVAR(Crye_AVS_1_2_Solid_Tan): Crye_AVS_1_2 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -2365,8 +3164,9 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_Solid_Tan.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(Solid_Tan_lite_V_Crye_AVS_1_3_Solid_Tan): Crye_AVS_1_3 {
+    class GVAR(Crye_AVS_1_3_Solid_Tan): Crye_AVS_1_3 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -2389,8 +3189,9 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_Solid_Tan.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(Solid_Tan_lite_V_Crye_AVS_2_Solid_Tan): Crye_AVS_2 {
+    class GVAR(Crye_AVS_2_Solid_Tan): Crye_AVS_2 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -2411,8 +3212,9 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_Solid_Tan.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(Solid_White_lite_V_Crye_AVS_1_Solid_White): Crye_AVS_1 {
+    class GVAR(Crye_AVS_1_Solid_White): Crye_AVS_1 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -2435,8 +3237,9 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_Solid_White.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(Solid_White_lite_V_Crye_AVS_1_1_Solid_White): Crye_AVS_1_1 {
+    class GVAR(Crye_AVS_1_1_Solid_White): Crye_AVS_1_1 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -2459,8 +3262,9 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_Solid_White.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(Solid_White_lite_V_Crye_AVS_1_2_Solid_White): Crye_AVS_1_2 {
+    class GVAR(Crye_AVS_1_2_Solid_White): Crye_AVS_1_2 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -2483,8 +3287,9 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_Solid_White.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(Solid_White_lite_V_Crye_AVS_1_3_Solid_White): Crye_AVS_1_3 {
+    class GVAR(Crye_AVS_1_3_Solid_White): Crye_AVS_1_3 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -2507,8 +3312,9 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_Solid_White.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(Solid_White_lite_V_Crye_AVS_2_Solid_White): Crye_AVS_2 {
+    class GVAR(Crye_AVS_2_Solid_White): Crye_AVS_2 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -2529,8 +3335,9 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_Solid_White.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(US_DCU_lite_V_Crye_AVS_1_US_DCU): Crye_AVS_1 {
+    class GVAR(Crye_AVS_1_US_DCU): Crye_AVS_1 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -2553,8 +3360,9 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_US_DCU.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(US_DCU_lite_V_Crye_AVS_1_1_US_DCU): Crye_AVS_1_1 {
+    class GVAR(Crye_AVS_1_1_US_DCU): Crye_AVS_1_1 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -2577,8 +3385,9 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_US_DCU.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(US_DCU_lite_V_Crye_AVS_1_2_US_DCU): Crye_AVS_1_2 {
+    class GVAR(Crye_AVS_1_2_US_DCU): Crye_AVS_1_2 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -2601,8 +3410,9 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_US_DCU.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(US_DCU_lite_V_Crye_AVS_1_3_US_DCU): Crye_AVS_1_3 {
+    class GVAR(Crye_AVS_1_3_US_DCU): Crye_AVS_1_3 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -2625,8 +3435,9 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_US_DCU.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(US_DCU_lite_V_Crye_AVS_2_US_DCU): Crye_AVS_2 {
+    class GVAR(Crye_AVS_2_US_DCU): Crye_AVS_2 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -2647,8 +3458,9 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_US_DCU.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(US_M81_lite_V_Crye_AVS_1_US_M81): Crye_AVS_1 {
+    class GVAR(Crye_AVS_1_US_M81): Crye_AVS_1 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -2671,8 +3483,9 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_US_M81.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(US_M81_lite_V_Crye_AVS_1_1_US_M81): Crye_AVS_1_1 {
+    class GVAR(Crye_AVS_1_1_US_M81): Crye_AVS_1_1 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -2695,8 +3508,9 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_US_M81.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(US_M81_lite_V_Crye_AVS_1_2_US_M81): Crye_AVS_1_2 {
+    class GVAR(Crye_AVS_1_2_US_M81): Crye_AVS_1_2 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -2719,8 +3533,9 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_US_M81.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(US_M81_lite_V_Crye_AVS_1_3_US_M81): Crye_AVS_1_3 {
+    class GVAR(Crye_AVS_1_3_US_M81): Crye_AVS_1_3 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -2743,8 +3558,9 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_US_M81.paa);
         MACRO_ITEM_COMMON
+
     };
-    class GVAR(US_M81_lite_V_Crye_AVS_2_US_M81): Crye_AVS_2 {
+    class GVAR(Crye_AVS_2_US_M81): Crye_AVS_2 {
         author = QAUTHOR;
         class ItemInfo: ItemInfo {
             containerClass = "Supply300";
@@ -2765,5 +3581,56 @@ class CfgWeapons {
         };
         picture=QPATHTOF(data\ui\icon_V_AVS_US_M81.paa);
         MACRO_ITEM_COMMON
+
     };
+    ////////////////////////////////////////////
+
+    class JPC2_MC: Vest_Camo_Base     {
+        class ItemInfo: ItemInfo {
+            containerClass="Supply300";
+            };
+    };
+    class JPC22: Vest_Camo_Base     {
+        class ItemInfo: ItemInfo {
+            containerClass="Supply300";
+        };
+    };
+    class JPC23: Vest_Camo_Base {
+        class ItemInfo: ItemInfo {
+            containerClass="Supply300";
+        };
+    };
+    class JPC24: Vest_Camo_Base {
+        class ItemInfo: ItemInfo {
+            containerClass="Supply300";
+        };
+    };
+    class JPC25: Vest_Camo_Base {
+        class ItemInfo: ItemInfo {
+            containerClass="Supply300";
+
+        };
+    };
+    ////////////////////////////////
+    class LV119: Vest_Camo_Base {
+        class ItemInfo: ItemInfo {
+            containerClass="Supply300";
+        };
+    };
+    class LV1192: Vest_Camo_Base {
+        class ItemInfo: ItemInfo {
+            containerClass="Supply300";
+        };
+    };
+    class LV1193: Vest_Camo_Base {
+        class ItemInfo: ItemInfo {
+            containerClass="Supply300";
+        };
+    };
+    class LV1194: Vest_Camo_Base {
+        class ItemInfo: ItemInfo {
+            containerClass="Supply300";
+        };
+    };
+
 };

@@ -2,7 +2,7 @@
 #include "\a3\ui_f\hpp\defineResinclDesign.inc"
 /*
  * Author: veteran29
- * Initializes loading screen display and adds GHOSTB branding.
+ * Initializes loading screen display and adds ghostbrhs branding.
  *
  * Arguments:
  * 0: Loading display <DISPLAY>
@@ -30,16 +30,16 @@ _picture ctrlSetPosition [
 
 switch (systemTime select 1) do {
     case 10: {
-        _picture ctrlSetText QPATHTOF(ui\Ghost.paa);
+        _picture ctrlSetText QUOTE(\z\ghostbrhs\addons\common\images\newlogo_3_512.paa);
     };
     case 12: {
-        _picture ctrlSetText QPATHTOF(ui\Ghost.paa);
+        _picture ctrlSetText QUOTE(\z\ghostbrhs\addons\common\images\newlogo_3_512.paa);
     };
     case ([] call EFUNC(core,easterDate) select 1): {
-        _picture ctrlSetText QPATHTOF(ui\Ghost.paa);
+        _picture ctrlSetText QUOTE(\z\ghostbrhs\addons\common\images\newlogo_3_512.paa);
     };
     default {
-        _picture ctrlSetText QPATHTOF(ui\Ghost.paa);
+        _picture ctrlSetText QUOTE(\z\ghostbrhs\addons\common\images\newlogo_3_512.paa);
     };
 };
 _picture ctrlCommit 0;

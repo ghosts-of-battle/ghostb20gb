@@ -12,7 +12,7 @@
  * Can add item? <BOOL>
  *
  * Example:
- * [player,"FirstAidKit",2] call GHOSTB_boc_fnc_canAddItemToChestpack;
+ * [player,"FirstAidKit",2] call ghostbrhs_boc_fnc_canAddItemToChestpack;
  *
  * Public: No
  */

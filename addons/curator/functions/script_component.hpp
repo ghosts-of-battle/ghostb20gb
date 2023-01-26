@@ -1,1 +1,1 @@
-#include "\z\ghostb\addons\curator\script_component.hpp"
+#include "\z\ghostbrhs\addons\curator\script_component.hpp"

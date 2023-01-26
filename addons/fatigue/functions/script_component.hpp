@@ -1,1 +1,1 @@
-#include "\z\ghostb\addons\fatigue\script_component.hpp"
+#include "\z\ghostbrhs\addons\fatigue\script_component.hpp"

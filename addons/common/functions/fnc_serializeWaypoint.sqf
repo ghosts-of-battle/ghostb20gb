@@ -1,5 +1,5 @@
 /*
- * Name: ghostb_common_fnc_serializeWaypoint
+ * Name: ghostbrhs_common_fnc_serializeWaypoint
  * Author: Head
  *
  * Arguments:

@@ -1,4 +1,4 @@
-#include "\z\ghostb\addons\adminmenu\script_component.hpp"
+#include "\z\ghostbrhs\addons\adminmenu\script_component.hpp"
 
 params [["_unit", objNull, [objNull]], ["_toggle", true, [true]], ["_skipModal", false, [false]]];
 
@@ -81,7 +81,7 @@ if (_error isEqualTo "") then {
                 _reasons pushBack "Unit RC var says player shouldn't be remote controlling it";
             };
             systemChat format [
-                "[GHOSTB Admin Menu] Remote Control stopped because: %1",
+                "[ghostbrhs Admin Menu] Remote Control stopped because: %1",
                 _reasons joinString " | "
             ];
 
@@ -100,7 +100,7 @@ if (_error isEqualTo "") then {
     }, _unit] call CBA_fnc_waitUntilAndExecute;
 } else {
     systemChat format [
-        "[GHOSTB Admin Menu] Spectator Remote Control error: %1",
+        "[ghostbrhs Admin Menu] Spectator Remote Control error: %1",
         _error
     ];
 };

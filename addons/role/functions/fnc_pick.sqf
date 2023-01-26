@@ -3,8 +3,8 @@
 if (isDedicated) exitWith {};
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
-private _ghostbmakecom = [
-    "ghostbmakecom",
+private _ghostbrhsmakecom = [
+    "ghostbrhsmakecom",
     "Communications",
     "", {
         player call FUNC(makecom);
@@ -13,11 +13,11 @@ private _ghostbmakecom = [
     [_area]
 ] call ACE_interact_menu_fnc_createAction;
 
-[this, 0, ["ACE_MainActions"], _ghostbmakecom] call ACE_interact_menu_fnc_addActionToObject;
+[this, 0, ["ACE_MainActions"], _ghostbrhsmakecom] call ACE_interact_menu_fnc_addActionToObject;
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
-private _ghostbmakeeng = [
-    "ghostbmakeeng",
+private _ghostbrhsmakeeng = [
+    "ghostbrhsmakeeng",
     "Engineer",
     "", {
         player call FUNC(makeeng);
@@ -25,11 +25,11 @@ private _ghostbmakeeng = [
     [_area]
 ] call ACE_interact_menu_fnc_createAction;
 
-[this, 0, ["ACE_MainActions"], _ghostbmakeeng] call ACE_interact_menu_fnc_addActionToObject;
+[this, 0, ["ACE_MainActions"], _ghostbrhsmakeeng] call ACE_interact_menu_fnc_addActionToObject;
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
-private _ghostbmakemed = [
-    "ghostbmakemed",
+private _ghostbrhsmakemed = [
+    "ghostbrhsmakemed",
     "Medic",
     "", {
         player call FUNC(makemed);
@@ -37,12 +37,12 @@ private _ghostbmakemed = [
     [_area]
 ] call ACE_interact_menu_fnc_createAction;
 
-[this, 0, ["ACE_MainActions"], _ghostbmakemed] call ACE_interact_menu_fnc_addActionToObject;
+[this, 0, ["ACE_MainActions"], _ghostbrhsmakemed] call ACE_interact_menu_fnc_addActionToObject;
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
-private _ghostbmakewep = [
-    "ghostbmakewep",
+private _ghostbrhsmakewep = [
+    "ghostbrhsmakewep",
     "Weapons",
     "", {
         player call FUNC(makewep);
@@ -50,11 +50,11 @@ private _ghostbmakewep = [
     [_area]
 ] call ACE_interact_menu_fnc_createAction;
 
-[this, 0, ["ACE_MainActions"], _ghostbmakewep] call ACE_interact_menu_fnc_addActionToObject;
+[this, 0, ["ACE_MainActions"], _ghostbrhsmakewep] call ACE_interact_menu_fnc_addActionToObject;
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
-private _ghostbFIX = [
-    "ghostbfix",
+private _ghostbrhsFIX = [
+    "ghostbrhsfix",
     "FIX Perms",
     "", {
         player call FUNC(role);
@@ -63,11 +63,11 @@ private _ghostbFIX = [
     [_area]
 ] call ACE_interact_menu_fnc_createAction;
 
-[this, 0, ["ACE_MainActions"], _ghostbFIX] call ACE_interact_menu_fnc_addActionToObject;
+[this, 0, ["ACE_MainActions"], _ghostbrhsFIX] call ACE_interact_menu_fnc_addActionToObject;
 
 
-// private _ghostbmakepilot = [
-//     "ghostbmakepilot",
+// private _ghostbrhsmakepilot = [
+//     "ghostbrhsmakepilot",
 //     "Pilot",
 //     "", {
 //         player call FUNC(makepilot);
@@ -75,5 +75,5 @@ private _ghostbFIX = [
 //     [_area]
 // ] call ACE_interact_menu_fnc_createAction;
 
-// [this, 0, ["ACE_MainActions"], _ghostbmakepilot] call ACE_interact_menu_fnc_addActionToObject;
+// [this, 0, ["ACE_MainActions"], _ghostbrhsmakepilot] call ACE_interact_menu_fnc_addActionToObject;
 

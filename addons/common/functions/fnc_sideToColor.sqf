@@ -1,5 +1,5 @@
 /*
- * Name: ghostb_common_fnc_sideToColor
+ * Name: ghostbrhs_common_fnc_sideToColor
  * Author: Snippers
  *
  * Arguments:
@@ -11,20 +11,20 @@
  * Description:
  * Will return the color of the inputted side.
  */
- 
+
 //Cache vars for speed
-if (isNil "ghostb_common_blufor_color") then {
-    ghostb_common_blufor_color = [blufor] call bis_fnc_sideColor;
-    ghostb_common_opfor_color = [opfor] call bis_fnc_sideColor;
-    ghostb_common_indep_color = [independent] call bis_fnc_sideColor;
-    ghostb_common_civ_color = [civilian] call bis_fnc_sideColor;
-    ghostb_common_empty_color = [sideUnknown] call bis_fnc_sideColor;
+if (isNil "ghostbrhs_common_blufor_color") then {
+    ghostbrhs_common_blufor_color = [blufor] call bis_fnc_sideColor;
+    ghostbrhs_common_opfor_color = [opfor] call bis_fnc_sideColor;
+    ghostbrhs_common_indep_color = [independent] call bis_fnc_sideColor;
+    ghostbrhs_common_civ_color = [civilian] call bis_fnc_sideColor;
+    ghostbrhs_common_empty_color = [sideUnknown] call bis_fnc_sideColor;
 };
 
 switch _this do {
-    case blufor: {ghostb_common_blufor_color};
-    case opfor: {ghostb_common_opfor_color};
-    case independent: {ghostb_common_indep_color};
-    case civilian: {ghostb_common_civ_color};
-    default {ghostb_common_empty_color};
+    case blufor: {ghostbrhs_common_blufor_color};
+    case opfor: {ghostbrhs_common_opfor_color};
+    case independent: {ghostbrhs_common_indep_color};
+    case civilian: {ghostbrhs_common_civ_color};
+    default {ghostbrhs_common_empty_color};
 };

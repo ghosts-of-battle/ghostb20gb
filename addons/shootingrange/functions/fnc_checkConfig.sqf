@@ -12,7 +12,7 @@
  * None
  *
  * Example:
- * [controller, "range", [target1, target2]] call ghostb_shootingrange_fnc_checkConfig;
+ * [controller, "range", [target1, target2]] call ghostbrhs_shootingrange_fnc_checkConfig;
  *
  * Public: No
  */

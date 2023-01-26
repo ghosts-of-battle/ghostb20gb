@@ -36,7 +36,7 @@
 #define VERSIONNUMBER (MGETMVAR(Version_UpdatedNumber,102))
 #define VERSION_CHECK(var1) if (var1 < VERSIONNUMBER) exitwith {}
 
-// GHOSTB macros
+// ghostbrhs macros
 #define IS_MOD_LOADED(modclass)     (isClass (configFile >> "CfgPatches" >> #modclass))
 
 // Extension macros
@@ -44,7 +44,7 @@
 #define EXT_LOG "Ghost_mods_log"
 
 
-// GHOSTB Debug macros
+// ghostbrhs Debug macros
 #include "script_debug.hpp"
 #include "config_macros.hpp"
 

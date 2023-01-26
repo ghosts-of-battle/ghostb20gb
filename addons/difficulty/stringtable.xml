@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project name="GHOSTB">
+<Project name="ghostbrhs">
     <Package name="Difficulty">
-        <Key ID="STR_GHOSTB_Difficulty_DifficultyName">
+        <Key ID="STR_ghostbrhs_Difficulty_DifficultyName">
             <English>Ghosts of Battle</English>
         </Key>
-        <Key ID="STR_GHOSTB_Difficulty_DifficultyDescription">
+        <Key ID="STR_ghostbrhs_Difficulty_DifficultyDescription">
             <English>Custom Ghosts of Battle settings.</English>
             <Polish>Własne ustawienia Ghosts of Battle.</Polish>
         </Key>

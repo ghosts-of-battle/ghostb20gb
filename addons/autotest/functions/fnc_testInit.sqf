@@ -1,6 +1,6 @@
-#include "\z\ghostb\addons\autotest\script_component.hpp"
+#include "\z\ghostbrhs\addons\autotest\script_component.hpp"
 /*
- * Name = GHOSTB_autotest_fnc_testInit
+ * Name = ghostbrhs_autotest_fnc_testInit
  * Author = Nick
  *
  * Arguments:

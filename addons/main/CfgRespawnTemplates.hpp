@@ -1,7 +1,7 @@
 class CfgRespawnTemplates {
-    class GHOSTB_RespawnOnStartPosition {
+    class ghostbrhs_RespawnOnStartPosition {
         displayName = "Ghost Respawn on Start Position";
-        onPlayerRespawn = "z\ghostb\addons\main\RespawnOnStartPosition.sqf";
+        onPlayerRespawn = "z\ghostbrhs\addons\main\RespawnOnStartPosition.sqf";
         respawnDelay = 10;
         respawnOnStart = 0;
     };

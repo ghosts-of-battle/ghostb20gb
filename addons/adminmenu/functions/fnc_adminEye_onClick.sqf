@@ -1,10 +1,10 @@
-#include "\z\ghostb\addons\adminmenu\script_component.hpp"
+#include "\z\ghostbrhs\addons\adminmenu\script_component.hpp"
 
 disableSerialization;
 
 params["_fullmapWindow","_type","_x","_y"];
 
-private _mousePos = [_x,_y];       
+private _mousePos = [_x,_y];
 
 
 if (_type == 0) then { // left click
@@ -12,9 +12,9 @@ if (_type == 0) then { // left click
     {
         private _pos = (position _x);
         if (_mousePos distance (_fullmapWindow posWorldToScreen _pos) < 0.1) exitWith {
-            
+
             GVAR(adminEyeSelectedObj) = _x;
-            
+
         };
 
     } forEach GVAR(Triggers);

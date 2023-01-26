@@ -1,6 +1,6 @@
 /*
  * ARMA EXTENDED ENVIRONMENT
- * \z\ghostb\addons\hints\functions\fn_hint.sqf
+ * \z\ghostbrhs\addons\hints\functions\fn_hint.sqf
  * by Ojemineh
  *
  * extended hint system
@@ -16,7 +16,7 @@
  * nothing
  *
  * Example:
- * [ format [hint_ghostb_default, "Hello World"] ] call ghostb_fnc_hint;
+ * [ format [hint_ghostbrhs_default, "Hello World"] ] call ghostbrhs_fnc_hint;
  *
  */
 
@@ -48,16 +48,16 @@ if (_text isEqualTo "") exitWith {};
     "_barWidth", "_barHeight", "_barPosX", "_barPosY", "_totalY", "_activeNotifications",
     "_ctrlContent", "_ctrlBar", "_contentH", "_contentY"];
 
-    private _hint_enabled  = (missionNamespace getVariable ["ghostb_hint_enabled", true]);
-    private _hint_position  = (missionNamespace getVariable ["ghostb_hint_position", 0]);
-    private _hint_duration  = (missionNamespace getVariable ["ghostb_hint_duration", 15]);
-    private _hint_sound   = (missionNamespace getVariable ["ghostb_hint_sound", 1]);
-    private _hint_color_bg  = (missionNamespace getVariable ["ghostb_hint_color_background", [0.000,0.000,0.000,0.5]]);
-    private _hint_color_0  = (missionNamespace getVariable ["ghostb_hint_color_default", [0.000,0.824,0.000,1]]);
-    private _hint_color_1  = (missionNamespace getVariable ["ghostb_hint_color_info", [0.824,0.824,0.000,1]]);
-    private _hint_color_2  = (missionNamespace getVariable ["ghostb_hint_color_alert", [0.824,0.000,0.000,1]]);
-    private _hint_queue_size = (missionNamespace getVariable ["ghostb_hint_queue_size", 3]);
-    private _hint_queue_alpha = (missionNamespace getVariable ["ghostb_hint_queue_alpha", 0.4]);
+    private _hint_enabled  = (missionNamespace getVariable ["ghostbrhs_hint_enabled", true]);
+    private _hint_position  = (missionNamespace getVariable ["ghostbrhs_hint_position", 0]);
+    private _hint_duration  = (missionNamespace getVariable ["ghostbrhs_hint_duration", 15]);
+    private _hint_sound   = (missionNamespace getVariable ["ghostbrhs_hint_sound", 1]);
+    private _hint_color_bg  = (missionNamespace getVariable ["ghostbrhs_hint_color_background", [0.000,0.000,0.000,0.5]]);
+    private _hint_color_0  = (missionNamespace getVariable ["ghostbrhs_hint_color_default", [0.000,0.824,0.000,1]]);
+    private _hint_color_1  = (missionNamespace getVariable ["ghostbrhs_hint_color_info", [0.824,0.824,0.000,1]]);
+    private _hint_color_2  = (missionNamespace getVariable ["ghostbrhs_hint_color_alert", [0.824,0.000,0.000,1]]);
+    private _hint_queue_size = (missionNamespace getVariable ["ghostbrhs_hint_queue_size", 3]);
+    private _hint_queue_alpha = (missionNamespace getVariable ["ghostbrhs_hint_queue_alpha", 0.4]);
 
     if (!_hint_enabled) exitWith {};
 
@@ -83,7 +83,7 @@ if (_text isEqualTo "") exitWith {};
     disableSerialization;
 
     //_display = findDisplay 46;
-    _display = uiNamespace getVariable "ghostb_ctrlHint";
+    _display = uiNamespace getVariable "ghostbrhs_ctrlHint";
 
     _bwidth = 0.003 * safezoneW;
     _spacer = 1.5 * (0.01 * safezoneH);
@@ -99,7 +99,7 @@ if (_text isEqualTo "") exitWith {};
             _posY = 0.13 * safezoneH + safezoneY;
             _scrollDown = true;
             _barLeft = true;
-            _queue = uiNamespace getVariable ["ghostb_hint_queue_1", []];
+            _queue = uiNamespace getVariable ["ghostbrhs_hint_queue_1", []];
         };
         case 2: {
             _width = 0.15 * safezoneW;
@@ -108,7 +108,7 @@ if (_text isEqualTo "") exitWith {};
             _posY = safezoneY + safezoneH - (0.13 * safezoneH);
             _scrollDown = false;
             _barLeft = true;
-            _queue = uiNamespace getVariable ["ghostb_hint_queue_2", []];
+            _queue = uiNamespace getVariable ["ghostbrhs_hint_queue_2", []];
         };
         case 3: {
             _width = 0.15 * safezoneW;
@@ -117,7 +117,7 @@ if (_text isEqualTo "") exitWith {};
             _posY = safezoneY + safezoneH - (0.13 * safezoneH);
             _scrollDown = false;
             _barLeft = false;
-            _queue = uiNamespace getVariable ["ghostb_hint_queue_3", []];
+            _queue = uiNamespace getVariable ["ghostbrhs_hint_queue_3", []];
         };
         default {
             _width = 0.15 * safezoneW;
@@ -126,7 +126,7 @@ if (_text isEqualTo "") exitWith {};
             _posY = 0.13 * safezoneH + safezoneY;
             _scrollDown = true;
             _barLeft = false;
-            _queue = uiNamespace getVariable ["ghostb_hint_queue_0", []];
+            _queue = uiNamespace getVariable ["ghostbrhs_hint_queue_0", []];
         };
     };
 
@@ -134,7 +134,7 @@ if (_text isEqualTo "") exitWith {};
         case 1: { playSound ["HintExpand", true]; };
         case 2: { playSound ["Hint", true]; };
         case 3: { playSound ["taskCreated", true]; };
-        case 4: { playSound ["ghostbticalPing4", true]; };
+        case 4: { playSound ["ghostbrhsticalPing4", true]; };
         default {};
     };
 
@@ -218,10 +218,10 @@ if (_text isEqualTo "") exitWith {};
     _queue = ([[_Content,_ColorBar]] + _queue) select {!isNull (_x select 0) && !isNull (_x select 1)};
 
     switch (_position) do {
-        case 0: { uiNamespace setVariable ["ghostb_hint_queue_0", _queue]; };
-        case 1: { uiNamespace setVariable ["ghostb_hint_queue_1", _queue]; };
-        case 2: { uiNamespace setVariable ["ghostb_hint_queue_2", _queue]; };
-        case 3: { uiNamespace setVariable ["ghostb_hint_queue_3", _queue]; };
+        case 0: { uiNamespace setVariable ["ghostbrhs_hint_queue_0", _queue]; };
+        case 1: { uiNamespace setVariable ["ghostbrhs_hint_queue_1", _queue]; };
+        case 2: { uiNamespace setVariable ["ghostbrhs_hint_queue_2", _queue]; };
+        case 3: { uiNamespace setVariable ["ghostbrhs_hint_queue_3", _queue]; };
     };
 
 };

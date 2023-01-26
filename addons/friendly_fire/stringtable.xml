@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project name="GHOSTB">
+<Project name="ghostbrhs">
     <Package name="Friendly_Fire">
-        <Key ID="STR_GHOSTB_Friendly_Fire_DisplayName">
+        <Key ID="STR_ghostbrhs_Friendly_Fire_DisplayName">
             <English>Ghost - Friendly Fire</English>
             <Polish>Ghost - Ogień sojuszniczy</Polish>
         </Key>
-        <Key ID="STR_GHOSTB_Friendly_Fire_Logging_Enabled">
+        <Key ID="STR_ghostbrhs_Friendly_Fire_Logging_Enabled">
             <English>Friendly fire logging</English>
             <Polish>Logowanie ognia sojuszniczego</Polish>
         </Key>

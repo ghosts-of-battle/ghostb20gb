@@ -1,20 +1,20 @@
-#include "\z\ghostb\addons\adminmenu\script_component.hpp"
+#include "\z\ghostbrhs\addons\adminmenu\script_component.hpp"
 /* ----------------------------------------------------------------------------
-Internal Function: GHOSTB_adminmenu_fnc_messageLog_printAll
+Internal Function: ghostbrhs_adminmenu_fnc_messageLog_printAll
 
 Description:
     Prints current admin log to RPT
 
 Examples:
     (begin example)
-        [] call GHOSTB_adminmenu_fnc_messageLog_printAll;
+        [] call ghostbrhs_adminmenu_fnc_messageLog_printAll;
     (end)
 
 Author:
     Freddo
 ---------------------------------------------------------------------------- */
 
-diag_log "[GHOSTB Adminmenu] Printing complete log to RPT";
+diag_log "[ghostbrhs Adminmenu] Printing complete log to RPT";
 
 {
     _x params [
@@ -28,4 +28,4 @@ diag_log "[GHOSTB Adminmenu] Printing complete log to RPT";
     diag_log (_warning + _text);
 } forEach GVAR(logEntries);
 
-diag_log "[GHOSTB Adminmenu] Log end";
+diag_log "[ghostbrhs Adminmenu] Log end";

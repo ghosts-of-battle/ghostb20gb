@@ -1,6 +1,6 @@
 // Updates the group names on the slotting/lobby screen.
 
-#include "\z\ghostb\addons\common\script_component.hpp"
+#include "\z\ghostbrhs\addons\common\script_component.hpp"
 
 params ["_display"];
 

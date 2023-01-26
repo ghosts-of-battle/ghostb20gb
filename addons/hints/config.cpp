@@ -3,13 +3,13 @@
 
 class CfgPatches {
 
-    class GHOSTB_Hints {
+    class ghostbrhs_Hints {
         author = QAUTHOR;
         name = COMPONENT_NAME;
         url = URL;
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "ghostb_main"
+            "ghostbrhs_main"
         };
         units[] = {};
         weapons[] = {};

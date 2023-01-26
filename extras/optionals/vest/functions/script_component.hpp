@@ -1,1 +1,1 @@
-#include "\z\ghostb\addons\vest\script_component.hpp"
+#include "\z\ghostbrhs\addons\vest\script_component.hpp"

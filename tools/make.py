@@ -57,7 +57,7 @@ if sys.platform == "win32":
     import winreg
 
 ######## GLOBALS #########
-project = "@ghostb"
+project = "@ghostbrhs"
 project_version = "3.0.0"
 arma3tools_path = ""
 work_drive = ""
@@ -66,11 +66,11 @@ make_root = ""
 release_dir = ""
 module_root_parent = ""
 optionals_root = ""
-key_name = "ghostb"
+key_name = "ghostbrhs"
 key = ""
 dssignfile = ""
-prefix = "ghostb"
-pbo_name_prefix = "ghostb_"
+prefix = "ghostbrhs"
+pbo_name_prefix = "ghostbrhs_"
 signature_blacklist = []
 importantFiles = ["mod.cpp", "README.md", "AUTHORS.txt", "LICENSE", "Ghost.paa"]
 versionFiles = ["README.md", "mod.cpp"]
@@ -84,7 +84,7 @@ ciBuild = False # Used for CI builds
 #  See http://www.opensource.org/licenses/mit-license.php
 # Error Codes:
 #   -1 -> Directory does not exist
-#   -2 -> General error (see sghostbk traceback)
+#   -2 -> General error (see sghostbrhsk traceback)
 def  get_directory_hash(directory):
     directory_hash = hashlib.sha1()
     if not os.path.exists (directory):
@@ -110,7 +110,7 @@ def  get_directory_hash(directory):
                 f.close()
 
     except:
-        # Print the sghostbk traceback
+        # Print the sghostbrhsk traceback
         traceback.print_exc()
         return -2
 

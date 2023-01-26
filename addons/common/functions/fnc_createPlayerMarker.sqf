@@ -12,7 +12,7 @@
  * Marker ID, empty string if could not create <STRING>
  *
  * Example:
- * [player ,"global"] call ghostb_common_fnc_createPlayerMarker
+ * [player ,"global"] call ghostbrhs_common_fnc_createPlayerMarker
  *
  * Public: No
  */

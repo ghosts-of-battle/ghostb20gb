@@ -1,12 +1,12 @@
 /*
- GHOSTB MISSION TEMPLATE
+ ghostbrhs MISSION TEMPLATE
  RespawnOnStartPosition.sqf
  Author: MitchJC
  Description: Scripts executed when a player respawns.
 */
  player disableConversation true;
  [player ,"NoVoice"] remoteExec ["setSpeaker",0,true];
-  
+
  {_x addCuratorEditableObjects [[player],FALSE];} count allCurators;
 
 

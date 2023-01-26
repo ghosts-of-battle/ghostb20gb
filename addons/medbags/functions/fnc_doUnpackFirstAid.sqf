@@ -1,7 +1,7 @@
 #include "..\script_component.hpp"
 /*
 
- * \ghostb_medical\supplies\functions\fn_doUnpackFirstAid.sqf
+ * \ghostbrhs_medical\supplies\functions\fn_doUnpackFirstAid.sqf
  * by Ojemineh
  *
  * unpack medical supplies
@@ -13,7 +13,7 @@
  * nothing
  *
  * Example:
- * [player] call GHOSTB_medical_supplies_fnc_doUnpackFirstAid;
+ * [player] call ghostbrhs_medical_supplies_fnc_doUnpackFirstAid;
  *
  */
 
@@ -39,27 +39,27 @@ if (isNull _unit) exitWith {};
         playSound QGVAR(Medical_FirstAid_Open_1);
     } else {
         private _pitch = random [0.6, 1, 1.4];
-        playSound3D ["z\ghostb\addons\medbags\data\sounds\FirstAid_Open_1.ogg", _unit]
+        playSound3D ["z\ghostbrhs\addons\medbags\data\sounds\FirstAid_Open_1.ogg", _unit]
     };
 
-    GHOSTB_MEDICAL_SUPPLIES_UNPACK_SUCCESS = false;
-    GHOSTB_MEDICAL_SUPPLIES_UNPACK_FAILURE = false;
+    ghostbrhs_MEDICAL_SUPPLIES_UNPACK_SUCCESS = false;
+    ghostbrhs_MEDICAL_SUPPLIES_UNPACK_FAILURE = false;
 
     [
         2,
         [],
-        { GHOSTB_MEDICAL_SUPPLIES_UNPACK_SUCCESS = true; },
-        { GHOSTB_MEDICAL_SUPPLIES_UNPACK_FAILURE = true; },
+        { ghostbrhs_MEDICAL_SUPPLIES_UNPACK_SUCCESS = true; },
+        { ghostbrhs_MEDICAL_SUPPLIES_UNPACK_FAILURE = true; },
         localize "Unpacking Boo Boo Bag....",
         {true},
         ["isNotInside", "isNotSitting", "isNotSwimming"]
     ] call ACE_common_fnc_progressBar;
 
-    waitUntil {if ((GHOSTB_MEDICAL_SUPPLIES_UNPACK_SUCCESS) || (GHOSTB_MEDICAL_SUPPLIES_UNPACK_FAILURE)) exitWith {true}; false};
+    waitUntil {if ((ghostbrhs_MEDICAL_SUPPLIES_UNPACK_SUCCESS) || (ghostbrhs_MEDICAL_SUPPLIES_UNPACK_FAILURE)) exitWith {true}; false};
 
-    if (GHOSTB_MEDICAL_SUPPLIES_UNPACK_SUCCESS) exitWith {
+    if (ghostbrhs_MEDICAL_SUPPLIES_UNPACK_SUCCESS) exitWith {
 
-        _unit removeItem "ghostb_medbags_FirstAid";
+        _unit removeItem "ghostbrhs_medbags_FirstAid";
 
         private _order = [1,2,3];
         private _overflow = true;
@@ -74,7 +74,7 @@ if (isNull _unit) exitWith {};
         [_unit, "kat_TXA", 1, _order, _overflow] call EFUNC(common,addItem);
     };
 
-    if (GHOSTB_MEDICAL_SUPPLIES_UNPACK_FAILURE) exitWith {
+    if (ghostbrhs_MEDICAL_SUPPLIES_UNPACK_FAILURE) exitWith {
         [_unit, QGVAR(Medical_FirstAid_Open_1)] call EFUNC(common,stop3dSound);
     };
 

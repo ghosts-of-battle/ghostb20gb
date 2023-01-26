@@ -1,1 +1,1 @@
-#include "\z\ghostb\addons\bodybag\script_component.hpp"
+#include "\z\ghostbrhs\addons\bodybag\script_component.hpp"

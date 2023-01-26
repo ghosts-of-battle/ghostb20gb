@@ -1,1 +1,1 @@
-#include "\z\ghostb\addons\shootingrange\script_component.hpp"
+#include "\z\ghostbrhs\addons\shootingrange\script_component.hpp"

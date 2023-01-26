@@ -11,7 +11,7 @@
  * None
  *
  * Example:
- * [player,true] call GHOSTB_boc_fnc_manageWeight;
+ * [player,true] call ghostbrhs_boc_fnc_manageWeight;
  *
  * Public: No
  */
@@ -24,7 +24,7 @@ if ([_unit] call FUNC(chestpack) isEqualTo "") exitWith {false};
 
 _chestpackClass = [_unit] call FUNC(chestpack);
 _chestpackItemsMass = [_unit] call FUNC(loadChestpack);
-_chestpackClassMass = [_chestpackClass] call GHOSTB_boc_fnc_itemMass;
+_chestpackClassMass = [_chestpackClass] call ghostbrhs_boc_fnc_itemMass;
 _totalChestpackMass = _chestpackItemsMass + _chestpackClassMass;
 
 if (_add) then {

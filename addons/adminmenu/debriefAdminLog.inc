@@ -9,12 +9,12 @@
 
     Example:
     class CfgDebriefingSections {
-        #include "\z\ghostb\addons\adminmenu\debriefAdminLog.inc"
+        #include "\z\ghostbrhs\addons\adminmenu\debriefAdminLog.inc"
     };
 */
 
-class ghostb_adminlog
+class ghostbrhs_adminlog
 {
     title = "Ghost Log";
-    variable = "ghostb_adminmenu_debrief";
+    variable = "ghostbrhs_adminmenu_debrief";
 };

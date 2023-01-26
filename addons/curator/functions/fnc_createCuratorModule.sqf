@@ -10,7 +10,7 @@
  * 0: New curator module <OBJECT>
  *
  * Example:
- * call ghostb_curator_fnc_createCuratorModule
+ * call ghostbrhs_curator_fnc_createCuratorModule
  *
  * Public: No
  */

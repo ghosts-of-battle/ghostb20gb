@@ -2,7 +2,7 @@
 
 ADDON = false;
 
-if (isNil QEGVAR(core,GHOSTB_enabled) || !(EGVAR(core,GHOSTB_enabled))) exitWith {};
+if (isNil QEGVAR(core,ghostbrhs_enabled) || !(EGVAR(core,ghostbrhs_enabled))) exitWith {};
 
 
 ADDON = true;

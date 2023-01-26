@@ -1,10 +1,10 @@
 /*
-Function: GHOSTB_fnc_LimitedArsenal
+Function: ghostbrhs_fnc_LimitedArsenal
 
 Description:
  Fills an Ammobox with predefined equipment dependent on _Type. Each Ammobox can be a
  different type and have a different duration.  This function is almost identical to
- GHOSTB_fnc_Arsenal, only the items in the container change.
+ ghostbrhs_fnc_Arsenal, only the items in the container change.
 
 Arguments:
  _object - Object the Ammobox is applied to.  <OBJECT>
@@ -13,10 +13,10 @@ Arguments:
 
 Examples:
  (begin example)
-  [this] call GHOSTB_fnc_LimitedArsenal;
-  [this, "Aegis", 50] call GHOSTB_fnc_LimitedArsenal;
-  [this, "VANILLA"] call GHOSTB_fnc_LimitedArsenal;
-  [MyAmmoCrate, "RHS", 0] call GHOSTB_fnc_LimitedArsenal;
+  [this] call ghostbrhs_fnc_LimitedArsenal;
+  [this, "Aegis", 50] call ghostbrhs_fnc_LimitedArsenal;
+  [this, "VANILLA"] call ghostbrhs_fnc_LimitedArsenal;
+  [MyAmmoCrate, "RHS", 0] call ghostbrhs_fnc_LimitedArsenal;
  (end)
 
 Author:
@@ -27,12 +27,12 @@ if (!isServer) exitwith {};
 
 params [
  "_object",
- ["_Type", "GHOSTB"],
+ ["_Type", "ghostbrhs"],
  ["_Duration", 0]
 ];
 
 call {
- if (_Type isEqualto 0) exitwith {_Type = "GHOSTB"};
+ if (_Type isEqualto 0) exitwith {_Type = "ghostbrhs"};
  if (_Type isEqualto 1) exitwith {_Type = "Winter"};
  if (_Type isEqualto 2) exitwith {_Type = "UnderCover"};
     if (_Type isEqualto 3) exitwith {_Type = "RHS"};
@@ -51,7 +51,7 @@ private [
 ];
 
 call {
- if (_Type isEqualTo "GHOSTB") exitwith {
+ if (_Type isEqualTo "ghostbrhs") exitwith {
   _AvailableItems =[];
         _AvailableHeadgear = [];
         _AvailableGoggles = [];

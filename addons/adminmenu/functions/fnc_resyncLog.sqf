@@ -1,6 +1,6 @@
-#include "\z\ghostb\addons\adminmenu\script_component.hpp"
+#include "\z\ghostbrhs\addons\adminmenu\script_component.hpp"
 /* ----------------------------------------------------------------------------
-Function: GHOSTB_adminmenu_fnc_resyncLog
+Function: ghostbrhs_adminmenu_fnc_resyncLog
 
 Description:
     Resynchronizes the server log from the server to a client
@@ -13,7 +13,7 @@ Returns:
 
 Examples:
     (begin example)
-        [clientOwner] call GHOSTB_adminmenu_fnc_resyncLog;
+        [clientOwner] call ghostbrhs_adminmenu_fnc_resyncLog;
     (end)
 
 Author:

@@ -3,9 +3,9 @@ class RscNotepad {
     enableSimulation = 1;
     closeOnMissionEnd = 0;
     scriptName = "RscNotepad";
-    scriptPath = "GHOSTBisplays";
-    onLoad = "[""onLoad"",_this,""RscNotepad"",'GHOSTBisplays'] call  (uinamespace getvariable 'BIS_fnc_initDisplay')";
-    onUnload = "[""onUnload"",_this,""RscNotepad"",'GHOSTBisplays'] call  (uinamespace getvariable 'BIS_fnc_initDisplay')";
+    scriptPath = "ghostbrhsisplays";
+    onLoad = "[""onLoad"",_this,""RscNotepad"",'ghostbrhsisplays'] call  (uinamespace getvariable 'BIS_fnc_initDisplay')";
+    onUnload = "[""onUnload"",_this,""RscNotepad"",'ghostbrhsisplays'] call  (uinamespace getvariable 'BIS_fnc_initDisplay')";
     onMouseButtonDown = "\
         if ((_this select 1) != 0) exitWith { \
             _ctrl = ((_this select 0) displayCtrl 1004); \
@@ -66,7 +66,7 @@ class RscNotepad {
     class controlsBackground {
         class NotePadBackground: RscPicture {
             idc = 1201;
-            text = "z\ghostb\addons\common\images\cuecards\notepad_CA.paa";
+            text = "z\ghostbrhs\addons\common\images\cuecards\notepad_CA.paa";
             x = 0.288594 * safezoneW + safezoneX;
             y = 0.093 * safezoneH + safezoneY;
             w = 0.31 * safezoneW;

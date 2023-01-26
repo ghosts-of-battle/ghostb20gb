@@ -1,15 +1,15 @@
 /*
- * Name: ghostb_common_fnc_serializeWaypoints
+ * Name: ghostbrhs_common_fnc_serializeWaypoints
  * Author: Head
  *
  * Arguments:
  * _group: Group
  *
  * Return:
- * array: of waypoint datagit 
+ * array: of waypoint datagit
  *
  */
 params ["_group"];
-#include "\z\ghostb\addons\common\script_component.hpp"
+#include "\z\ghostbrhs\addons\common\script_component.hpp"
 private _waypoints = (waypoints _group) apply { _x call FUNC(serializeWaypoint)};
 _waypoints

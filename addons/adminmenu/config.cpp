@@ -8,7 +8,7 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"ghostb_common", "A3_UI_F", "cba_diagnostic"};
+        requiredAddons[] = {"ghostbrhs_common", "A3_UI_F", "cba_diagnostic"};
         VERSION_CONFIG;
     };
 };

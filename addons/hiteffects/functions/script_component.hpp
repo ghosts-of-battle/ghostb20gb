@@ -1,1 +1,1 @@
-#include "\z\ghostb\addons\hiteffects\script_component.hpp"
+#include "\z\ghostbrhs\addons\hiteffects\script_component.hpp"

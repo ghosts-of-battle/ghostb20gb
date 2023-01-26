@@ -6,7 +6,7 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"GHOSTB_main"};
+        requiredAddons[] = {"ghostbrhs_main"};
         author = "";
         authors[] = {""};
         VERSION_CONFIG;

@@ -26,7 +26,7 @@
  * None
  *
  * Example:
- *  ["Some title", "This is a content."] call ghostb_common_fnc_modal
+ *  ["Some title", "This is a content."] call ghostbrhs_common_fnc_modal
  *  [
  *      ["Left", "Right"],
  *      [
@@ -36,7 +36,7 @@
  *          [getText (configFile >> "CfgWeapons" >> currentWeapon player >> "picture"), 5]
  *      ],
  *      true, {systemChat "Open!"}, {systemChat "Close!"}
- *  ] call ghostb_common_fnc_modal
+ *  ] call ghostbrhs_common_fnc_modal
  *
  * Public: Yes
  */

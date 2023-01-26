@@ -1,6 +1,6 @@
 /*
  * ARMA EXTENDED ENVIRONMENT
- * \z\ghostb\addons\hints\functions\ace_common\fn_displayIcon.sqf
+ * \z\ghostbrhs\addons\hints\functions\ace_common\fn_displayIcon.sqf
  * by Ojemineh
  *
  * replace ace core displayIcon
@@ -24,14 +24,14 @@
 
 params ["_iconId", "_show", "_icon", ["_color", [1,1,1,1]], ["_timeAlive", 6]];
 
-private _hint_enabled = (missionNamespace getVariable ["ghostb_hint_enabled", true]);
-private _hint_option_ace = (missionNamespace getVariable ["ghostb_hint_option_ace", true]);
+private _hint_enabled = (missionNamespace getVariable ["ghostbrhs_hint_enabled", true]);
+private _hint_option_ace = (missionNamespace getVariable ["ghostbrhs_hint_option_ace", true]);
 
 if (_hint_enabled && _hint_option_ace) then {
 
- private _text = format [hint_ghostb_icon_1, _icon, _color];
+ private _text = format [hint_ghostbrhs_icon_1, _icon, _color];
 
- [_text, -1, 0] call ghostb_fnc_hint;
+ [_text, -1, 0] call ghostbrhs_fnc_hint;
 
 } else {
 

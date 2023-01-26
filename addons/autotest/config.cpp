@@ -8,7 +8,7 @@ class cfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"ghostb_common"};
+        requiredAddons[] = {"ghostbrhs_common"};
         VERSION_CONFIG;
     };
 };

@@ -11,7 +11,7 @@
  * Nothing
  *
  * Example:
- * _this call GHOSTB_boc_fnc_EHAnimDone;
+ * _this call ghostbrhs_boc_fnc_EHAnimDone;
  *
  * Public: No
  */

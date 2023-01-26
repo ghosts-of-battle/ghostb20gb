@@ -1,6 +1,6 @@
-#include "\z\ghostb\addons\common\script_component.hpp"
+#include "\z\ghostbrhs\addons\common\script_component.hpp"
 /*
- * Name: ghostb_common_fnc_edenInit
+ * Name: ghostbrhs_common_fnc_edenInit
  * Author: Nick
  *
  * Arguments:

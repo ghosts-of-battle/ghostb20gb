@@ -1,4 +1,4 @@
-#include "\z\ghostb\addons\autotest\script_component.hpp"
+#include "\z\ghostbrhs\addons\autotest\script_component.hpp"
 
 // AI Numbers check
 private _output = [];

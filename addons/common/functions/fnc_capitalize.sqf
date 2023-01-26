@@ -1,5 +1,5 @@
 /*
- * Name: ghostb_common_fnc_capitalize
+ * Name: ghostbrhs_common_fnc_capitalize
  * Author: Head
  *
  * Arguments:

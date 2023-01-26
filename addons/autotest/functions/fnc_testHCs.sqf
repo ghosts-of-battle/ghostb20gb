@@ -1,6 +1,6 @@
-#include "\z\ghostb\addons\autotest\script_component.hpp"
+#include "\z\ghostbrhs\addons\autotest\script_component.hpp"
 /* ----------------------------------------------------------------------------
-Internal Function: GHOSTB_autotest_fnc_testHCs
+Internal Function: ghostbrhs_autotest_fnc_testHCs
 
 Description:
     Checks number of HCs and if they're set up correctly

@@ -10,7 +10,7 @@
  * 0: Successfully canceled unit's tasks <BOOL>
  *
  * Example:
- * [player] call ghostb_tasks_fnc_cancelUnfinishedTasks
+ * [player] call ghostbrhs_tasks_fnc_cancelUnfinishedTasks
  *
  * Public: Yes
  */

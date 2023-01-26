@@ -7,8 +7,8 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "ghostb_main",
-            "ghostb_debug_console"
+            "ghostbrhs_main",
+            "ghostbrhs_debug_console"
         };
         author = "Ghost";
         VERSION_CONFIG;

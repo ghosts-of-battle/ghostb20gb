@@ -1,7 +1,7 @@
 class CfgMarkers {
     class iconcasap {
         name = "CAS Action Point";
-        icon = "z\Ghostb\addons\common\images\map\aap.paa";
+        icon = "z\ghostbrhs\addons\common\images\map\aap.paa";
         size = 24;
         shadow = False;
         scope=2;
@@ -11,7 +11,7 @@ class CfgMarkers {
     };
     class iconcasbp {
         name = "CAS Battle Point";
-        icon = "z\Ghostb\addons\common\images\map\abp.paa";
+        icon = "z\ghostbrhs\addons\common\images\map\abp.paa";
         size = 24;
         shadow = False;
         scope=2;
@@ -21,7 +21,7 @@ class CfgMarkers {
     };
     class iconcascp {
         name = "CAS Control Point";
-        icon = "z\Ghostb\addons\common\images\map\acp.paa";
+        icon = "z\ghostbrhs\addons\common\images\map\acp.paa";
         size = 24;
         shadow = False;
         scope=2;
@@ -31,7 +31,7 @@ class CfgMarkers {
     };
     class iconcasop {
         name = "CAS Orbit Point";
-        icon = "z\Ghostb\addons\common\images\map\orbit.paa";
+        icon = "z\ghostbrhs\addons\common\images\map\orbit.paa";
         size = 24;
         shadow = False;
         scope=2;
@@ -41,7 +41,7 @@ class CfgMarkers {
     };
     class iconcasip {
         name = "CAS Initiation Point";
-        icon = "z\Ghostb\addons\common\images\map\aip.paa";
+        icon = "z\ghostbrhs\addons\common\images\map\aip.paa";
         size = 24;
         shadow = False;
         scope=2;
@@ -51,7 +51,7 @@ class CfgMarkers {
     };
     class iconcascck {
         name = "CAS Communications Point";
-        icon = "z\Ghostb\addons\common\images\map\ackp.paa";
+        icon = "z\ghostbrhs\addons\common\images\map\ackp.paa";
         size = 24;
         shadow = False;
         scope=2;
@@ -61,7 +61,7 @@ class CfgMarkers {
     };
     class iconcasep {
         name = "CAS Egress Point";
-        icon = "z\Ghostb\addons\common\images\map\aep.paa";
+        icon = "z\ghostbrhs\addons\common\images\map\aep.paa";
         size = 24;
         shadow = False;
         scope=2;
@@ -71,7 +71,7 @@ class CfgMarkers {
     };
     class iconcasdz {
         name = "Drop Zone";
-        icon = "z\Ghostb\addons\common\images\map\DZ.paa";
+        icon = "z\ghostbrhs\addons\common\images\map\DZ.paa";
         size = 24;
         shadow = False;
         scope=2;
@@ -81,7 +81,7 @@ class CfgMarkers {
     };
     class iconcasilz {
         name = "Landing Zone Insertion";
-        icon = "z\Ghostb\addons\common\images\map\ILZ.paa";
+        icon = "z\ghostbrhs\addons\common\images\map\ILZ.paa";
         size = 24;
         shadow = False;
         scope=2;
@@ -91,7 +91,7 @@ class CfgMarkers {
     };
     class iconcaselz {
         name = "Landing Zone Extraction";
-        icon = "z\Ghostb\addons\common\images\map\ELZ.paa";
+        icon = "z\ghostbrhs\addons\common\images\map\ELZ.paa";
         size = 24;
         shadow = False;
         scope=2;
@@ -101,7 +101,7 @@ class CfgMarkers {
     };
     class iconcasflz {
         name =  "Landing Zone False\Fake";
-        icon = "z\Ghostb\addons\common\images\map\FLZ.paa";
+        icon = "z\ghostbrhs\addons\common\images\map\FLZ.paa";
         size = 24;
         shadow = False;
         scope=2;
@@ -111,7 +111,7 @@ class CfgMarkers {
     };
     class iconassultd {
         name = "Assult";
-        icon = "z\Ghostb\addons\common\images\map\assult.paa";
+        icon = "z\ghostbrhs\addons\common\images\map\assult.paa";
         size = 24;
         shadow = False;
         scope=2;
@@ -121,7 +121,7 @@ class CfgMarkers {
     };
     class iconsupportd {
         name = "Support";
-        icon = "z\Ghostb\addons\common\images\map\support.paa";
+        icon = "z\ghostbrhs\addons\common\images\map\support.paa";
         size = 24;
         shadow = False;
         scope=2;
@@ -131,7 +131,7 @@ class CfgMarkers {
     };
     class iconXMARKx {
         name = "X";
-        icon = "z\Ghostb\addons\common\images\map\x.paa";
+        icon = "z\ghostbrhs\addons\common\images\map\x.paa";
         size = 24;
         shadow = False;
         scope=2;
@@ -141,7 +141,7 @@ class CfgMarkers {
     };
     class iconXMARKnrp {
         name = "Dive Referance Point";
-        icon = "z\Ghostb\addons\common\images\map\nrp.paa";
+        icon = "z\ghostbrhs\addons\common\images\map\nrp.paa";
         size = 24;
         shadow = False;
         scope=2;
@@ -151,7 +151,7 @@ class CfgMarkers {
     };
     class iconXMARKnsp {
         name = "Dive Special Referance Point";
-        icon = "z\Ghostb\addons\common\images\map\nsp.paa";
+        icon = "z\ghostbrhs\addons\common\images\map\nsp.paa";
         size = 24;
         shadow = False;
         scope=2;
@@ -161,7 +161,7 @@ class CfgMarkers {
     };
     class iconXMARKnnp {
         name = "Dive Navigation Point";
-        icon = "z\Ghostb\addons\common\images\map\nnp.paa";
+        icon = "z\ghostbrhs\addons\common\images\map\nnp.paa";
         size = 24;
         shadow = False;
         scope=2;
@@ -171,7 +171,7 @@ class CfgMarkers {
     };
     class iconXMARKdive {
         name = "Dive Point";
-        icon = "z\Ghostb\addons\common\images\map\dive.paa";
+        icon = "z\ghostbrhs\addons\common\images\map\dive.paa";
         size = 24;
         shadow = False;
         scope=2;
@@ -181,7 +181,7 @@ class CfgMarkers {
     };
     class iconXMARKsurface {
         name = "Dive Surface Point";
-        icon = "z\Ghostb\addons\common\images\map\surface.paa";
+        icon = "z\ghostbrhs\addons\common\images\map\surface.paa";
         size = 24;
         shadow = False;
         scope=2;
@@ -191,24 +191,24 @@ class CfgMarkers {
     };
     class iconXMARKland {
         name = "Dive\Amphibious Landing Point";
-        icon = "z\Ghostb\addons\common\images\map\land.paa";
+        icon = "z\ghostbrhs\addons\common\images\map\land.paa";
         size = 24;
         shadow = False;
         scope=2;
         scopeCurator=2;
         markerClass="xmark_assets";
         color[] = {1, 1, 1, 1};
-    };   
+    };
     class iconXMARKacrew {
         name = "Downed Aircrew";
-        icon = "z\Ghostb\addons\common\images\map\down.paa";
+        icon = "z\ghostbrhs\addons\common\images\map\down.paa";
         size = 24;
         shadow = False;
         scope=2;
         scopeCurator=2;
         markerClass="xmark_assets";
         color[] = {1, 1, 1, 1};
-    }; 
+    };
     class hd_dot {
         scope=01;
     };

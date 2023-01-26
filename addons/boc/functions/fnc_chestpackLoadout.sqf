@@ -21,7 +21,7 @@
  * Chestpack Loadout <ARRAY>
  *
  * Example:
- * [player] call GHOSTB_boc_fnc_chestpackLoadout;
+ * [player] call ghostbrhs_boc_fnc_chestpackLoadout;
  *
  * Public: No
  */

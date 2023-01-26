@@ -1,1 +1,1 @@
-#include "\z\ghostb\addons\respawn\script_component.hpp"
+#include "\z\ghostbrhs\addons\respawn\script_component.hpp"
